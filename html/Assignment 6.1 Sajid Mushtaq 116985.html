@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Assignment 6.1 Sajid Mushtaq 116985</title>
+    
+    <style>
+        div {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form style="color: aliceblue;">
+            <table style="border: 1px solid black;" bgcolor="#6b5acd"  >
+
+                <tr></tr>
+                <tr>
+                    <td> <label for="FName"> FIRST NAME:</label></td>
+                    <td> <input type="text" name="FName" id="FNAME" maxlength="30"> (Max 30 characters a-z and A-Z0)
+                    </td>
+                    <td></td>
+                </tr>
+                <tr></tr><tr></tr>
+
+
+
+                <tr>
+                    <td><label for="LName"> LAST NAME :</label></td>
+                    <td> <input type="text" name="lName" id="LNAME" maxlength="30"> (Max 30 characters a-z and A-Z)
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+
+                <tr>
+                    <td>
+                        <label for="birthday">Date of Birth:</label>
+                    </td>
+                    <td> <input type="date" id="birthday" name="birthday">
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td>
+                        <label for="email">EMAIL ID</label>
+                    </td>
+                    <td> <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td>
+                        <label for="MNumber">MOBILE NUMBER</label>
+                    </td>
+                    <td> <input type="number" name="MNumber" id="MNumber"> (11 digit number )
+                        <!--<p>number men maxlenth nahi lag rahi</p> <-->
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                <td>
+                    <label for="Gander">GENDER</label>
+                </td>
+                <td> Male<input type="radio" name="Gander" id="GENDER">
+                    Fmale<input type="radio" name="Gander" id="GENDER">
+                </td>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td>
+                        <label for="Adress">ADDRESS</label>
+                    </td>
+                    <td> <textarea name="Adress" id="Adress" cols="30" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td>
+                        <label for="city"> CITY:</label>
+                    </td>
+                    <td> <input type="text" name="city" id="characters" maxlength="30"> (Max 30 characters a-z and A-Z)
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td>
+                        <label for="pcode"> PIN CODE:</label>
+                    </td>
+                    <td> <input type="password" name="pcode" id="pcode"> (6 digit numbers)
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td>
+                        <label for="city"> STATE:</label>
+                    </td>
+                    <td><input type="text" name="state" id="characters" maxlength="30"> (Max 30 characters a-z and A-Z)
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td><label for="Country">COUNTRY</label></td>
+
+                    <td> <select id="country" name="country" class="form-control">
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Pakistan">Barbados</option>
+                            <option value="India">Zimbabwe</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td><label for="hobbies">HOBBIES*</label></td>
+                    <td> Drawing<input type="checkbox" name="hobbies" value="Drawing">
+                        Singing<input type="checkbox" name="hobbies" id="Singing">
+                        Dancing<input type="checkbox" name="hobbies" id="Dancing">
+                        Sketching<input type="checkbox" name="hobbies" id="Sketching"><br>
+                        Others <input type="checkbox" name="hobbies" id="Others"> <input type="text">
+                    </td>
+                </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td><label for="QUALIFICATION">QUALIFICATION</label></td>
+                    <td style="border: 1px solid black;" bgcolor="#6b5acd" >
+                        <table>
+                            <tr>
+                                <th colspan="2" style="color: rgb(255, 255, 255);">Sl.No.Examination</th>
+
+                                <th style="color: rgb(255, 255, 255);">Board</th>
+                                <th style="color: rgb(255, 255, 255);">Percentage</th>
+                                <th style="color: rgb(255, 255, 255);">Year Of Passing</th>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(255, 255, 255);">1</td>
+                                <td style="color: rgb(255, 255, 255);">Class X</td>
+                                <td style="border: 1px solid black;" bgcolor="white"></td>
+                                <td style="border: 1px solid black;" bgcolor="white"></td>
+                                <td style="border: 1px solid black;" bgcolor="white"></td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(255, 255, 255);">2</td>
+                                <td style="color: rgb(255, 255, 255);">Class XII</td>
+                                <td style="border: 1px solid black;" bgcolor="white"></td>
+                                <td style="border: 1px solid black;" bgcolor="white"></td>
+                                <td style="border: 1px solid black;" bgcolor="white"></td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(255, 255, 255);">3</td>
+                                <td style="color: rgb(255, 255, 255);">Graduation</td>
+                                <td style="border: 1px solid black;" bgcolor="white"></td>
+                                <td style="border: 1px solid black;" bgcolor="white"></td>
+                                <td style="border: 1px solid black;" bgcolor="white"></td>
+                            </tr>
+                            <tr>
+                                <td style="color: rgb(255, 255, 255);">4</td>
+                                <td style="color: rgb(255, 255, 255);">Masters</td>
+                                <td style="border: 1px solid black;" bgcolor="white"></td>
+                                <td style="border: 1px solid black;" bgcolor="white"></td>
+                                <td style="border: 1px solid black;" bgcolor="white"></td>
+                            </tr>
+                            <tr style="color: rgb(255, 255, 255);">
+                                <td colspan="2"></td>
+                                <td> (10 char max)</td>
+                                <td> (upto 2 decimal)</td>
+
+                            </tr>
+                        </table>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>
+                                <label for="Course">COURSES <br>APPLIED FOR</label></td>
+                            <td> BCA<input type="radio" name="Course" id="country">
+                             B.com<input type="radio" name="Course" id="country">
+                            B.sc<input type="radio" name="Course" id="country">
+                             B.A<input type="radio" name="Course" id="country">
+                                
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+
+                        
+                    </td>
+                </tr>
+              <center>  <tr>
+                   <td></td>
+                   
+                   
+                   
+                        <td>
+                    <input type="submit" >
+                      
+                        <input type="reset" value="Reset">
+
+                </td>
+            
+                </tr></center>
+            </table>
+        </form>
+    </div>
+    <h3>Sajid Mushtaq 116985 </h3>
+</body>
+
+</html>

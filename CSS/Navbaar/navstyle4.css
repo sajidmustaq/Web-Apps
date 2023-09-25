@@ -1,0 +1,194 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+body {
+    background-color: white;
+    height: 100%;
+    width: 100vw;
+
+}
+a{
+    text-decoration: none;
+}
+.conatainer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* this is navbar1 css */
+.nave1 {
+    width: 80%;
+    height: 70px;
+    background-color: #322e33;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: 50px;
+}
+
+.links a {
+    margin: 0px 10px 0px 10px;
+    padding: 24px 10px 22px 10px;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.links a:hover{
+background-color: yellowgreen;
+color: black;
+
+}
+.logo1 {
+    padding-right: 15px;
+    
+}
+.button1{
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.buy{
+    width: 70px;
+    height: 25px;
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+    margin: 0px 10px 0px 10px;
+    padding: 8px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+.disc{
+    width: 70px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    margin: 0px 10px 0px 10px;
+    border-radius: 3px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+.disc:hover , .buy:hover{
+    background-color: #322e33;
+    color: white;
+
+}
+
+/* this is navbar 2 css */
+.nave2 {
+    width: 80%;
+    height: 70px;
+    background-color: #6230f4;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: 50px;
+}
+.img2 {
+    margin: 0px 10px 0px 15px;
+
+}
+.logo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.links2{
+    margin-right: 20px;
+
+}
+.links2 a{
+    margin-right: 20px;
+    font-size: large;
+    padding: 23px 5px 23px 5px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.links2 a:hover{
+    background-color: rgb(147, 245, 81);
+    color: black;
+    font-weight: bold;
+}
+/* this is navbar 3 css */
+
+.nave3 {
+    width: 80%;
+    height: 70px;
+    background-color: #7fd097;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.logo3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.links3{
+    margin-right: 20px;
+
+}
+.links3 a{
+    margin-right: 20px;
+    font-size: large;
+    padding: 23px 5px 23px 5px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.links3 a:hover{
+    background-color: rgb(6, 157, 245);
+    color: black;
+    font-weight: bold;
+}
+.signin{
+    background-color: #6230f4;
+    padding:7px 7px 7px 7px;
+    height: 25px;
+    width: 60px;
+    border-radius: 3px;
+}
+/* this is navbar 4 css */
+
+.nave4 {
+    width: 80%;
+    height: 70px;
+    background-color: #e23955;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.links4{
+    margin-right: 20px;
+
+}
+.links4 a{
+    margin-right: 20px;
+    font-size: large;
+    text-decoration: none;
+}

@@ -1,0 +1,122 @@
+body{
+    background-color: #f1f2f6;
+    font-family: lucida grande,tahoma,verdana,arial,sans-serif;
+}
+.container{
+    max-width: 1200px;
+    display: flex;
+    display: inline flex;
+}
+.box1{
+    margin-left: 80px;
+    margin-top: 200px;
+    margin-right: 400px;
+    width: 500px;
+    height: 350px;
+   
+    margin-bottom:auto;
+    display: flex;
+    display: block;
+}
+h1{
+    color: #1a74eb;
+    font-size: 80px;
+    
+
+}
+p{
+    font-size: 40px;
+    width: 800px;
+   
+    
+}
+.box2{
+    margin:200px 50px auto 150px;
+    padding-right: 50px;
+
+}
+form{
+    background-color: #ffff;
+    padding:5%;
+    height: 300px;
+    width: 370px;
+
+   
+    border-radius: 10px;
+    box-shadow: rgba(61, 61, 63, 0.2) 0px 7px 29px 0px;
+
+}
+
+input{
+    height: 52px;
+    width: 364px;
+    padding: 16px 14px;
+   margin-bottom: 10px;
+   margin-right: 10px;
+   border-radius: 7px;
+   border: 1px solid #dcdcdc;
+   box-sizing: border-box;
+   outline: none;
+   
+ }
+
+input:focus {
+    border: 1px solid #1a74eb;
+  }
+.login{
+    background-color: #1978f3;
+    text-align: center;
+    height: 48px;
+    width: 364px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    color: #ffff;
+font-size: larger;
+font-weight: bolder;
+    border: 1px solid #1978f3;
+    margin-top: 8px;
+
+
+}
+.login:hover{
+    background-color: #1058b8;
+    cursor: pointer;
+    
+}
+hr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+a.forgot{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    color: #1058b8;
+ 
+}
+a.forgot:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}  
+
+.creatna{
+    background-color: #41b72e;
+    text-align: center;
+    color: #ffff;
+    width: 150px;
+    height: 45px;
+    border-radius: 7px;
+    border: 1px solid #41b72e;
+   margin-left: 30%;
+   margin-right: 30%;
+   font-weight: bolder;
+   font-size:13px;
+    
+}
+.creatna:hover{
+    background-color: #349225;
+    cursor: pointer;
+}

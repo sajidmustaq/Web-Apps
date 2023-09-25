@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Assignment 03 Sajid Mushtaq 116985</title>
+    <style>
+      ol {
+        counter-reset: item;
+      }
+      li {
+        display: block;
+        color: #0c0c0c;
+      }
+      li:before {
+        content: counters(item, ".") " ";
+        counter-increment: item;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Ordered List</h3>
+<ol>
+    <li> Item One </li>
+    <li>Item two
+    <ol>
+    <li>Sub Item One</li>
+    <ol>
+        <li>Sub sub Item One</li>
+        <li>Sub sub Item two</li>
+    </ol>
+    
+    
+    <li>Sub Item Two</li>
+</ol>
+</li>
+<li>Item Three</li>
+
+
+</ol>
+</ol>
+  </body>
+</html>

@@ -1,0 +1,228 @@
+
+body {
+    background-image: url(As5.1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #FFFFFF;
+}
+.rgform{
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 500px;
+    border-radius: 1%;
+    margin-top: 10%;
+    margin-left: 40px;
+    /* box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; */
+    color: black;
+}
+.main{
+ padding-left: 5%;
+
+ 
+}
+
+h1{
+    text-align: center;
+    margin: 20px auto 10px auto;
+    padding-top: 20px;
+}
+input[type="text"] {
+    width: 80%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px auto  10px 20px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+  input[type="text"]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+    
+  }
+input[type="email"] {
+    width: 80%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px auto  10px 20px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+  input[type="email"]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+    
+  }
+input[type="password"] {
+    width: 80%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px auto  10px 20px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+  input[type="password"]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+    
+  }
+
+  .fname input[type="text" ] {
+    padding-left: 40px;
+  }  
+
+  .fname {
+    position: relative;
+  }
+  .fname  i{
+    position: absolute;
+    left: 20px;
+    top: 1%;
+    padding: 15px 8px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  .Lname input[type="text"] {
+    padding-left: 40px;
+  }  
+  .Lname {
+    position: relative;
+  }
+
+  .Lname i{
+    position: absolute;
+    left: 20px;
+    top: 1%;
+    padding: 15px 8px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  .email input[type="email"] {
+    padding-left: 40px;
+  }  
+  .email {
+    position: relative;
+  }
+
+  .email i{
+    position: absolute;
+    left: 20px;
+    top: 1%;
+    padding: 15px 8px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  .password input[type="password"] {
+    padding-left: 40px;
+  }  
+  .password {
+    position: relative;
+  }
+
+  .password i{
+    position: absolute;
+    left: 20px;
+    top: 1%;
+    padding: 15px 8px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  .gander{
+    display: inline-flex;
+    padding-left: 40px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .gander input[type="radio"]:focus{
+    border-color: dodgerBlue;
+  
+    color: dodgerblue;
+  } 
+
+
+  
+  .button{
+    padding: 5px 5px;
+    width: 80%;
+    border-radius: 4px;
+    margin: 20px auto  10px 20px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+     align-items: center;
+     font-size: larger;
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: #324960;
+   }
+ button{
+  background-color: transparent;
+  color: #FFFFFF;
+  border: none;
+padding-left: 35%;
+font-size: x-large;
+}
+.button:hover{
+background-color:#63abf3 ;
+cursor:pointer ;
+}
+button:hover{
+  background-color:#63abf3 ;
+  cursor:pointer ;
+
+  }
+
+
+
+ select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #324960;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 3em;
+    line-height: 3;
+    background: #324960;
+    overflow: hidden;
+    border-radius: .25em;
+    margin: 20px auto  10px 20px;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #324960;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #f5f5f5;
+ }
+ 
+ 

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8" />
+    <title>Assignment 04.1 Sajid Mushtaq 116985</title>
+</head>
+<body>
+<h1>Nested Tables</h1>
+
+<table border="1px" cellpadding="5">
+    <tr>
+        <th> Hrader Columm 1</th>
+        <th>Hrader Columm 2</th>
+        <th>Hrader Columm 3</th>
+        <th>Hrader Columm 4</th>
+    </tr>
+    <tr>
+        <td>Row 2- Ilem 1</td>
+        <td>Row 2- Ilem 2</td>
+        <th rowspan="2">Row 2- Nested Table 1 <table border="1">
+                <tr>
+                    <th> Row 1 Header</th>
+                    <td> Item</td>
+                </tr>
+                <tr>
+                    <th> Row 2 Header</th>
+                    <td> Item</td>
+                </tr>
+                <tr>
+                    <th> Row 3 Header</th>
+                    <td> Item</td>
+                </tr>
+            </table>
+        </th>
+        <td>Row 2- Ilem 4 <br>A second line</td>
+    </tr>
+<tr>
+    <th>Row 3- Nested Table 2 <table border="1">
+            <tr>
+                <th> Row 1 Header</th>
+                <td> Item</td>
+            </tr>
+            <tr>
+                <th> Row 2 Header</th>
+                <td> Item</td>
+            </tr>
+        </table>
+    </th>
+    <td> Row 3 - Item 2</td>
+    <td rowspan="2"> Row 3 - Item 3</td>
+
+</tr>
+<tr>
+    <td> Row 4 - Item 1</td>
+    <td>Row 4 - Item 2</td>
+    <td>Row 4 - Item 3</td>
+</tr>
+<tr>
+    <td colspan="4"> Row 5 - lest row of outer table</td>
+</tr>
+
+    </table>
+    <hr style="border: solid;">
+    <h1>Picture 2 </h1>
+    <table border="2" style="text-align: center;">
+        <tr >
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+            <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+            </tr>
+      
+           <tr> <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+        <td rowspan="2">Monday</td>
+        <td rowspan="2">08:00 am</td>
+        <td rowspan="2">05:00 pm</td>
+        <td>introduction to XML</td>
+        </tr>
+           <tr> 
+            <td>Validity: DTD and Relax</td>
+           </tr> 
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>08:00 am</td>
+            <td>11:00 am</td>
+            <td rowspan="3"> Xpath
+            <hr>XSL Transformations
+        </td>
+            <tr>
+                <td>11:00 am</td>
+                <td>02:00 pm</td>
+                
+            </tr>
+            <tr>
+                <td>02:00 pm</td>
+                <td>05:00 pm</td>
+            </tr>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>08:00 am</td>
+            <td>12:00 pm</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+    <hr style="border: solid;">
+    <h1>Picture 3 </h1>
+    <table border="2px" style="text-align: center;" >
+        <th colspan="6">Athletics day time table</th>
+        <tr>
+            <th>Area</th>
+            <th>10 Am-11 Am</th>
+            <th>11 Am-12 Pm</th>
+            <th>12 pm-01 Pm</th>
+            <th>01 Pm-02 Pm</th>
+            <th>02 Pm-03 Pm</th>
+        </tr>
+        <tr>
+            <th rowspan="2"> Track</th>
+            <td>400m</td>
+            <td>200m</td>
+            <td rowspan="3">Lunch</td>
+            <td>800m</td>
+            <td>100m</td>
+            <tr>
+                <td>Hurdle</td>
+                <td>1500m</td>
+                <td>free</td>
+                <td>80m</td>
+            </tr>
+        </tr>
+        <tr>
+            <th>Field</th>
+            <td>Discus</td>
+            <td>Javelin</td>
+            <td>shot put</td>
+            <td>Hammer throw</td>
+        </tr>
+        
+    </table>
+     <hr style="border: solid;">
+     <h1 >Picture 5 </h1>
+     <table table border="3px" style="background-color: rgb(31, 236, 59);" >
+        <td style="text-align: center;" colspan="9">Mark Sheet of 2023</td>
+       
+        
+        <tr>
+            <th rowspan="4">S.No</th>
+            <th rowspan="4">Name</th>
+            <th colspan="6">Subject</th>
+            <th rowspan="4">Total</th>
+        </tr>
+        <tr>
+            <th colspan="2">Science</th>
+            <th colspan="2">Social </th>
+            <th colspan="2">Computer</th>
+        </tr>
+        <tr>
+            <th colspan="6">marks</th>
+        </tr>
+        <tr>
+            <th>Internal</th>
+            <th>final</th>
+            <th>Internal</th>
+            <th>final</th>
+            <th>Internal</th>
+            <th>final</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Jafar Mughal</td>
+            <td>10</td>
+            <td>12</td>
+            <td>43</td>
+            <td>43</td>
+            <td>43</td>
+            <td>43</td>
+            <td>50</td>
+
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Kareem Nawaz</td>
+            <td>10</td>
+            <td>12</td>
+            <td>43</td>
+            <td>43</td>
+            <td>43</td>
+            <td>43</td>
+            <td>50</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sajid Mushtaq</td>
+            <td>10</td>
+            <td>12</td>
+            <td>43</td>
+            <td>43</td>
+            <td>43</td>
+            <td>43</td>
+            <td>50</td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Jameel</td>
+            <td>10</td>
+            <td>12</td>
+            <td>43</td>
+            <td>43</td>
+            <td>43</td>
+            <td>43</td>
+            <td>50</td>
+
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Arshad</td>
+            <td>10</td>
+            <td>12</td>
+            <td>43</td>
+            <td>43</td>
+            <td>43</td>
+            <td>43</td>
+            <td>50</td>
+
+        </tr>
+        <tr>
+            <th colspan="9">Total</th>
+        </tr>
+
+     </table>
+
+
+</body>
+</html>

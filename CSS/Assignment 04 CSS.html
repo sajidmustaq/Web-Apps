@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Assignment4 CSS</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 1px;
+          font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+           
+
+        }
+        body{
+            width:auto;
+        }
+                         /*  main navbar style*/
+        div.navbar {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            display: inline-flex;
+            background-color: rgb(0, 0, 0);
+        }
+
+
+        .logo1 {
+            padding: 2px;
+            width: 200px;
+            height: 40px;
+            background-color: red;
+            color: white;
+
+        }
+
+        .navbar1 {
+            padding-top: 1%;
+            display: flex;
+        }
+
+        div.logo {
+            background-color: red;
+            padding: 3px;
+            padding-top: 1%;
+        }
+        div.container{
+         display: flex;
+
+}
+        .rnavbar {
+            list-style: none;
+            display: flex;
+           
+        }
+
+        .rnavbar > li {
+            border-right: 2px solid rgb(85, 85, 85);
+            padding-left: 20px;
+            padding-right: 25px;
+            text-align: justify;
+            text-decoration: none; 
+            color: #ffffff;
+
+        }
+        li>a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .navbar1 li:hover{
+            transform: scale(1.2);
+            text-shadow: -1px 2px 7px #ffffff;
+            padding: 0px 20px 0px 20px;
+            border-right: none;
+            
+        }
+
+        .contact-box {
+            display: inline-block;
+            justify-items: right;
+            
+        }
+        .contact-box a {
+            color: #ffffff;
+        }
+
+        .fa-ul {
+            border-right: none;
+        }
+
+        div.searchbox {
+            background-color: white;
+            width: 235px;
+            height: 25px;
+            border: 1px solid black;
+            margin-right: 0;
+        }
+
+        .searchbox1 {
+            border-style: none;
+            margin-right: 0;
+            
+
+        }
+
+        .bottons {
+            background-color: red;
+            border-radius: 5%;
+            border-style: none;
+            text-align: center;
+            padding: 1%;
+            padding-right: 5px;
+            margin-right: 0;
+
+        }
+div.heading{
+    padding-left: 10px;
+    border-bottom:4px solid rgb(129, 129, 129);
+    font-size: xx-large;
+}
+.heading2{
+   margin: 10px;
+   
+}
+.heading2 li{
+   margin-right: 12px;
+   color: rgb(4, 158, 185);
+}
+ul.topics{
+    display: flex;
+    padding-right: 20px;
+    list-style: none;
+    text-align: center;
+    margin: 1%;
+}
+.topics li:hover{
+    transform: scale(1.2);
+    padding: 5px;
+    text-shadow: -1px 2px 10px #1E1D1D;
+}
+div.rbox1{
+    margin-left:  20px;
+    margin-top: 20px;
+}
+ul.lbox1{
+    display: flex;
+    /* padding-right: 20px; */
+    list-style: none;
+    text-align: center;
+    margin-left: 25px;
+    text-align: center;
+    font-size: larger;
+    
+   
+}
+.rbox1 li{
+    border-left: 2px solid slategrey;
+    /* padding:  2px 5px 2px 5px ; */
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+}
+li.redbox1{
+    color: red;
+    font-weight: bold;
+  padding-top: 1%;
+  font-size: larger;
+  border: none;
+   
+}
+li.redbox2{
+    color: red;
+ 
+}
+div.rbox2{
+    margin-left:  20px;
+    /* margin-top: 20px; */
+}
+ul.rboxtopic1{
+    display: flex;
+    /* padding-right: 20px; */
+    list-style: none;
+    text-align: center;
+    margin-left: 2px;
+    text-align: center;
+    /* margin-top: 5px; */
+    padding-top: 1%;
+
+}
+.rbox2 li{
+    
+ 
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+    text-align: center;
+    color: rgb(4, 158, 185);
+}
+div.rbox2{
+    border-bottom: 2px solid;
+    width: 800px;
+}
+div.rightbox{
+    width: 800px;
+}
+.leftbox{
+    width: auto;
+    /* height: 100vh; */
+    margin-left: 20px;
+    margin-right: 0;
+}
+div.navrbox1{
+    background-color:rgba(64,112,141,255);
+    color: #ffffff;
+    padding-left: 5px;
+    display: flex;
+    display: inline-block;
+}
+.navrbox1  li{
+list-style: none;
+}
+/* .navrbox2 li{
+    display: flex;
+    
+} */
+.navrlist li{
+   display: flex;
+   display: inline;
+   background-color: rgba(55,85,104,255);
+   padding: 4px;
+   margin-left: 3px;
+   margin-bottom: -1px;
+   margin-left: 0;
+   border-right: 1px solid rgba(64,112,141,255);
+
+}
+ul.navrlist{
+    padding-top: 25px;
+    display: flex;
+
+}
+ul.navrlist :hover{
+   color:rgba(64,112,141,255) ;
+   background-color: rgba(235,243,238,255);
+
+}
+div.lbox2{
+   background-color: rgba(235,243,238,255);
+   width: auto;
+
+
+}
+ul.lbox2list{
+    list-style: none;
+    display: flex;
+display: inline-flex;
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: lighter;
+margin: 5px;
+margin-left: 10px;
+margin-top: 0;
+}
+.Trade{
+    background-color: red;
+    border-radius: 5px;
+    color:rgba(235,243,238,255) ;
+    width: 150px;
+
+}
+
+
+
+    </style>
+</head>
+
+<body>
+<!-- this is top right navbar  -->
+
+    <div class="navbar">
+        <div class="logo"><img class="logo1" src="Reuters_Logo.png"></div>
+        <div class="navbar1">
+            <ul class="rnavbar">
+           <li> <a href="#">Edition <br> <b>U.S</b> </a></li>
+           <li><a href="#"><b>News <br> & Markets</b> </a></li>
+           <li><a href="#"><b>Sectors <br> & Industries</b> </a></li>
+           <li><a href="#"><b>Sectors <br> & Industries</b> </a></li>
+           <li><a href="#"><b>Sectors <br> & Industries</b> </a> </li>
+        </ul>
+        </div>
+<!-- this is top left navbar  -->
+        <div class="contact-box">
+
+            <div class="fa-ul">
+                <a href="https://www.facebook.com/sajidmushtaq51/" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.me/+923122049901/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://sajidmustaq.github.io/Web-and-Apps/" target="_blank"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="mailto:" sajidmushtaq51@gmail.com target="_blank"><i
+                        class="fa-solid fa-square-envelope"></i></a>
+                <a href="tel:+923122049901" target="_blank"><i class="fa-solid fa-mobile-screen-button"></i></a>
+
+
+
+            </div>
+            <div class="searchbox"> <input class="searchbox1" type="search" value="" placeholder="Search News"> <input
+                    class="bottons" type="button" value="SEARCH"> </div>
+        </div>
+    </div>
+
+<!-- this is top heading  -->
+
+<div class="heading">
+    <h1>Commodities</h1>
+</div>
+<div class="heading2">
+    <ul class="topics"> Related Topics:
+        <li>MARKETS</li>
+        <li>BUSINESS</li>
+        <li>ECONOMY</li>
+        <li>GREEN BUSINESS</li>
+        <li>HOT STOCK</li>
+        <li>MORE TOPICS</li>
+    </ul>
+</div >
+<div class="container">
+<div class="rightbox">
+<div class="rbox1">
+<h4>THOMSON REUTERS/JEFFERIES CRB INDEX (TR/J CRB)</h4>
+<ul class="lbox1">
+    <li class="redbox1">359.42</li>
+    <li class="redbox2">Change <br>-3.36</li>
+    <li>Open <br>360.92</li>
+    <li>High <br>361.19</li>
+    <li> low <br> 357.99</li>
+    <li>Time <br>04/18 14:48</li>
+</ul>
+</div>
+<div class="rbox2">
+    <h4>COMMODITY FUTURES</h4>
+    <ul class="rboxtopic1"> <b>Energy:</b>
+        <li>Oil , Natural Gas , Electricty</li>
+    </ul>
+</div>
+<div class="rbox2">
+    
+    <ul class="rboxtopic1"> <b>Metals:</b>
+        <li>Bas Metals , Precious Metals</li>
+    </ul>
+</div>
+<div class="rbox2">
+   
+    <ul class="rboxtopic1"> <b>Grains:</b>
+        <li> Corn Maiz , Wheat , Barley , Rice</li>
+    </ul>
+</div>
+<div class="rbox2">
+    
+    <ul class="rboxtopic1"> <b>Oilseeds:</b>
+        <li> Soyabeans , Rapseed ,Palm Oil</li>
+    </ul>
+</div>
+<div class="rbox2">
+   
+    <ul class="rboxtopic1"> <b>Softs:</b>
+        <li>Sugar , Coffea , Coooa , Rubber , cotton</li>
+    </ul>
+</div>
+<div class="rbox2">
+    
+    <ul class="rboxtopic1"> <b>livestock:</b>
+        <li>Lean Hogs , Live Cattle</li>
+    </ul>
+</div>
+
+</div>
+
+<div class="leftbox">
+
+<div class="navrbox1">
+   
+        <h3> MARKETS</h3>
+   
+
+
+    <ul class="navrlist">
+        <li>US</li>
+        <li>EUROPE</li>
+        <li>ASIA</li>
+        <li>SECTORS</li>
+
+    </ul>
+</div>
+<div class="lbox2">
+  
+   <ul class="lbox2list">
+        <li>Sponsed by</li>
+        <li class="Trade"> Trade Lorex <br>with Citi.</li>
+    </ul>
+</div>
+<img src="under.gif" alt="">
+
+</div>
+</div>
+
+
+</body>
+
+</html>

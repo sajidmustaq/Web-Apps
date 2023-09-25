@@ -1,0 +1,736 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+/* this is navbar */
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+.navleft a,
+.navlright a {
+    padding-right: 15px;
+    text-decoration: none;
+    color: black ;
+}
+.navleft a:hover,
+.navlright a:hover {
+    color: #9fcb3c;
+}
+
+.price i,
+.cart i {
+    color: #afee68;
+}
+
+a.price {
+    color: #afee68;
+}
+
+/* this is section 1  */
+.section1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 760px;
+    background-color: #fffaf4;
+    position: relative;
+}
+
+.sec-left {
+
+    padding-left: 10px;
+    width: 48%;
+    margin-left: 200px;
+    height: 500PX;
+
+}
+
+.sec-right {
+    width: 48%;
+    height: 500PX;
+
+}
+
+.logo-leaf-top {
+    position: absolute;
+    top: 100px;
+}
+
+h3 {
+    position: absolute;
+    top: 150px;
+    z-index: 2;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+
+}
+
+.sec-right h1 {
+    position: absolute;
+    top: 190px;
+    z-index: 3;
+    font-size: 70px;
+    margin-top: 20px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+.sec-right p {
+    position: absolute;
+    top: 450px;
+    z-index: 4;
+    width: 40%;
+    font-size: large;
+
+
+}
+
+.shopnow {
+    position: absolute;
+    top: 570px;
+    z-index: 5;
+    background-color: #6a9739;
+    padding: 12px;
+    height: 48px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+
+
+}
+
+.shopnow:hover {
+    background-color: #9fcc38;
+    color: black;
+
+
+}
+
+.bg-logo-leaf {
+    position: relative;
+    top: 90px;
+    left: 150px;
+    height: 100%;
+    width: 70%;
+    opacity: 30%;
+
+
+}
+
+/* this is section 2  */
+.section2 {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    height: 190px;
+    width: 100%;
+}
+
+.section2 .box1,
+.section2 .box2,
+.section2 .box3,
+.section2 .box4 {
+    background-color: #303030;
+    height: 130px;
+    width: 290px;
+    color: white;
+    position: relative;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.box1 i,.box2 i,.box3 i,.box4 i {
+    position: absolute;
+    top: 30%;
+    font-size: larger;
+    left: 22px;
+    color: #6a9739;
+}
+
+.box1 h4 ,.box2 h4,.box3 h4,.box4 h4{
+    position: absolute;
+    top: 25%;
+    left: 60px;
+}
+
+.box1 p ,.box2 p ,.box3 p ,.box4 p {
+    position: absolute;
+    top: 60%;
+    left: 60px;
+}
+/* this is sechtion 3  */
+.section3{
+    width: 100%;
+    height: 800px;
+    display: inline-block;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+.top-heading{
+    margin-top: 200px;
+    font-family: 'Merriweather', serif;
+}
+.top-heading h1{
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+}
+.groceries{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+}
+.groceries , .item{
+ margin-top: 50px;
+
+}
+#sale{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    
+}
+.sale{
+    position: absolute;
+    background-color:#8BC34A;
+    height: 40px;
+    width: 40px;    
+    border-radius: 50px;
+    padding: 5px;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+/* this is sechtion 4  */
+.center-leaf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    position: relative;
+
+}
+.center-leaf img{
+    position: relative;
+    top: 50px;
+    left: 0;
+}
+
+/* this is sechtion 5  */
+
+.sec-five{
+    width: 100%;
+    background-color: #F8F6F3;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.sec-box1 ,.sec-box2 ,.sec-box3{
+   
+ position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 365px;
+    width: 370px;
+    margin-top: 0;
+    margin: 25px;
+   
+}
+
+.sec-box1 img ,.sec-box2 img, .sec-box3 img{
+    position: absolute;
+    height: 370px;
+    width: 365px;
+    border-radius: 5px;
+  
+    z-index:1;
+    top: 0;
+    left: 0;
+
+}
+.sec-box1 h3 ,.sec-box2 h3,.sec-box3 h3{
+    z-index: 3;
+    position: relative;
+    top: 20px;
+    left: 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+
+}
+
+.sec-box1 p,.sec-box2 p,.sec-box3 p{
+    z-index: 4;
+    position: relative;
+    text-align: center;
+    top: 30px;
+    left: 20px;
+    width: 90%;
+}
+  
+.sec-box1 button ,.sec-box2 button, .sec-box3 button{ 
+    z-index: 5;
+    color: #303030;
+    position: relative;
+    top: 60px;
+    left: 30px;
+    width: 166px;
+    height: 54px;
+    text-align: center;
+    background-color: #6a9739;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 2px 5px 2px 5px;
+    
+}  
+.sec-box1 button:hover ,.sec-box2 button:hover, .sec-box3 button:hover{
+    background-color: #82B846;
+ }
+
+/* this is sechtion  6 */
+
+.sec-six{
+    background-color: black;
+    width: 100%;
+    height: 128;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: white;
+  
+}
+.sec-six h2{
+    padding: 40px 30px;
+    font-family: 'Merriweather', serif;
+}
+.sec-six-button{
+    background-color: #6a9739;
+    width: 176px;
+    height: 48px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+   
+}
+.sec-six-button:hover{
+    background-color:  #82B846;
+}
+
+
+
+/* this is sechtion  7 */
+
+.sec-seven{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #F8F6F3;
+    position: relative;
+    text-align: center;
+ 
+}
+.sec-seven-h h3{
+    color: black;
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+    top: 0;
+    left: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+
+}
+
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 25px solid black;
+    position: absolute;
+    top: 0px;
+    
+  }
+
+
+
+/* this is sechtion  9 */
+
+.section9{
+    width: 100%;
+    height: 752px;
+    display: inline-block;
+    justify-content: center ;
+    align-items:end;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    background-color: #fffaf4;
+    background-image: url(images/logo-leaf2-free-img.png);
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+.top-heading{
+    margin-top: 50px;
+    font-family: 'Merriweather', serif;
+}
+.top-heading h1{
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+.sec-nine2{
+    display: flex;
+    justify-content: center;
+   align-items: last baseline;
+    margin: 50px auto;
+
+}
+
+.sec-nine-box1 ,.sec-nine-box3{
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    width: 352px;
+    height: 351px;
+    margin: 0px 35px ;
+    
+    background-color: white;
+    border-radius: 5px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.sec-nine-item1 i ,.sec-nine-item3 i{
+    margin-top: 20px;
+} 
+.sec-nine-item1 p ,.sec-nine-item3 p{
+    margin: 20px auto 20px auto;
+   width: 80%;
+   height: auto;
+
+} 
+
+.sec-nine-box1 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.sec-nine-box2{
+    background-image:url(images/sydney-rae-668606-unsplash.jpg);
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    width: 380px;
+    height: 422px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+}
+
+.sec-nine-box2 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.sec-nine-box2 h1{
+    font-weight: bold;
+    width: 90%;
+    margin: 10px  auto 10px   auto;
+   
+   }
+.sec-nine-box2 p{
+ font-weight: bold;
+ width: 80%;
+ margin: 10px  auto 10px   auto;
+
+}
+
+.sec-nine-box3{
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    width: 352px;
+    height: 351px;
+}
+
+.sec-nine-box3 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.sec-nine-button1{
+    background-color: #6a9739;
+    width: 176px;
+    height: 48px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-top: 50px;
+   
+}
+.sec-nine-button1:hover{
+    background-color:  #82B846;
+}
+
+.sec-logos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    color: black;
+    background-color:#fffaf4 ;
+}
+.logo-heading{
+    font-size: larger;
+    font-weight:bold ;
+    
+   
+}
+
+/* this is footer */
+
+footer{
+    background-color: #001524;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    padding: 75px 0px 75px 0px;
+    margin: 75px 0px 0px 0px;
+    text-decoration: none;
+
+}
+footer a{
+    text-decoration: none;
+    color:#ffffffa8 ;
+}
+.f-box1{
+    display: block;
+    height: 60%;
+    width: 432px;
+    margin: 0px 100px 0px 00px;
+    
+}
+
+.f-box1 p{
+    margin: 100px 0px;
+    color: #ffffffa8;
+    font-family: sans-serif ;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.f-box2{
+    display: block;
+    width: 295px;
+    height: 460px;
+    padding-right: 15px;
+    margin-right: 100px;
+
+}
+.f2-box-u h2,.f2-box-l h2{
+    padding: 20px 0px;
+    font-family: 'Merriweather', serif;
+}
+.f2-box-u a,.f2-box-l a{
+    margin: 5px 0px;
+}
+.f2-box-u a:hover,.f2-box-l a:hover{
+    margin: 5px 0px;
+    color: white;
+}
+.f2-box-u{
+    display: inline-block;
+    color: white;
+}
+.f2-box-l{
+    display: inline-block;
+    color: white;
+
+}
+.f-box3{
+    display: inline-block;
+    width: 295px;
+    height: 460px;
+}
+.f3-box-l {
+    display: inline-block;
+}
+.f-box3 h2{
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+.f-box3 p{
+    color: #ffffffa8;
+}
+
+.f-box3 a {
+    color: #8bc34a;
+}
+.f-box3 a:hover {
+    color: #6a9739;
+}
+.f3-box-l img{
+padding: 0px 10px ;
+display: inline;
+width: 125px;
+height: 38px;
+margin-top: 40px;
+}
+.footer2{
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #001524;
+    margin-top: 0px;
+   
+}
+
+
+.footer2-box1 h4,.footer2-box2 i{
+    color: white;
+    padding: 0px 10px ;
+}
+
+.footer2-box2 i:hover{
+    color: #6a9739;
+    cursor: pointer;
+    padding: 0px 10px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+.sec-nine{
+    position: relative;
+    height: 752px;
+    width: 100%;
+    margin-top: 200px;
+    z-index: 0;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bg-leaf{
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 37% auto;
+    opacity: .1;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  
+  }
+  .sec-nine-box1{
+    background-color: white;
+    width: 360px;
+    height: 352;
+   
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .sec-nine-box1 div img{
+height: 50px;
+width: 50px;
+border-radius: 50%;
+  }
+.sec-nine-box2{
+    background-image: url(images/sydney-rae-668606-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 380px;
+    height: 422px;
+    position: relative;
+
+}
+.sec-nine-box2 h1{
+    position: absolute;
+     top: 20px;
+     left: 0px;
+
+} */
+
+/* #bg-logo-leaf{
+    background-image: url(images/logo-leaf2-free-img\ -\ Copy.png ) ;
+  background-size: cover;
+  background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    height: 100%;
+    width: 100%;
+} */
