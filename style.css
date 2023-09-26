@@ -1,722 +1,178 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'rubik', sans-serif;
-    list-style: none;
-    text-decoration: none;
-
-}
-
-:root {
-    --bg-color: #1f1f21;
-    --text-color: #fff;
-    --main-color: #ffae00;
-    --big-font: 7rem;
-    --p-font: 1.1rem;
-
-
-}
-/* ::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 2px grey; 
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: red; 
-  border-radius: 5px;
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
-}
-body{
-  height: 100vh;
-  
-} */
-body{
-background-color  : #1f1f21;
-}
-.container {
-background-color  : #1f1f21;
-    color:#fff;
-    
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
+/* Custom CSS styles */
+body {
+  background-color: #1f1f21;
+  /* Blackish background color */
+  color: #ffae00;
+  ;
+  /* Text color */
 }
 
 .navbar {
-    position: sticky;
-    top: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 32px 15%;
-    
-    transition: all ease .45s;
-
+  background-color: #222;
+  /* Dark background color for the navbar */
 }
 
-.logo {
-    color:#fff;
-    font-size: 41px;
-    font-weight: 600;
+#logopic{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 
-.logo span {
-    color:#ffae00;
+.container a {
+  font-size: large;
 }
 
-.navbar1 {
-    display: flex;
+.jumbotron h1 {
+  font-weight: bold;
+  font-size: xx-large;
 }
 
-.links a {
-    font-size: var(--p-font);
-    font-weight: 500;
-    color: var(--text-color);
-    transition: all ease .50;
-    margin: 0 25px;
-
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffae00;
+  /* Navbar link color */
 }
 
-.links a:hover {
-    color:#ffae00;
+.jumbotron {
+  background-color: #333;
+  /* Dark background color for the jumbotron */
 }
 
-.links a.active {
-    color:#ffae00;
+.portfolio-item {
+  background-color: #444;
+  /* Dark background color for portfolio items */
+  color: #fff;
+  /* Text color for portfolio items */
 }
 
-.main {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  height: 88vh;
-  margin-top: 100px;
+.contact-icons i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.work-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.work-item img {
+  max-width: 100%
+}
+
+
+
+/*----  Main Style  ----*/
+#cards_landscape_wrap-2{
+  text-align: center;
+  background: #F7F7F7;
+}
+#cards_landscape_wrap-2 .container{
+  padding-top: 80px; 
+  padding-bottom: 100px;
+}
+#cards_landscape_wrap-2 a{
+  text-decoration: none;
+  outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box{
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease; 
+  width: 100%;
+  height: 200px;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+  opacity: 0.7;
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box{
+  text-align: center;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+  padding: 30px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer{
+  background: #FFFFFF;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+#cards_landscape_wrap-2 .card-flyer:hover{
+  background: #fff;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px; 
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 4px; 
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  letter-spacing: 1px;
+  color: #00acc1;
+}
+
+.top{
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
   
-
-}
-.right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 50%;
-    float: left;
-    padding-bottom: 0px;
-  
-    
-  
-}
-
-.left {
+  background-color: #ffae00;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
- 
-  width: 50%;
-  height:100% ;
-  
-}
-
-.assignmentlist {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 92vh;
- background-color: transparent;
-  
-  
-}
-
-.assignment a {
-    text-decoration: none;
-    color: #ffae00;
-    padding: 25px;
-    font-size: xx-large;
-
-
-}
-
-
-.html  {
-
-    width: 49%;
-    height: auto;
-
-margin: 50px auto 0px auto;
-
-}
-.css{
-  width: 49%;
-  height: 20%;
-  margin: 100px auto 0px auto;
-
-}
-.js{
-  width: 49%;
-  height: 20%;
-  margin: 240px auto 0px auto;
-}
-
-
-fieldset a {
-    text-decoration: none;
-    color: white;
-    font-size: medium;
-    font-family: 'Bakbak One', cursive;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 20px;
-    margin: 10px 15px 10px 15px;
-    padding: 3%;
-    border-radius: 5px;
-    position: relative;
-    float: left;
-    box-shadow: rgb(1, 160, 252) 0px 20px 15px -20px;
-   
-}
-
-
-
-legend {
-    margin-left: 20px;
-    color: #ffae00;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-    font-weight: bold;
-    text-shadow: #fff 0px 5px 5px 5px;
-   
-}
-.top{
-    position: fixed;
-    bottom: 10px;
-    right: 15px;
-    
-    background-color: #ffae00;
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
-    color: #050303;
+  align-items:center ;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  color: #050303;
 }
 .top i{
-    text-decoration: none;
-    color: #050303;
-    padding-right: 0px;
-   
+  text-decoration: none;
+  color: #050303;
+  padding-right: 0px;
+ 
 }
 .top:hover i{
-    background-color: #383528;
-    color: #f3f2ee;
-    font-size: larger;
+  background-color: #383528;
+  color: #f3f2ee;
+  font-size: larger;
 }
 .top:hover{
-    background-color: #383528;
-    color: #f3f2ee;
+  background-color: #383528;
+  color: #f3f2ee;
 
 }
-
-.html1:hover{
-    background-image: url(./images/html1.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-
-}
-.html2:hover{
-    background-image: url(./images/html2.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-  
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.html3:hover{
-    background-image: url(./images/html3.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.html3a:hover{
-    background-image: url(./images/html3.1.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.html4:hover{
-    background-image: url(./images/html4.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.html5:hover{
-    background-image: url(./images/html5.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.html6:hover{
-    background-image: url(./images/html6.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.html6a:hover{
-    background-image: url(./images/html6.1.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.html7:hover{
-    background-image: url(./images/html7.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.html8:hover{
-    background-image: url(./images/html8.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.html9:hover{
-    background-image: url(./images/html9.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.html9a:hover{
-    background-image: url(./images/html9.1.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.css1:hover{
-    background-image: url(./images/css1.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.css2:hover{
-    background-image: url(./images/css2.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.css3:hover{
-    background-image: url(./images/css3.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.css4:hover{
-    background-image: url(./images/css4.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.css5:hover{
-    background-image: url(./images/css5.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.css6:hover{
-    background-image: url(./images/css6.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: 250px;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.css7:hover{
-    background-image: url(./images/css7.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.css8:hover{
-    background-image: url(./images/css8.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.css9:hover{
-    background-image: url(./images/css9.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.css10:hover{
-    background-image: url(./images/css10.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: fit-content;
-    height: 250px;
-    border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 1s;
-  font-size: xx-large;
-  color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-.css11:hover{
-  background-image: url(./images/css11.png);
-  background-size:contain;
-  background-repeat: no-repeat;
-  width: fit-content;
-  height: 250px;
-  border-left: 10px solid red;
-  border-right: 10px solid red;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  transition: all 1s;
-font-size: xx-large;
-color: transparent;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-weight: bold;
-}
-
-.css12:hover{
-  background-image: url(./images/css12.png);
-  background-size:contain;
-  background-repeat: no-repeat;
-  width: fit-content;
-  height: 250px;
-  border-left: 10px solid red;
-  border-right: 10px solid red;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  transition: all 1s;
-font-size: xx-large;
-color: transparent;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-weight: bold;
-}
-.css13:hover {
-  background-image: url(./images/css13.png);
-  background-size:contain;
-  background-repeat: no-repeat;
-  width: fit-content;
-  height: 250px;
-  border-left: 10px solid red;
-  border-right: 10px solid red;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  transition: all 1s;
-font-size: xx-large;
-color: transparent;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-weight: bold;
-}
-.css14:hover{
-  background-image: url(./images/css14.png);
-  background-size:contain;
-  background-repeat: no-repeat;
-  width: fit-content;
-  height: 250px;
-  border-left: 10px solid red;
-  border-right: 10px solid red;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  transition: all 1s;
-font-size: xx-large;
-color: transparent;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-weight: bold;
-}
-.js1:hover{
-  background-image: url();
-  background-size:contain;
-  background-repeat: no-repeat;
-  width: fit-content;
-  height: 250px;
-  border-left: 10px solid red;
-  border-right: 10px solid red;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  transition: all 1s;
-font-size: xx-large;
-color: transparent;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-weight: bold;
-}
-.introduction{
- 
-  width: 70vw;
-  height: 50vh;
- display: block;
- margin: 500px auto 100px auto;
-  text-align: left;
- 
-  background-color: #1f1f21;
-  color: white;
-
-}
-h3 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-  color: #ffae00;
-}
-.contact-box{
- display: flex;
- justify-content: center;
- align-items: center;
- text-align: center;
-  height:50px;
-  width: 500px;
-  margin-top: 200px;
-  margin-bottom: 300px;
-  margin: 300px auto 300px auto;
- border: 2px solid #ffae00;
-  background-color: transparent;
-  border-radius: 15px;
-
-}
-.fa-ul a{
-  padding: 0px 15px 0px 15px;
-  height: 25px;
-  font-size: xx-large;
-  color: #FFAE00;
-  box-sizing: border-box;
-
- 
-}
-.fa-ul a :hover{
- font-size: 50px;
-padding: 0px 20px 0px 20px;
- 
-}
-
