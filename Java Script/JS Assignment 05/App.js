@@ -71,36 +71,19 @@
 
 // Q:5 Write a script to display multiplication table of any number in your browser. E.g
 
-// var num1 = 4;
-// var num2 = 1; var multiplication = num1*num2 ;
-// document.write("4x1 = " + multiplication +"<br>")
-// var num1 = 4;
-// var num2 = 2; var multiplication = num1*num2 ;
-// document.write("4x2 = " + multiplication +"<br>")
-// var num1 = 4;
-// var num2 = 3; var multiplication = num1*num2 ;
-// document.write("4x3 = " + multiplication +"<br>")
-// var num1 = 4;
-// var num2 = 4; var multiplication = num1*num2 ;
-// document.write("4x4 = " + multiplication +"<br>")
-// var num1 = 4;
-// var num2 = 5; var multiplication = num1*num2 ;
-// document.write("4x5 = " + multiplication +"<br>")
-// var num1 = 4;
-// var num2 = 6; var multiplication = num1*num2 ;
-// document.write("4x6 = " + multiplication +"<br>")
-// var num1 = 4;
-// var num2 = 7; var multiplication = num1*num2 ;
-// document.write("4x7 = " + multiplication +"<br>")
-// var num1 = 4;
-// var num2 = 8; var multiplication = num1*num2 ;
-// document.write("4x8 = " + multiplication +"<br>")
-// var num1 = 4;
-// var num2 = 9; var multiplication = num1*num2 ;
-// document.write("4x9 = " + multiplication +"<br>")
-// var num1 = 4;
-// var num2 = 10; var multiplication = num1*num2 ;
-// document.write("4x10 = " + multiplication +"<br>")
+// var table =prompt("Please Enter Any Numbr","10")
+
+// document.write("Table Of "+ table+"<br>")
+// document.write(table +"x"+ 1  +"=" +table*1+"<br>")
+// document.write(table +"x"+ 2  +"=" +table*2+"<br>")
+// document.write(table +"x"+ 3  +"=" +table*3+"<br>")
+// document.write(table +"x"+ 4  +"=" +table*4+"<br>")
+// document.write(table +"x"+ 5  +"=" +table*5+"<br>")
+// document.write(table +"x"+ 6  +"=" +table*6+"<br>")
+// document.write(table +"x"+ 7 +"=" +table*7+"<br>")
+// document.write(table +"x"+ 8 +"=" +table*8+"<br>")
+// document.write(table +"x"+ 9  +"=" +table*9+"<br>")
+// document.write(table +"x"+ 10  +"=" +table*10+"<br>")
 
 
 // Q:6 The Temperature Converter:
