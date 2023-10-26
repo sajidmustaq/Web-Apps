@@ -1,0 +1,2247 @@
+
+body {
+    height: 1500px; /* for testing scroll behavior */
+}
+.top__header__bar .country__drop button:focus,.top__header__bar .lang__drop button:focus {
+    box-shadow: 0 0 0 transparent!important
+}
+
+.body_rtl .breadcrumbs__section ul li a,.breadcrumbs__section ul li a {
+    font-family: sans-serif!important
+}
+
+* {
+    outline: 0!important
+}
+
+#scrollUp {
+    background: #d841489c!important;
+    transition: .5s;
+    border-radius: 100px!important;
+    align-items: center;
+    justify-content: center;
+    display: none!important
+}
+
+#scrollUp:hover {
+    background: #d84149de!important
+}
+
+.modal.fade.show {
+    z-index: 99999999;
+    background: #0000006b
+}
+
+.pr-10 {
+    padding-right: 10px!important
+}
+
+.main__lang__class__ang section .container {
+    padding-right: 15px!important;
+    padding-left: 15px!important
+}
+
+.modal-content {
+    background: 0 0!important;
+    border: 0 solid transparent!important
+}
+
+.top__header__bar .country__drop button,.top__header__bar .lang__drop button {
+    border-radius: 0!important;
+    font-size: 18px;
+    padding: 10px 10px 7px;
+    font-weight: 400;
+    text-align: center
+}
+
+.modal-content .modal-body {
+    padding: 0!important
+}
+
+.pr__zero__res {
+    padding-right: 0
+}
+
+.dreamit-section-title h4 {
+    text-transform: uppercase
+}
+
+.if__You__Want__to__check {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #1b1d21
+}
+
+.style-two.video-icon a::before {
+    content: unset!important
+}
+
+.about-button.text-right.make__btn__flex a {
+    margin-bottom: 10px
+}
+
+.blog-page-text p {
+    height: 77px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.pagination .paginate_button.active .page-link {
+    color: #fff!important
+}
+
+.page-link {
+    color: #d84148!important
+}
+
+.page-item.active .page-link,.top__header__bar .country__drop button {
+    background-color: #d84148!important;
+    border-color: #d84148!important
+}
+
+.top__header__bar .header-top-area {
+    display: block!important;
+    background: #3b3b79;
+    padding: 0;
+    z-index: 99999
+}
+
+.top__header__bar .header-top-area:after {
+    position: unset
+}
+
+.top__header__bar .dreamit-header-menu-address {
+    display: flex;
+    height: 100%;
+    align-items: center
+}
+
+.top__header__bar {
+    transition: .3s
+}
+
+.top__header__bar .dreamit-header-menu-address ul {
+    width: 100%;
+    list-style: none
+}
+
+.top__header__bar .dreamit-header-menu-address ul li a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize
+}
+
+.top__header__bar .lang__drop button {
+    background-color: #dea73c!important;
+    border-color: #dea73c!important
+}
+
+.top__header__bar .lang__drop .dropdown-menu.show {
+    background: #fff;
+    min-width: max-content;
+    border: 0;
+    display: flex;
+    padding: 2px 0;
+    border-top: 2px solid #d84148;
+    box-shadow: 0 0 10px #00000029
+}
+
+.top__header__bar .lang__drop .dropdown-menu.show .dropdown-item {
+    color: #252628;
+    margin: 0 2px
+}
+
+.top__header__bar .lang__drop .dropdown-menu.show .dropdown-item:active,.top__header__bar .lang__drop .dropdown-menu.show .dropdown-item:focus,.top__header__bar .lang__drop .dropdown-menu.show .dropdown-item:hover {
+    color: #d84148;
+    background: #fff
+}
+
+.top__header__bar .mega__drop .dropdown-menu.show {
+    display: flex;
+    width: 400px;
+    flex-wrap: nowrap;
+    background: #fff;
+    border: 0;
+    border-top: 2px solid #d84148;
+    box-shadow: 0 0 10px #00000029
+}
+
+.top__header__bar .mega__drop .dropdown-menu.show div {
+    width: 50%
+}
+
+.top__header__bar .mega__drop .dropdown-menu.show div p {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #d84148;
+    font-weight: 600;
+    margin-bottom: 5px;
+    position: relative;
+    overflow: hidden
+}
+
+.top__header__bar .mega__drop .dropdown-menu.show div p:before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background: #d84148;
+    bottom: 0;
+    left: 10px
+}
+
+.top__header__bar .mega__drop .dropdown-menu.show div ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 30px;
+    padding-right: 10px
+}
+
+.top__header__bar .mega__drop .dropdown-menu.show div ul li::marker {
+    color: #d84148
+}
+
+.top__header__bar .mega__drop .dropdown-menu.show div a {
+    padding: 2px 5px;
+    color: #252628
+}
+
+.top__header__bar .mega__drop .dropdown-menu.show div a:active,.top__header__bar .mega__drop .dropdown-menu.show div a:focus,.top__header__bar .mega__drop .dropdown-menu.show div a:hover {
+    background: #fff;
+    color: #d84148
+}
+
+.logo__header__second__baar {
+    padding: 10px 0
+}
+
+.logo__header__second__baar .main__sites__anchrs__divs {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between
+}
+
+.logo__header__second__baar .anchrs__main__sites {
+    font-size: 20px;
+    background: #252628;
+    color: #fff;
+    font-weight: 400;
+    padding: 5px;
+    width: 25%;
+    text-align: center;
+    transition: .5s
+}
+
+.islamic__edu__banner.depart__ment,.logo__header__second__baar .anchrs__main__sites:hover {
+    background: #d84148
+}
+
+.logo__header__second__baar .anchrs__main__sites.red__red {
+    background: #d84148;
+    width: 45%
+}
+
+.logo__header__second__baar .anchrs__main__sites.red__red:hover {
+    background: #252628
+}
+
+.main__menu__nav__bar {
+    border-top: 1px solid #0000001a;
+    background: #fff;
+    border-bottom: 1px solid #0000001a
+}
+
+.main__menu__nav__bar .navbar-expand-xl .navbar-collapse {
+    justify-content: center
+}
+
+.main__menu__nav__bar.sticky {
+    position: fixed;
+    z-index: 9999999;
+    width: 100%;
+    background: #fffffff2;
+    box-shadow: 0 11px 10px -13px #00000063;
+    border-top: 1px solid #e5e5e5;
+    backdrop-filter: blur(3px)
+}
+
+.ACH__Important__Activity .dreamit-single-why-choose-us-thumb,.What__People__say__about .what__people__say__ima__div,.edu__departments__area ul.nav-pills li,.footer__section,.main__banner__animated__slider.events__banner {
+    position: relative;
+    overflow: hidden
+}
+
+.main__menu__nav__bar.sticky .bg-light {
+    background-color: transparent!important
+}
+
+.main__menu__nav__bar .bg-light {
+    background-color: #ffffff00!important;
+    padding: 15px;
+    transition: .5s;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.main__menu__nav__bar .navbar-light .navbar-nav .nav-link {
+    color: #444;
+    font-weight: 400;
+    font-size: 16px;
+    transition: .5s
+}
+
+.main__menu__nav__bar .navbar-light .navbar-nav .nav-link:hover {
+    color: #d84148
+}
+
+.main__menu__nav__bar .navbar-light .navbar-nav .nav-link.active {
+    color: #d84148;
+    font-weight: 600
+}
+
+.main__menu__nav__bar .dropdown-menu a.active {
+    color: #d84148!important;
+    font-weight: 600!important;
+    background: 0 0!important
+}
+
+.main__menu__nav__bar .search__div__new__nav {
+    display: flex;
+    margin: 0 10px 0 0
+}
+
+.main__menu__nav__bar .search__div__new__nav span {
+    border: 1px solid #ced4da;
+    padding: 10.5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background: #fff
+}
+
+.ACH__Achivement__Area .service-title h2,.ACH__Achivement__Area .service-title p,.ACH__Important__Activity .about-text p,.ACH__Important__Activity .alignm p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.search_icon {
+    color: #63636b
+}
+
+.main__menu__nav__bar .searchBar__new__nav {
+    border-radius: 100px 0 0 100px;
+    padding: 10px 10px 8px;
+    margin: 0!important;
+    cursor: pointer
+}
+
+.main__menu__nav__bar .searchBar__new__nav[readonly] {
+    background: #fff!important;
+    border-right: 0px
+}
+
+.main__menu__nav__bar.sticky .searchBar__new__nav[readonly],.main__menu__nav__bar.sticky .search__div__new__nav span {
+    background: #ffffff6e!important
+}
+
+.main__menu__nav__bar .searchBar__new__nav:focus {
+    box-shadow: 0 0 0 transparent;
+    border: 1px solid #ced4da;
+    border-right: 0px!important
+}
+
+.main__menu__nav__bar .donation__btn__new__nav {
+    border-radius: 100px;
+    font-size: 18px;
+    padding: 5px 20px;
+    border: 0;
+    background: #d84148;
+    color: #fff;
+    font-weight: 100;
+    margin-top: 0!important
+}
+
+.main__menu__nav__bar .nav-item {
+    margin: 0 5px
+}
+
+.ACH__Achivement__Area .dreamit-service-icon,.edu__depart__area,.nav-res-item {
+    display: none
+}
+
+.main__menu__nav__bar .dropdown.onHover__show:hover .dropdown-menu {
+    display: block!important
+}
+
+.main__menu__nav__bar .dropdown-menu {
+    background: #fff;
+    border-top: 2px solid #d84148
+}
+
+.main__menu__nav__bar .dropdown-menu a {
+    color: #000;
+    font-size: 15px
+}
+
+.main__menu__nav__bar .dropdown-menu a:active,.main__menu__nav__bar .dropdown-menu a:focus,.main__menu__nav__bar .dropdown-menu a:hover {
+    color: #d84148;
+    background: #fff
+}
+
+.main__menu__nav__bar .navbar-toggler {
+    transition: .5s;
+    position: relative;
+    overflow: hidden
+}
+
+.main__menu__nav__bar .navbar-toggler[aria-expanded=true] span {
+    visibility: hidden
+}
+
+.main__menu__nav__bar .navbar-toggler:before {
+    content: 'X';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 6px;
+    opacity: 0;
+    font-family: sans-serif!important
+}
+
+.main__menu__nav__bar .navbar-toggler[aria-expanded=true]:before {
+    background: #fff;
+    color: #7f7f7f;
+    opacity: 1
+}
+
+.breadcrumbs__section {
+    direction: ltr;
+    text-align: left;
+    background: #e9e9e9;
+    padding: 5px 0
+}
+
+.breadcrumbs__section ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.breadcrumbs__section ul li {
+    margin: 0 15px 0 0;
+    text-transform: capitalize
+}
+
+.breadcrumbs__section ul li span {
+    margin-left: 10px
+}
+
+.breadcrumbs__section ul li a {
+    display: block;
+    color: #333;
+    font-size: 15px
+}
+
+.breadcrumbs__section ul li a:hover {
+    text-decoration: none
+}
+
+.main__banner__animated__slider .em-nivo-slider-wrapper .nivo-directionNav a {
+    background: #ffffff36;
+    border: 1px solid #d8414998!important;
+    color: #d84148!important;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.main__banner__animated__slider .em-nivo-slider-wrapper .nivo-directionNav a:hover {
+    background: #d8414824!important;
+    border-color: #d8414821!important;
+    color: #fff!important
+}
+
+.main__banner__animated__slider .em-slider-image img,.main__banner__animated__slider .nivo-main-image {
+    height: 500px!important
+}
+
+.main__banner__animated__slider h1 {
+    font-size: 50px!important
+}
+
+.main__banner__animated__slider h2 {
+    font-size: 40px!important
+}
+
+.main__banner__animated__slider h3 {
+    font-size: 30px!important
+}
+
+.main__banner__animated__slider .event__date__area {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    height: 100%;
+    align-items: center;
+    border-right: 10px solid #fff;
+    flex-direction: column;
+    padding-right: 15px!important
+}
+
+.main__banner__animated__slider .event__date__area h1 {
+    font-size: 100px!important;
+    color: #fff;
+    margin: 0;
+    width: 100%
+}
+
+.main__banner__animated__slider .event__date__area p {
+    font-size: 20px!important;
+    color: #fff;
+    margin: 0;
+    width: 100%;
+    text-align: center
+}
+
+.main__banner__animated__slider .events__banner__text__area .em_slider_inner {
+    padding-left: 15px!important;
+    width: inherit;
+    margin: unset;
+    position: unset;
+    top: unset;
+    left: unset;
+    right: unset;
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset
+}
+
+.main__banner__animated__slider .events__banner__text__area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    width: 80%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.main__banner__animated__slider .events__banner__text__area .em-slider-main-title {
+    text-transform: uppercase;
+    font-weight: 800
+}
+
+.main__banner__animated__slider .events__banner__text__area .em-slider-sub-title.expected__date {
+    text-transform: uppercase;
+    margin: 0!important;
+    color: #e0e0e0;
+    font-size: 18px!important;
+    font-weight: 100
+}
+
+.main__banner__animated__slider .events__banner__text__area h1.em-slider-main-title {
+    font-size: 60px!important
+}
+
+.main__banner__animated__slider .events__banner__text__area h3.em-slider-main-title {
+    font-size: 40px!important
+}
+
+.main__banner__animated__slider .events__banner__text__area .em-slider-descript p {
+    text-transform: uppercase;
+    margin: 0!important;
+    color: #e0e0e0;
+    font-size: 20px!important;
+    font-weight: 100;
+    padding: 0
+}
+
+.main__banner__animated__slider.events__banner .event__img__hide__class {
+    background: #000
+}
+
+.ACH__Important__Activity .dreamit-section-title h3,.ACH__about__us .dreamit-section-title h3 {
+    font-size: 35px
+}
+
+.ACH__about__us .about__ach__multi__divs i {
+    color: #3b3b79;
+    font-size: 25px
+}
+
+.ACH__about__us .about__ach__multi__divs span {
+    font-weight: 600;
+    color: #1b1d21
+}
+
+.ACH__about__us .about__ach__multi__divs:nth-child(2n+2) i {
+    color: #f7b733
+}
+
+.ACH__Important__Activity .style-two.why-choose-us-area {
+    background-image: unset
+}
+
+.ACH__Important__Activity .ACH__Important__Activity__heading,.ACH__famous__departments .ACH__famous__departments__heading,.What__People__say__about .What__People__say__about__heading {
+    font-size: 38px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #1b1d21;
+    margin-bottom: 10px
+}
+
+.ACH__Important__Activity .content-title h4,.ACH__Important__Activity .content-title p {
+    color: #1b1d21
+}
+
+.ACH__Important__Activity .alignm p {
+    margin: 25px 0 5px;
+    height: 30px;
+    -webkit-line-clamp: 1
+}
+
+.ACH__Important__Activity .about-text p {
+    margin-bottom: 15px;
+    height: 57px;
+    -webkit-line-clamp: 2
+}
+
+.ACH__Important__Activity .about-button a {
+    margin-top: 5px
+}
+
+.ACH__Important__Activity .em-bar:before {
+    top: 8px
+}
+
+.ACH__Important__Activity .dreamit-single-why-choose-us-thumb .what__people__say__span,.What__People__say__about .what__people__say__ima__div .what__people__say__span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: #000000b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    text-shadow: 0 0 50px #00000096
+}
+
+.ACH__Important__Activity .what__people__say__span .style-two.video-icon {
+    left: unset!important;
+    position: unset!important;
+    top: unset!important;
+    -webkit-transform: unset!important;
+    transform: unset!important;
+    padding-top: unset!important
+}
+
+.ACH__Important__Activity .what__people__say__span .style-two.video-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2090bd
+}
+
+.ACH__Important__Activity .dreamit-single-why-choose-us-thumb img {
+    max-height: 300px
+}
+
+.ACH__Achivement__Area .container {
+    border-bottom: 1px solid #0000002a
+}
+
+.ACH__Achivement__Area .dreamit-single-service-thumb {
+    margin-bottom: 10px!important
+}
+
+.ACH__Achivement__Area .service-title h2 {
+    height: 55px;
+    -webkit-line-clamp: 2
+}
+
+.ACH__Achivement__Area .service-title p {
+    height: 62px;
+    -webkit-line-clamp: 2
+}
+
+.ACH__famous__departments .row.margin-tp {
+    box-shadow: 0 0 0 transparent;
+    margin-top: 0;
+    padding: 10px 0
+}
+
+.What__People__say__about .what__people__say__ima__div img {
+    width: 100%
+}
+
+.What__People__say__about .What__People__say__video__headings {
+    color: #fff;
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    padding: 0 15px;
+    font-size: 22px;
+    display: flex;
+    align-items: flex-start;
+    height: 70px;
+    width: 100%;
+    align-content: space-around;
+    text-shadow: -1px 5px 7px #0000006e;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+
+.What__People__say__about .video-icon.style-two {
+    position: unset;
+    transform: unset;
+    padding: 0
+}
+
+.What__People__say__about .video-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2090bd;
+    background: #ffffffba;
+    animation: 2s linear infinite ripple-blue
+}
+
+.What__People__say__about .style-two.video-icon a::before {
+    animation: 6s ease-out infinite pulse-border;
+    background: #ffffffdb
+}
+
+.act__upcoming__activity .dropdown.filter__heading.show button,.act__upcoming__activity .filter__heading button:hover {
+    background: #d84148;
+    border: 1px solid #d84148;
+    color: #fff
+}
+
+.Custom__Quotes__slider .texti__list__Quotes__slider {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center
+}
+
+.Custom__Quotes__slider .single-testimonial-inner {
+    padding: 0;
+    box-shadow: unset!important
+}
+
+.Custom__Quotes__slider .single-testimonial-inner:before {
+    width: 90%!important;
+    left: 5%!important;
+    content: unset!important
+}
+
+.Custom__Quotes__slider .texti__list__Quotes__slider .testimonal-images {
+    width: 106px;
+    height: 106px
+}
+
+.Custom__Quotes__slider .texti__list__Quotes__slider .testimonal-images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    border: 3px solid #9e9aa1
+}
+
+.Custom__Quotes__slider .texti__list__Quotes__slider .testimonial-title {
+    position: unset;
+    float: unset;
+    top: unset;
+    left: unset;
+    margin: 0 10px
+}
+
+.Custom__Quotes__slider .texti__list__Quotes__slider .testimonial-icon {
+    position: unset;
+    top: unset;
+    right: unset
+}
+
+.Custom__Quotes__slider .custom__Quotes__sliders__quotes i {
+    font-size: 40px;
+    color: #d84148
+}
+
+.Custom__Quotes__slider .testimonial-title-text p {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0
+}
+
+.Custom__Quotes__slider .testi_list .owl-dots {
+    display: flex;
+    width: 100%;
+    justify-content: center
+}
+
+.Custom__Quotes__slider .testi_list .owl-dots .owl-dot {
+    background: #d5d5d5;
+    padding: 1px;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 10px;
+    transition: .5s
+}
+
+.Custom__Quotes__slider .testi_list .owl-dots .owl-dot.active {
+    background: #d84148;
+    width: 20px
+}
+
+.footer__section {
+    background: #1b182b;
+    margin-top: 20px
+}
+
+.footer__section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.footer__section .footer-area {
+    background: #1b182b
+}
+
+.footer__section .footer-buttom-area {
+    background: #1b182b;
+    border: 0 solid transparent;
+    border-top: 1px solid #484444
+}
+
+.footer__section .Contacts__section .footer-title-menu ul li {
+    margin-left: 0
+}
+
+.footer__section .Contacts__section .footer-title-menu ul li:before {
+    content: unset!important
+}
+
+.footer__section .dreamit-section-title span {
+    color: #d84148
+}
+
+.footer__section .new__hr {
+    box-shadow: 0 1px 0 0 #d8414840
+}
+
+.footer__section .widget-footer-title h2 {
+    text-transform: uppercase;
+    font-size: 24px
+}
+
+.footer__section .widget-social-menu-inner ul li a {
+    border: 0 solid #fff!important;
+    background: #292744;
+    display: flex!important;
+    align-items: center;
+    justify-content: center
+}
+
+.footer__section .footer-title-menu ul li a {
+    font-size: 13px!important
+}
+
+.footer__section .padding__add__right__for__design {
+    padding-right: 50px
+}
+
+.footer__section .widget-social-menu-inner ul li {
+    display: flex;
+    flex-wrap: nowrap
+}
+
+.act__upcoming__activity {
+    padding: 30px 0 0
+}
+
+.act__upcoming__activity .related__Activities__heading,.edu__departments__area .edu__dep__heading,.evn__islamic__events .ACH__Important__Activity__heading {
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    font-size: 30px!important;
+    font-weight: 800
+}
+
+.act__upcoming__activity .dreamit-single-blog-box {
+    padding: 0
+}
+
+.act__upcoming__activity .blog-page-content {
+    padding: 10px
+}
+
+.act__upcoming__activity .dreamit-blog-meta-left {
+    padding: 5px 0;
+    box-shadow: 0 0 35px #00000000;
+    background: #fff0;
+    text-align: left;
+    width: 100%;
+    position: unset
+}
+
+.act__upcoming__activity .dreamit-single-blog-thumb img {
+    height: 250px
+}
+
+.act__upcoming__activity .blog-page-title h2 {
+    margin: 5px 0 0;
+    text-align: left;
+    font-weight: 800;
+    height: 62px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.act__upcoming__activity .blog-page-title h2:hover {
+    color: #d84148!important
+}
+
+.act__upcoming__activity .blog-page-text {
+    color: #63636b
+}
+
+.act__upcoming__activity .filter__heading .filter__icons .fa {
+    color: #fff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+    font-size: 20px
+}
+
+.act__upcoming__activity .filter__heading button {
+    border: 1px solid #00000000;
+    background: 0 0;
+    padding-top: 5px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 600;
+    text-align: right;
+    margin-bottom: 10px;
+    transition: .5s
+}
+
+.act__upcoming__activity .filter__heading .dropdown-menu {
+    background: #fff;
+    border: 0;
+    border-top: 2px solid #d84148;
+    box-shadow: 0 0 10px #00000029
+}
+
+.act__upcoming__activity .dropdown.filter__heading.show button .fa,.act__upcoming__activity .filter__heading button:hover .fa {
+    -webkit-text-stroke-color: #00000000
+}
+
+.act__upcoming__activity .filter__heading .dropdown-menu a {
+    color: #252628
+}
+
+.act__upcoming__activity .filter__heading .dropdown-menu a:active,.act__upcoming__activity .filter__heading .dropdown-menu a:focus,.act__upcoming__activity .filter__heading .dropdown-menu a:hover {
+    background: #fff;
+    color: #d84148
+}
+
+.upcoming__events .upcoming__events__area {
+    background: #1b182b;
+    padding: 70px 10px
+}
+
+.upcoming__events .upcoming__events__area h2 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 0
+}
+
+.upcoming__events .upcoming__events__area h3 {
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    overflow: hidden
+}
+
+.home__counter .counter-area.style-six {
+    background: #3b3b79;
+    padding: 40px 0
+}
+
+.home__counter .counter-area.style-six .counter-text {
+    background: unset;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    line-height: normal
+}
+
+.home__counter .counter-area.style-six .counter-text h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-shadow: 4px 3px 9px #00000070
+}
+
+.home__counter .counter-area.style-six .counter-text span {
+    font-size: 35px;
+    text-shadow: 4px 3px 9px #00000070;
+    margin-left: 5px;
+    margin-top: -5px
+}
+
+.home__counter .counter-area.style-six .counter-title h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 0;
+    text-transform: capitalize;
+    text-shadow: 4px 3px 9px #00000070
+}
+
+.home__counter .counter-area.style-six .dreamit-single-counter-inner span i {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 4px 3px 9px #00000070
+}
+
+.main__activities__of__departs .content__area {
+    padding: 50px 30px;
+    background-image: url(../images/main-img/dmca.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    z-index: 1
+}
+
+.main__activities__of__departs .content__area:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #1b182bf2;
+    z-index: -1
+}
+
+.main__activities__of__departs .content__area .dreamit-section-title {
+    padding-bottom: 20px
+}
+
+.main__activities__of__departs .content__area .dreamit-section-title h3 {
+    color: #fff;
+    font-size: 110px;
+    font-family: 'Secular One',sans-serif!important;
+    text-shadow: 4px 3px 9px #00000070
+}
+
+.main__activities__of__departs .content__area .dreamit-section-title span,.main__activities__of__departs .content__area .em-button-button-area a.em-active-button-two:hover {
+    color: #d84148
+}
+
+.main__activities__of__departs .content__area p {
+    color: #fff;
+    font-size: 20px
+}
+
+.main__activities__of__departs .content__area .em-button-button-area a.em-active-button {
+    background: #d84148;
+    border-color: #d84148
+}
+
+.main__activities__of__departs .content__area .em-button-button-area a.em-active-button:hover {
+    background: #fff;
+    border-color: #fff;
+    color: #d84148
+}
+
+.main__activities__of__departs .video__area {
+    position: relative;
+    overflow: hidden;
+    background-size: cover!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    height: 100%
+}
+
+.main__activities__of__departs .video__area .running__fgrf__act {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end
+}
+
+.main__activities__of__departs .video__area .running__fgrf__act span {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-shadow: 0 0 10px #00000057;
+    width: 100%
+}
+
+.main__activities__of__departs .video__area .what__people__say__span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: #1b182b88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    text-shadow: 0 0 50px #00000096
+}
+
+.main__activities__of__departs .video__area .what__people__say__span .video-icon.style-two {
+    left: unset!important;
+    position: unset!important;
+    top: unset!important;
+    -webkit-transform: unset!important;
+    transform: unset!important;
+    padding-top: unset!important
+}
+
+.main__activities__of__departs .video__area .what__people__say__span .video-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    background: #ffffff91;
+    font-size: 50px;
+    animation: 2s linear infinite ripple-blue
+}
+
+.main__activities__of__departs .video__area .what__people__say__span .style-two.video-icon a::before {
+    background: 0 0
+}
+
+.main__activities__of__departs .main__act__social__arrow {
+    padding: 5px 7px;
+    background: #fff;
+    color: #d84148;
+    border-radius: 100px;
+    margin-left: 10px
+}
+
+.evn__islamic__events {
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.evn__islamic__events .event__li__div {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.evn__islamic__events .time {
+    padding: 5px;
+    background-color: #d84148;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    transition: .5s;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column
+}
+
+.evn__islamic__events .time h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 60px;
+    line-height: 35px
+}
+
+.evn__islamic__events .time span {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase
+}
+
+.evn__islamic__events .details {
+    padding: 5px 5px 5px 15px;
+    width: 70%
+}
+
+.evn__islamic__events .details h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase
+}
+
+.evn__islamic__events .details .event__date__time__area {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #d84148;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 15px
+}
+
+.evn__islamic__events .details .event__date__time__area span {
+    text-transform: uppercase
+}
+
+.evn__islamic__events .details .event__pera {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 18px;
+    height: 57px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.islamic__edu__banner .edu__baner__cnt__area {
+    padding: 20px 0
+}
+
+.islamic__edu__banner .edu__baner__cnt__area h1 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 50px;
+    text-shadow: 3px 2px 6px #00000069
+}
+
+.islamic__edu__banner .edu__baner__cnt__area h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 5px 0 0;
+    line-height: 20px
+}
+
+.islamic__edu__banner .edu__baner__cnt__area h3 span {
+    font-weight: 800
+}
+
+.islamic__edu__banner .edu__baner__cnt__area p {
+    color: #fff;
+    text-align: justify;
+    text-transform: capitalize;
+    margin: 0
+}
+
+.islamic__edu__banner .edu__baner__cnt__area .edu__baner__cnt__counter {
+    display: grid;
+    width: 70%;
+    grid-template-columns: auto auto auto auto;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+    padding-bottom: 10px
+}
+
+.islamic__edu__banner .edu__baner__cnt__area .edu__baner__cnt__counter .edu__baner__cnt__counter__divs {
+    text-align: center
+}
+
+.islamic__edu__banner .edu__baner__cnt__area .edu__baner__cnt__counter .edu__baner__cnt__counter__divs p {
+    text-align: center;
+    padding: 30px 0;
+    background: #fff;
+    margin: 10px 5px;
+    font-size: 60px;
+    color: #252628;
+    font-weight: 900
+}
+
+.islamic__edu__banner .edu__baner__cnt__area .edu__baner__cnt__counter .edu__baner__cnt__counter__divs span {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #fff
+}
+
+.islamic__edu__banner .enrol__now__div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.islamic__edu__banner .enrol__now__div a {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    background: #d84148;
+    font-size: 50px;
+    flex-direction: column;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 100%;
+    transition: .5s;
+    text-shadow: 3px 2px 6px #00000069
+}
+
+.islamic__edu__banner .enrol__now__div a:hover {
+    color: #252628
+}
+
+.islamic__edu__banner .enrol__now__div a span {
+    margin-top: 19px;
+    font-size: 72px;
+    margin-left: -4px
+}
+
+.islamic__edu__banner.depart__ment .depart__ment__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.islamic__edu__banner.depart__ment .depart__ment__counter__divs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 5px 20px
+}
+
+.islamic__edu__banner.depart__ment .depart__ment__counter__divs h1 {
+    color: #d84148;
+    font-weight: 900;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0
+}
+
+.islamic__edu__banner.depart__ment .depart__ment__counter__divs p {
+    color: #d84148;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0
+}
+
+.islamic__edu__banner.depart__ment .depart__ment__counter__divs img {
+    width: 100%
+}
+
+.islamic__edu__banner.depart__ment .depart__ment__counter__divs.depart__bg__two {
+    background: #1a1d22
+}
+
+.dreamit-sinlge-service-box:hover .dreamit-service-title h2,.dreamit-sinlge-service-box:hover .dreamit-service-title p,.edu__departments__area .active .dreamit-service-title h2,.edu__departments__area .active .dreamit-service-title p,.islamic__edu__banner.depart__ment .depart__ment__counter__divs.depart__bg__two h1,.islamic__edu__banner.depart__ment .depart__ment__counter__divs.depart__bg__two p,.islamic__events .SIS__books .team-icon a:hover {
+    color: #fff
+}
+
+.edu__departments__area .col-lg-3.col-md-6.col-sm-12.padding-left {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.edu__departments__area .dreamit-sinlge-service-box {
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background: #f8fafb;
+    box-shadow: 0 0 6px rgb(26 46 85 / 10%);
+    padding: 30px 10px;
+    display: flex;
+    height: 100%
+}
+
+.edu__departments__area .dreamit-sinlge-service-box:before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 0;
+    background: #3b3b79;
+    left: 0;
+    bottom: 0;
+    transition: .5s
+}
+
+.edu__departments__area .dreamit-service-icon i {
+    font-size: 40px;
+    color: #3b3b79;
+    display: flex;
+    transition: .5s;
+    margin: 0 auto!important;
+    align-items: center;
+    justify-content: center
+}
+
+.edu__departments__area .dreamit-service-title h2,.edu__departments__area .dreamit-service-title p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: .5s
+}
+
+.edu__departments__area .dreamit-service-title h2 {
+    font-size: 18px;
+    margin: 30px 0 10px;
+    line-height: 1;
+    text-transform: uppercase;
+    height: 37px
+}
+
+.edu__departments__area .dreamit-service-title p {
+    margin: 0 0 15px;
+    line-height: 20px;
+    color: #1b1d21;
+    height: 39px
+}
+
+.edu__departments__area .active .dreamit-service-icon i {
+    color: #fff;
+    background: #3b3b79;
+    box-shadow: 0 0 14px 2px #00000026;
+    transform: scale(1.3);
+    text-shadow: 0 0 10px #000
+}
+
+.edu__departments__area .dreamit-sinlge-service-box:hover {
+    cursor: pointer
+}
+
+.edu__departments__area .active.dreamit-sinlge-service-box:before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #303050;
+    left: 0;
+    bottom: 0;
+    transition: .5s
+}
+
+.edu__departments__area .dreamit-sinlge-service-box:hover:before {
+    height: 100%;
+    background: #303050
+}
+
+.edu__departments__area .dreamit-service-icon {
+    position: unset
+}
+
+.edu__departments__area .dreamit-sinlge-service-box:hover .dreamit-service-icon i {
+    color: #fff;
+    background: #3b3b79;
+    box-shadow: 0 0 14px 2px #00000026;
+    transform: scale(1.3);
+    text-shadow: 0 0 20px #000
+}
+
+.dreamit-sinlge-service-box:hover .edu__visit__site__a,.edu__departments__area .active .edu__visit__site__a {
+    background: #fff;
+    color: #3b3b79
+}
+
+.edu__depart__area.active {
+    display: block
+}
+
+.edu__departments__area .edu__visit__site__a {
+    padding: 7px 15px;
+    background: #3b3b79;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px
+}
+
+.active .owl-carousel.owl-hidden {
+    opacity: 1!important
+}
+
+#scrollUp,.scrol__top__me {
+    right: 10px!important;
+    bottom: 120%!important
+}
+
+.scrol__top__me {
+    position: fixed;
+    z-index: 9;
+    background: #d841489c!important;
+    transition: .5s;
+    border-radius: 100px!important;
+    width: 50px;
+    height: 50px
+}
+
+.scrol__top__me.ScrolTopBtn {
+    position: fixed;
+    bottom: 1%!important
+}
+
+.scrol__top__me a {
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff
+}
+
+.footer__section .footer__li__res li {
+    display: flex;
+    align-items: center
+}
+
+.footer__res__text {
+    margin: 0;
+    font-size: 14px
+}
+
+@media(max-width: 1440px) {
+    .top__header__bar .mega__drop .dropdown-menu.show {
+        left:-30%!important
+    }
+
+    .main__activities__of__departs .content__area .dreamit-section-title h3 {
+        font-size: 80px
+    }
+}
+
+@media(max-width: 1366px) {
+    .main__menu__nav__bar .navbar-light .navbar-nav .nav-link {
+        font-size:12px
+    }
+
+    .main__activities__of__departs .content__area .dreamit-section-title h3 {
+        font-size: 77px
+    }
+}
+
+@media(max-width: 1280px) {
+    .top__header__bar .mega__drop .dropdown-menu.show {
+        left:-50%!important
+    }
+
+    .main__activities__of__departs .content__area .dreamit-section-title h3 {
+        font-size: 71px
+    }
+}
+
+@media(max-width: 1199px) {
+    .footer__res__text {
+        font-size:12px
+    }
+
+    .main__menu__nav__bar .dropdown-menu {
+        margin-top: -10px
+    }
+
+    .main__menu__nav__bar .navbar-light .navbar-nav .nav-link {
+        font-size: 16px
+    }
+
+    .main__activities__of__departs .content__area .dreamit-section-title h3 {
+        font-size: 68px
+    }
+
+    .main__menu__nav__bar .donation__btn__new__nav.desk__desk,.main__menu__nav__bar .search__div__new__nav.desk__desk {
+        display: none
+    }
+
+    .navbar-nav.scroll__scroll {
+        height: 300px;
+        overflow-y: scroll
+    }
+
+    .main__menu__nav__bar div#navbarSupportedContent {
+        margin-top: 10px;
+        padding: 5px 10px 0;
+        box-shadow: inset 0 9px 10px -13px #000
+    }
+
+    .nav-res-item {
+        display: flex
+    }
+
+    .main__banner__animated__slider .em-nivo-slider-wrapper .nivo-directionNav {
+        display: block!important
+    }
+
+    .main__banner__animated__slider .em-nivo-slider-wrapper .nivo-directionNav .nivo-nextNav {
+        left: auto!important;
+        right: 10px!important
+    }
+
+    .main__banner__animated__slider .em-nivo-slider-wrapper .nivo-directionNav a {
+        opacity: 1!important;
+        visibility: visible!important;
+        left: 10px!important
+    }
+
+    .main__banner__animated__slider .em-nivo-slider-wrapper .nivo-directionNav .nivo-nextNav,.main__banner__animated__slider .em-nivo-slider-wrapper .nivo-directionNav .nivo-prevNav {
+        margin: 0!important
+    }
+
+    .main__banner__animated__slider h1 {
+        font-size: 22px!important
+    }
+
+    .main__banner__animated__slider h3 {
+        font-size: 18px!important;
+        margin: 0
+    }
+
+    .main__banner__animated__slider p {
+        font-size: 16px!important;
+        margin: 5px 0!important;
+        width: 100%!important;
+        line-height: 25px!important
+    }
+
+    .main__banner__animated__slider .em-slider-button a {
+        padding: 2px 10px!important;
+        margin-top: 5px;
+        font-size: 15px!important;
+        display: inline-block!important
+    }
+
+    .main__banner__animated__slider .nivo-directionNav a {
+        width: 30px!important;
+        height: 40px!important;
+        line-height: 0!important;
+        display: flex!important;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px!important
+    }
+
+    .main__banner__animated__slider .em-slider-image img {
+        height: 400px!important
+    }
+
+    .main__banner__animated__slider.events__banner {
+        background: #333;
+        padding: 50px
+    }
+
+    .main__banner__animated__slider.events__banner .event__img__hide__class {
+        display: none
+    }
+
+    .main__banner__animated__slider .events__banner__text__area {
+        position: unset;
+        transform: unset;
+        -webkit-transform: unset;
+        -ms-transform: unset;
+        width: 100%;
+        flex-wrap: nowrap
+    }
+
+    .main__banner__animated__slider .events__banner__text__area .em_slider_inner {
+        width: auto
+    }
+
+    .islamic__edu__banner .edu__baner__cnt__area .edu__baner__cnt__counter {
+        width: 100%
+    }
+}
+
+@media(max-width: 1024px) {
+    .main__menu__nav__bar .dropdown.onHover__show:hover .dropdown-menu {
+        display:none!important
+    }
+
+    .main__menu__nav__bar .dropdown.onHover__show.show .dropdown-menu.show {
+        display: block!important
+    }
+
+    .top__header__bar .mega__drop .dropdown-menu.show {
+        top: 5px;
+        left: -120%
+    }
+
+    .top__header__bar .lang__drop .dropdown-menu.show {
+        top: 5px!important
+    }
+
+    .ACH__Achivement__Area .dreamit-section-title h3,.ACH__Important__Activity .ACH__Important__Activity__heading,.ACH__famous__departments .ACH__famous__departments__heading,.What__People__say__about .What__People__say__about__heading {
+        font-size: 30px;
+        margin-top: 0!important
+    }
+
+    .ACH__Important__Activity .alignm p,.if__You__Want__to__check {
+        font-size: 18px
+    }
+
+    .ACH__Important__Activity .about-text p {
+        margin-bottom: 10px
+    }
+
+    .ACH__Important__Activity .dreamit-section-title h3,.ACH__about__us .dreamit-section-title h3 {
+        font-size: 25px
+    }
+
+    .main__banner__animated__slider .em-slider-image img {
+        height: 350px!important
+    }
+
+    .main__activities__of__departs .content__area {
+        padding: 30px 20px
+    }
+
+    .main__activities__of__departs .content__area .dreamit-section-title h3 {
+        font-size: 55px
+    }
+
+    .footer__section .padding__add__right__for__design {
+        padding-right: 0
+    }
+
+    .ACH__about__us .dreamit-about-content-inner ul li {
+        font-size: 12px
+    }
+}
+
+@media(max-width: 992px) {
+    .top__header__bar .mega__drop .dropdown-menu.show {
+        left:-130%
+    }
+
+    .top__header__bar .dreamit-header-menu-address ul li a {
+        font-size: 14px
+    }
+
+    .What__People__say__about .what__people__say__ima__div {
+        margin: 7px 0
+    }
+
+    .What__People__say__about .what__people__say__ima__div .what__people__say__span,.islamic__edu__banner .edu__baner__cnt__area .edu__baner__cnt__counter .edu__baner__cnt__counter__divs p {
+        font-size: 50px
+    }
+
+    .What__People__say__about .What__People__say__video__headings {
+        font-size: 18px;
+        height: 44px
+    }
+
+    .logo__header__second__baar .img-fluid {
+        max-width: 60%
+    }
+
+    .ACH__about__us .dreamit-about-single-img img {
+        width: 30%!important
+    }
+
+    .ACH__about__us .row.pt-50 {
+        padding-top: 10px!important
+    }
+
+    .act__upcoming__activity .blog-page-title h2 {
+        font-size: 16px
+    }
+
+    .main__activities__of__departs .content__area {
+        text-align: center
+    }
+
+    .main__activities__of__departs .video__area {
+        background-image: unset;
+        background-size: unset;
+        background-position: unset;
+        background-repeat: unset;
+        height: unset
+    }
+
+    .main__banner__animated__slider .events__banner__text__area h1.em-slider-main-title {
+        font-size: 50px!important
+    }
+
+    .main__banner__animated__slider .events__banner__text__area h3.em-slider-main-title {
+        font-size: 30px!important
+    }
+
+    .islamic__edu__banner .edu__baner__cnt__area h1 {
+        font-size: 30px
+    }
+
+    .islamic__edu__banner .edu__baner__cnt__area h3 {
+        font-size: 18px
+    }
+
+    .islamic__edu__banner .enrol__now__div a {
+        height: 200px;
+        font-size: 30px
+    }
+
+    .islamic__edu__banner .enrol__now__div a span {
+        margin-top: 3px;
+        font-size: 43px;
+        margin-left: -1px
+    }
+
+    .islamic__edu__banner.depart__ment .depart__ment__counter__divs img {
+        width: 50%
+    }
+
+    .evn__islamic__events .event__li__div {
+        margin-bottom: 10px
+    }
+
+    .evn__islamic__events hr {
+        display: none
+    }
+
+    .ACH__about__us .dreamit-about-content-inner ul li {
+        font-size: 15px
+    }
+
+    .act__upcoming__activity .blog-page-title h2 {
+        height: 42px
+    }
+}
+
+@media(max-width: 768px) {
+    .top__header__bar .mega__drop .dropdown-menu.show {
+        left:-140%
+    }
+
+    .main__banner__animated__slider .em-slider-image img,.main__banner__animated__slider .nivo-main-image {
+        height: 250px!important
+    }
+
+    .evn__islamic__events .details h3 {
+        font-size: 20px!important
+    }
+}
+
+@media(max-width: 767px) {
+    .footer__section p.mb-10.text-white,.footer__section p.mb-10.text-white.text-right,.if__You__Want__to__check,.make__btn__flex {
+        text-align:center!important
+    }
+
+    .top__header__bar .mega__drop .dropdown-menu.show {
+        transform: unset!important;
+        top: 110%!important;
+        left: -10%!important;
+        width: 300px
+    }
+
+    .top__header__bar .mega__drop .dropdown-menu.show div p {
+        font-size: 13px;
+        padding-left: 5px;
+        padding-right: 5px
+    }
+
+    .top__header__bar .mega__drop .dropdown-menu.show div ul {
+        padding-left: 25px;
+        padding-right: 5px
+    }
+
+    .top__header__bar .mega__drop .dropdown-menu.show div a {
+        font-size: 13px
+    }
+
+    .top__header__bar .dreamit-header-menu-address ul li a {
+        font-size: 15px
+    }
+
+    .top__header__bar .dreamit-header-menu-address ul {
+        text-align: center
+    }
+
+    .top__header__bar .country__drop,.top__header__bar .lang__drop {
+        text-align: center;
+        margin-bottom: 5px
+    }
+
+    .main__menu__nav__bar .searchBar__new__nav {
+        width: 150px
+    }
+
+    .logo__header__second__baar .img-fluid {
+        max-width: 50%
+    }
+
+    .top__header__bar .country__drop button,.top__header__bar .lang__drop button {
+        padding: 5px 10px 2px
+    }
+
+    .home__counter .dreamit-single-counter {
+        margin-bottom: 0!important
+    }
+
+    .home__counter .counter-area.style-six {
+        padding: 20px 0
+    }
+
+    .act__upcoming__activity .related__Activities__heading,.evn__islamic__events .ACH__Important__Activity__heading {
+        font-size: 20px!important
+    }
+
+    .home__counter .counter-area.style-six .dreamit-single-counter-inner span i {
+        font-size: 20px
+    }
+
+    .home__counter .counter-area.style-six .counter-text h1 {
+        font-size: 35px
+    }
+
+    .home__counter .counter-area.style-six .counter-title h4 {
+        font-size: 15px
+    }
+
+    .home__counter .row .col-lg-3.col-md-6.col-6:first-child .dreamit-single-counter,.home__counter .row .col-lg-3.col-md-6.col-6:nth-child(2) .dreamit-single-counter {
+        margin-bottom: 20px!important
+    }
+
+    .act__upcoming__activity .filter__heading .dropdown-menu {
+        transform: translate3d(0,37px,0)!important
+    }
+
+    .main__banner__animated__slider.events__banner {
+        padding: 30px 20px
+    }
+
+    .main__banner__animated__slider .event__date__area h1 {
+        font-size: 70px!important
+    }
+
+    .main__banner__animated__slider .events__banner__text__area .em-slider-descript p,.main__banner__animated__slider .events__banner__text__area .em-slider-sub-title.expected__date {
+        font-size: 15px!important
+    }
+
+    .main__banner__animated__slider .events__banner__text__area h1.em-slider-main-title {
+        font-size: 30px!important
+    }
+
+    .main__banner__animated__slider .events__banner__text__area h3.em-slider-main-title {
+        font-size: 24px!important
+    }
+
+    .islamic__edu__banner .enrol__now__div a {
+        height: inherit;
+        font-size: 30px;
+        border-radius: 0;
+        width: 100%;
+        margin-bottom: 20px
+    }
+
+    .islamic__edu__banner.depart__ment .depart__ment__counter__divs img {
+        width: 100%
+    }
+
+    .pr__zero__res {
+        padding-right: 15px
+    }
+
+    .if__You__Want__to__check {
+        justify-content: center!important
+    }
+
+    .make__btn__flex {
+        display: flex;
+        justify-content: center
+    }
+
+    .act__upcoming__activity .blog-page-title h2,.act__upcoming__activity .dreamit-single-blog-thumb img,.blog-page-text p {
+        height: auto
+    }
+}
+
+@media(max-width: 576px) {
+    .discover__islam__section .service-area {
+        padding:20px 0!important
+    }
+
+    .top__header__bar .mega__drop .dropdown-menu.show {
+        left: -40%!important
+    }
+
+    .logo__header__second__baar .anchrs__main__sites {
+        font-size: 17px
+    }
+
+    .main__menu__nav__bar .searchBar__new__nav {
+        width: 200px
+    }
+
+    .main__menu__nav__bar .donation__btn__new__nav {
+        padding: 5px 10px
+    }
+
+    .main__banner__animated__slider h1,.main__banner__animated__slider h3 {
+        font-size: 15px!important
+    }
+
+    .main__banner__animated__slider p {
+        font-size: 14px!important;
+        display: none
+    }
+
+    .main__banner__animated__slider .em-slider-button a {
+        font-size: 14px!important
+    }
+
+    .main__banner__animated__slider .em-slider-image img,.main__banner__animated__slider .nivo-main-image {
+        height: 180px!important
+    }
+
+    .ACH__about__us .dreamit-about-single-img img {
+        width: 50%!important
+    }
+
+    .Our__Happy__Users .testimonial-icon {
+        top: 10px!important;
+        right: 0
+    }
+
+    .Our__Happy__Users .testimonial-title {
+        position: unset;
+        width: 100%;
+        float: unset
+    }
+
+    .islamic__edu__banner.depart__ment .depart__ment__counter__divs h1,.main__activities__of__departs .content__area .dreamit-section-title h3 {
+        font-size: 40px
+    }
+
+    .main__activities__of__departs .content__area p {
+        font-size: 14px
+    }
+
+    .main__activities__of__departs .content__area .em-button-button-area a.em-active-button,.main__activities__of__departs .content__area .em-button-button-area a.em-active-button-two {
+        padding: 10px;
+        font-size: 15px
+    }
+
+    .act__upcoming__activity .filter__heading .dropdown-menu {
+        transform: translate3d(-28px,37px,0)!important
+    }
+
+    .main__banner__animated__slider .event__date__area {
+        width: 100px
+    }
+
+    .main__banner__animated__slider .event__date__area h1 {
+        font-size: 40px!important
+    }
+
+    .main__banner__animated__slider .events__banner__text__area h1.em-slider-main-title {
+        font-size: 20px!important
+    }
+
+    .main__banner__animated__slider .events__banner__text__area h3.em-slider-main-title {
+        font-size: 18px!important
+    }
+
+    .main__banner__animated__slider .events__banner__text__area .em-slider-descript p {
+        display: block
+    }
+
+    .main__banner__animated__slider .event__date__area p {
+        display: block;
+        font-size: 15px!important
+    }
+
+    .islamic__edu__banner.depart__ment .depart__ment__counter__divs img {
+        width: 75%
+    }
+
+    .main__activities__of__departs .video__area .running__fgrf__act span {
+        font-size: 20px
+    }
+}
+
+@media(max-height: 500px) {
+    .navbar-nav.scroll__scroll {
+        height:150px!important
+    }
+}
+
+@media(max-width: 480px) {
+    .ACH__about__us .for__br__top .dreamit-about-content {
+        border-top:1px solid #c9c9c9;
+        padding-top: 0;
+        margin: 0
+    }
+}
+
+@media(max-width: 470px) {
+    .main__banner__animated__slider.events__banner {
+        padding:30px 10px
+    }
+
+    .main__banner__animated__slider .events__banner__text__area {
+        flex-wrap: wrap
+    }
+
+    .main__banner__animated__slider .events__banner__text__area .event__date__area__div {
+        width: 100%;
+        margin-bottom: 10px
+    }
+
+    .main__banner__animated__slider .event__date__area {
+        width: 100%;
+        border: 0 solid transparent;
+        border-bottom: 3px solid #fff;
+        padding: 0!important;
+        text-align: center
+    }
+
+    .main__banner__animated__slider .event__date__area h1 {
+        line-height: 25px
+    }
+
+    .main__banner__animated__slider .events__banner__text__area .em_slider_inner {
+        width: 100%;
+        padding: 0!important;
+        text-align: center!important
+    }
+
+    .main__banner__animated__slider .events__banner__text__area h1.em-slider-main-title {
+        font-size: 30px!important
+    }
+
+    .main__banner__animated__slider .event__date__area p {
+        margin: 0 0 5px!important
+    }
+
+    .main__banner__animated__slider .events__banner__text__area .em-slider-descript p {
+        font-size: 14px!important
+    }
+
+    .islamic__edu__banner .edu__baner__cnt__area .edu__baner__cnt__counter .edu__baner__cnt__counter__divs p {
+        padding: 20px 0;
+        font-size: 40px
+    }
+}
+
+@media(max-width: 420px) {
+    .top__header__bar .mega__drop .dropdown-menu.show {
+        left:-70%!important
+    }
+
+    .main__menu__nav__bar .searchBar__new__nav {
+        width: 190px
+    }
+
+    .ACH__Achivement__Area .dreamit-section-title h3,.ACH__Achivement__Area .service-title h2,.ACH__Important__Activity .ACH__Important__Activity__heading,.ACH__Important__Activity .dreamit-section-title h3,.ACH__about__us .dreamit-section-title h3,.ACH__famous__departments .ACH__famous__departments__heading,.What__People__say__about .What__People__say__about__heading {
+        font-size: 18px
+    }
+
+    .What__People__say__about .What__People__say__video__headings {
+        font-size: 15px
+    }
+
+    .main__menu__nav__bar .donation__btn__new__nav {
+        padding: 5px;
+        font-size: 15px
+    }
+
+    .act__upcoming__activity .filter__heading .dropdown-menu {
+        transform: translate3d(-66px,37px,0)!important
+    }
+
+    .islamic__edu__banner.depart__ment .depart__ment__counter__divs {
+        padding: 5px 10px
+    }
+
+    .islamic__edu__banner.depart__ment .depart__ment__counter__divs p {
+        font-size: 13px
+    }
+
+    .islamic__edu__banner.depart__ment .depart__ment__counter__divs h1 {
+        font-size: 30px
+    }
+}
+
+@media(max-width: 400px) {
+    .main__menu__nav__bar .searchBar__new__nav {
+        width:150px
+    }
+
+    .main__banner__animated__slider .em_slider_inner.col-8.text-left {
+        max-width: 85%!important;
+        text-align: center!important
+    }
+}
+
+@media(max-width: 360px) {
+    .top__header__bar .mega__drop .dropdown-menu.show {
+        left:-80%!important
+    }
+
+    .logo__header__second__baar .anchrs__main__sites {
+        font-size: 15px
+    }
+
+    .main__menu__nav__bar .searchBar__new__nav {
+        width: 140px
+    }
+}
+
+@media(max-width: 320px) {
+    .main__menu__nav__bar .searchBar__new__nav {
+        width:100px
+    }
+}
