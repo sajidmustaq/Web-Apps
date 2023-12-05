@@ -6,60 +6,60 @@
 //“Welcome to city of lights”
 
 
-// var city = prompt("please enter your city name")
-// if (city == "karachi") {
-//     document.write('Welcome to the city of lights');
-// }
-// else if (city !== "karachi") {
-//      document.write("Enter City Namen in Lower Case")
-// }
+var city = prompt("please enter your city name")
+if (city == "karachi") {
+    document.write('Welcome to the city of lights');
+}
+else if (city !== "karachi") {
+     document.write("Enter City Namen in Lower Case")
+}
 
 // Q:2 Write a program to take “gender” as input from user. If the
 // user is male, give the message: Good Morning Sir. If the
 // user is female, give the message: Good Morning Ma’am.
 
-// var gender = prompt("Enter your Gender please")
-// if (gender == "male") {
-//      document.write('Good Morning Sir');
-// }
-// else if (gender == "female") {
-//      document.write("Good Morning Ma’am")
-// }
-// else ( document.write("Enter gender  in Lower Case"))
+var gender = prompt("Enter your Gender please")
+if (gender == "male") {
+     document.write('Good Morning Sir');
+}
+else if (gender == "female") {
+     document.write("Good Morning Ma’am")
+}
+else ( document.write("Enter gender  in Lower Case"))
 
 
 // Q:3Write a program to take input remaining fuel in car (in
 // litres) from user. If the current fuel is less than 0.25litres,
 // show the message “Please refill the fuel in your car”
 
-// var fuel = prompt("Enter Fuel litres in like 1 litre or 0.50 litre")
-// if (fuel < "0.50") {
-//     document.write("Please refill the fuel in your car")
-// }
-// else if (fuel > "0.50") {
-//     document.write("Good Fuel")
-// }
+var fuel = prompt("Enter Fuel litres in like 1 litre or 0.50 litre")
+if (fuel < "0.50") {
+    document.write("Please refill the fuel in your car")
+}
+else if (fuel > "0.50") {
+    document.write("Good Fuel")
+}
 
-// else ( document.write("Enter in numeric"))
+else ( document.write("Enter in numeric"))
 
 
 // Q:4 Write a program to take input color of road traffic signal
 // from the user & show the message according to this table:
 // traffic signal
 
-// var traffic_signal = prompt("Enter Color red ,yellow Or green")
-// if (traffic_signal == "red") {
-//     alert('Must Stop')
-// }
-// else if (traffic_signal == "yellow") {
+var traffic_signal = prompt("Enter Color red ,yellow Or green")
+if (traffic_signal == "red") {
+    alert('Must Stop')
+}
+else if (traffic_signal == "yellow") {
 
-//     document.write(' Ready to move ')
-// }
-// else if (traffic_signal == "green") {
+    document.write(' Ready to move ')
+}
+else if (traffic_signal == "green") {
 
-//     document.write('Move now')
-// }
-// else (document.write("Enter Traffic Light Color In Lower Case"))
+    document.write('Move now')
+}
+else (document.write("Enter Traffic Light Color In Lower Case"))
 
 //Q:5 Run this script, & check whether alert message would be
 //    displayed or not. Record the outputs.
@@ -129,4 +129,25 @@ else if (percentage <= 69 && percentage >= 40 ) {
 }
 else {
     document.write("Fail" + "<br>")
+}
+
+var day=1
+
+
+switch(day){
+    case 0:
+        document.write("Today is Monday");
+        break;
+
+    case 1:
+        document.write("Today is Tuesday");
+        break;
+}
+document.write("<br>")
+var a = confirm("Are You Ready")
+if(a){
+    document.write("Thanks")
+}
+else{
+    document.write("Sorry")
 }

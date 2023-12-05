@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Assignment 9 (Array)</title>
+</head>
+
+<body>
+
+
+
+    <h1 style="margin-left: 5px;">
+
+        <script>
+            //array
+            // Q 1 Declare an empty array using JS literal notation to store student names in future. 
+            var students = []
+
+            students.push("Sajid", "Mubeen", "Hafiz Rizwan", "Shahid Madani")
+            document.write(students + "<br>")
+
+            //Declare and initialize a strings array.
+
+            var name = ["Sajid", "Mubeen", "Hafiz Rizwan", "Shahid Madani"]
+            document.write(name + "<br>")
+
+            //Declare and initialize a numbers array.
+
+            var number = [1, 2, 3, 4, 5, 6]
+            document.write(number + "<br>")
+
+            // Declare and initialize a boolean array.
+
+            var boolean = [true, false]
+            document.write(boolean + "<br>")
+
+            // Declare and initialize a mixed array.
+
+            var mixed = ["Sajid", "Mubeen", " Asif", 1, 2, 3]
+            document.write(mixed + "<br>")
+
+            // 7. Declare and Initialize an array and store available education qualifications in Pakistan
+            var education = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil.", "PhD"]
+            document.write("<ol>")
+            for (var a = 0; a < 8; a++) {
+                document.write("<li>) " + education[a] + "</li>")
+            }
+
+            document.write("</ol>")
+
+//Write a program to store 3 student names in an array.Take
+//another array to store score of these three students.
+//Assume that total marks are 500 for each student, display
+//the scores & percentages of students like:
+
+
+
+          // Declare arrays to store student names and scores
+let studentNames = ["Alice", "Bob", "Charlie"];
+let studentScores = [450, 380, 420]; // Assume scores out of 500
+
+// Calculate percentages
+let totalMarks = 500;
+let per = [];
+
+for (let i = 0; i < studentScores.length; i++) {
+    per[i] = (studentScores[i] / totalMarks) * 100;
+}
+
+// Display scores and percentages
+for (let i = 0; i < studentNames.length; i++) {
+    document.write( "score of "+ studentNames[i] +" is "+studentScores[i] +"."+ "percentage:" + per[i] +"%"+ "<br>");
+    
+}
+
+let colorArray = ["Red", "Green", "Blue", "Yellow"]; 
+       document.write("<h3>Initial Array:</h3>");
+document.write(colorArray.join("<br>"));
+
+
+// Add a color to the beginning of the array
+
+let newColorBegin = prompt("Enter a color to add to the beginning:");
+colorArray.unshift(newColorBegin);
+
+document.write("<h3>Array after adding a color to the beginning:</h3>");
+document.write(colorArray);
+
+// b. Add a color to the end of the array
+let newColorEnd = prompt("Enter a color to add to the end:");
+colorArray.push(newColorEnd);
+
+document.write("<h3>Array after adding a color to the end:</h3>");
+document.write(colorArray);
+
+//c. Add two more colors to the beginning of the array
+colorArray.unshift("Purple", "Orange");
+
+// Display the updated array
+document.write("<h3>Array after adding two colors to the beginning:</h3>");
+document.write(colorArray);
+
+// d. Delete the first color in the array
+colorArray.shift();
+
+// Display the updated array
+document.write("<h3>Array after deleting the first color:</h3>");
+document.write(colorArray);
+
+// e. Delete the last color in the array
+colorArray.pop();
+
+// Display the updated array
+document.write("<h3>Array after deleting the last color:</h3>");
+document.write(colorArray);
+
+// f. Add a color at a user-specified index
+let addIndex = prompt("Enter the index where you want to add a color:");
+let addColor = prompt("Enter the color you want to add:");
+colorArray.splice(addIndex, 0, addColor);
+
+// Display the updated array
+document.write("<h3>Array after adding a color at a specific index:</h3>");
+document.write(colorArray);
+
+// g. Delete colors at a user-specified index
+let deleteIndex = prompt("Enter the index where you want to delete color(s):");
+let deleteCount = prompt("Enter the number of colors you want to delete:");
+colorArray.splice(deleteIndex, deleteCount);
+
+// Display the updated array
+document.write("<h3>Array after deleting color(s) at a specific index:</h3>");
+document.write(colorArray.join("<br>"));
+
+
+// Write a program to store student scores in an array &
+// sort the array in ascending order using Array’s sort
+// method.
+
+document.write("<br>");
+document.write("<br>");
+let arr =[85, 92, 78, 95, 88];
+document.write("scores of students :", arr +"<br>");
+ arr.sort((a,b)=>a-b);
+ document.write( "order scores of students :" +arr);
+ 
+ document.write("<br>");
+ document.write("<br>");
+
+//  Q 11 Write a program to initialize an array with city names.
+// Copy 3 array elements from cities array to selectedCities
+// array.
+  // Initialize an array with city names
+  let cities = ["New York", "London", "Tokyo", "Paris", "Sydney"];
+
+// Initialize an empty array for selected cities
+let selectedCities = [];
+
+// Copy 3 array elements from cities to selectedCities
+selectedCities = cities.slice(0, 3);
+
+// Display the original and selected arrays
+document.write("Cities list :" +"<br>"+ cities +"<br>");
+document.write("Selected  cities list :"+"<br>"+ selectedCities);
+
+
+document.write("<br>");
+
+
+// Write a program to create a single string from the
+// below mentioned array:
+// var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+// (Use array’s join method)
+
+var arrJoin = ["This", " is ", " my ", " cat"];
+document.write("Array:<br>")
+document.write(arrJoin.join())
+document.write("<br>")
+document.write("String:<br>")
+document.write(arrJoin.join(''))
+
+document.write("<br>");
+
+// Create a new array. Store values one by one in such a way
+// that you can access the values in the order in which they
+// were stored. (FIFO-First In First Out)
+
+let lifoArray = [];
+
+// Add values one by one to the end of the array (push)
+lifoArray.push("keyboard");
+lifoArray.push("mouse");
+lifoArray.push("printer");
+lifoArray.push("monitor");
+document.write("Devices:"+"<br>"+lifoArray +"<br>" +"<br>");
+
+// Access the values in reverse order (LIFO)
+console.log("Popping the values:");
+
+// Remove and display values from the end of the array
+while (lifoArray.length > 0) {
+    let poppedValue = lifoArray.pop();
+    document.write( "out:"+"<br>"+poppedValue +"<br>");
+} 
+
+
+// Write a program to store phone manufacturers (Apple,
+// Samsung, Motorola, Nokia, Sony & Haier) in an array.
+// Display the following dropdown/select menu in your
+// browser using document.write() method:
+
+document.write("<br>");
+var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia"];
+
+for (i = 0; i < phoneManufacturers.length; i++) {
+    document.write(phoneManufacturers +"<br>");
+}
+
+        </script>
+
+    </h1>
+</body>
+
+</html>

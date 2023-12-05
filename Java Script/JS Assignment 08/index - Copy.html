@@ -90,21 +90,28 @@
         // }
 
 
-        document.write("</ol>")
 
-            for (var i = 1; i <= 10; i++){
-                if (i == 5) {
-                    document.write("Hello" + i + "<br>")
-                    break;
-                }
+
+        // document.write("</ol>")
+
+        for (var i = 1; i <= 10; i++) {
+            if (i == 5) {
+                document.write("Hello" + i + "<br>")
+                break;
+            }
             document.write("Sajid " + i + "<br>");
         }
 
-            for (var i = 1; i <= 10; i++){
-                if (i % 2==1) {
-                    document.write(i + "<br>")
+        for (var i = 1; i <= 10; i++) {
+            if (i % 2 == 1) {
+                document.write(i + "<br>")
 
-                        }}
+            }
+        }
+
+
+
+
 
         for (var a = 1; a <= 100; a = a + 10) {
             for (var b = a; b < a + 10; b++) {
@@ -112,36 +119,49 @@
 
             }
 
-            document.write(b + "<br>")
+            document.write(b + "<center>")
         }
 
+        document.write("<br>")
+
         for (var a = 1; a <= 5; a++) {
-            for (var b = 1; b <= a ; b++) {
+            for (var b = 1; b <= a; b++) {
+                document.write(a + " ");
+
+            }
+
+            document.write("<center>")
+        }
+
+        document.write("<br>")
+
+
+        for (var a = 5; a >= 1; a--) {
+            for (var b = 1; b <= a; b++) {
                 document.write(a + " ");
 
             }
 
             document.write("<br>")
         }
+        document.write("<br>")
 
         for (var a = 5; a >= 1; a--) {
-            for (var b = 1; b <= a ; b++) {
-                document.write(a + " ");
-
-            }
-
-            document.write("<br>")
-        }
-        for (var a = 5; a >= 1; a--) {
-            for (var b = a; b >= 1 ; b--) {
+            for (var b = a; b >= 1; b--) {
                 document.write(b + " ");
 
             }
 
             document.write("<br>")
         }
+
+
+        document.write("<br>")
+
+
+
         for (var a = 1; a <= 5; a++) {
-            for (var b = a; b <= 5 ; b++) {
+            for (var b = a; b <= 5; b++) {
                 document.write(b + " ");
 
             }
@@ -149,6 +169,14 @@
             document.write("<br>")
         }
 
+
+        const str = "hello world";
+
+// capitalize the first letter
+let result = str.charAt(0).toUpperCase() + str.slice(1);
+
+// print the result
+console.log(result); // "Hello world"
 
 
     </script>
