@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Assignment 10 (Array)</title>
+    <style>
+        h2 {
+            font-size: larger;
+            color: red;
+        }
+
+        body {
+            padding-left: 50px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <h1 style="margin-left: 5px;">
+
+        <h1 style="color: brown; ">Sajid Mushtaq : 116985</h1>
+
+        <script>
+
+            //Q:1 Declare and initialize an empty multidimensional array.
+            //     (Array of arrays)
+            //    Q 2. Declare and initialize a multidimensional array
+            //     representing the following matrix:
+
+            // var arryA = [
+            //     [0, 1, 2, 3],
+            //     [1, 2, 3, 4],
+            //     [2, 3, 4, 5]
+            // ];
+            // for (var a = 0; a < 5; a++) {
+            //     for (var b = 0; b < 4; b++) {
+            //         document.write(arryA[a][b] + " ")
+            //     }
+
+            //     document.write("<br>")
+            // };
+
+            // document.write("<br>");
+
+
+            //Q 3 Write a program to print numeric counting from 1 to 10.
+
+            var arryB = [
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10]
+
+            ];
+            for (var i = 0; i < 10; i++) {
+
+                document.write(arryB[i] + "<br> ")
+            }
+
+            document.write("<br>"); document.write("<br>");
+
+            //  4. Write a program to print multiplication table of any
+            // number using for loop. Table number & length should be
+            // taken as an input from user.
+
+            var number = parseInt(prompt('Enter an integer: '));
+
+            var range = parseInt(prompt('Enter a range: '));
+            document.write("Multiplication table of " + number + " <br>")
+            document.write("Length " + range + " <br>")
+
+            for (var i = 1; i <= range; i++) {
+                var result = i * number;
+                document.write(`${number} * ${i} = ${result}` + "<br>");
+            }
+
+            // Write a program to print items of the following array
+            // using for loop:
+            // fruits = ["apple”, "banana”, "mango”, "orange”,
+            // "strawberry”]
+
+            var fruits = ["apple", "banana", "mango", "orange", "strawberry"]
+            for (var f = 0; f < fruits.length; f++) {
+                document.write("Element at index " + f + " is " + fruits[f] + "<br>")
+
+            }
+            document.write("<br>");
+
+            // Q 6. Generate the following series in your browser. See
+            // example output.
+
+
+            document.write("<h2>")
+            document.write("Counting :" + "<br>");
+            document.write("</h2>")
+            var series = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+            document.write("a.Counting: " + series + "<br>")
+
+            //Reverse Counting
+            document.write("<h2>")
+            document.write("Reverse Counting:" + "<br>");
+            document.write("</h2>")
+            var series2 = []
+            for (var a = 0; a <= series.length; a++) {
+                if (series[a])
+                    series2.push(series[a]);
+            }
+            document.write(`b. Reverse counting : ${series2.reverse()}` + "<br>")
+
+            // even
+            document.write("<h2>")
+            document.write("Even:" + "<br>");
+            document.write("</h2>")
+
+            var even = []
+            for (var i = 0; i <= series.length; i++) {
+                if (series[i] % 2 == 0)
+                    even.push(series[i]);
+            }
+            document.write(`c. Even :${even}` + "<br>");
+
+
+            //Odd:
+            document.write("<h2>")
+            document.write("Odd:" + "<br>");
+            document.write("</h2>")
+            var series3 = []
+            for (var i = 0; i <= series.length; i++) {
+                if (series[i] % 2 !== 0)
+                    series3.push(series[i]);
+            }
+            document.write(`d. Odd: :${series3}` + "<br>")
+
+            //Series
+            document.write("<h2>")
+            document.write("Series :" + "<br>");
+            document.write("</h2>")
+            var series4 = []
+            for (var i = 0; i <= series.length; i++) {
+                if (series[i] % 2 == 0)
+                    series4.push(series[i] + "k");
+            }
+            document.write(`e. Series : ${series4}` + "<br>");
+
+
+            //Q :7. You have an array
+            // A = ["cake”, "apple pie”, "cookie”, "chips”, "patties”]
+            // Write a program to enable "search by user input” in an
+            // array.
+
+            var backery2 = ["cake", "apple pie", "cookie", "chips", "patties"]
+            data = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?")
+            index = backery2
+            for (i = 0; i <= backery2.length; i++) {
+                if (data === backery2)
+                    document.write(data + " cookie is available at  our bakery ")
+
+                else {
+                    document.write(" We are sorry. pastry is not available in our bakery ")
+                }
+                break;
+            }
+            document.write("<br>")
+            document.write("<br>")
+
+
+            //Q:8  Write a program to identify the largest number in the
+            // given array.
+            var a = [24, 53, 78, 91, 12];
+            var max = Math.max(...a)
+            document.write("<h1>Array items : 24,53,78,91,12 </h1>")
+            document.write("The largest number is : " + max)
+
+            document.write("<br>")
+            document.write("<br>")
+
+            // 9. Write a program to identify the smallest number in the
+            // given array.
+
+
+            A = [24, 53, 78, 91, 12]
+            var max = Math.min(...A)
+            document.write("<h1> Array items : 24,53,78,91,12 </h1>")
+            document.write("The smallest number is : " + max)
+
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<h1> 10. Write a program to print multiples of 5 ranging 1 to 100.</h1>")
+
+            for (let i = 1; i <= 20; i++) {
+                let multipleOf5 = i * 5;
+                document.write(multipleOf5 + ",");
+
+            }
+
+
+
+        </script>
+
+    </h1>
+</body>
+
+</html>
