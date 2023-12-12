@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Assignment 11(STRING METHODS)</title>
+    <style>
+        h2 {
+            font-size: larger;
+            color: rgb(6, 105, 253);
+        }
+
+        body {
+            padding-left: 50px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <h1 style="margin-left: 5px;">
+
+        <h1 style="color: brown; ">Sajid Mushtaq : 116985</h1>
+
+        <script>
+            //Q7
+            document.write("<h2>Q7 :Write a program to replace the “Hyder” to “Islam” in the <br> word “Hyderabad” and display the result in your browser.</h2>")
+            var originalString = "Hyderabad";
+
+            var newString = originalString.replace("Hyder", "Islam");
+            document.write("<h3> City : Hyderabad </h3>  <br>");
+            document.write("<h3> After replacement : " + newString + "</h3>");
+            document.write("<br>");
+            document.write("<br>");
+
+            //Q8
+            document.write("<h2> Q 8 :Write a program to replace all occurrences of “and” in the <br> string with “&” and display the result in your browser.</h2>")
+
+            var message = "Ali and Sami are best friends. They play cricket and football together.";
+            var newMassg = message.replaceAll("and", "&");
+            document.write("<h3> After replacement : " + newMassg + "</h3>");
+
+            document.write("<br>");
+            document.write("<br>");
+
+            //Q9
+
+            document.write("<h2> Q:9 Write a program that converts a string “472” to a number 472.<br> Display the values & types in your browser.</h2>")
+
+            var number1 = "472"
+            document.write("<h3>Value : " + number1 + "<br>" + "</h3>");
+            document.write(" <h3>Type is : " + typeof number1 + "<br>" + "</h3>");
+            var valueInNumber = Number(number1);
+            document.write("<h3>Value : " + valueInNumber + "<br>" + "</h3>");
+            document.write("<h3> Type is : " + typeof valueInNumber + "</h3>");
+            
+            document.write("<br>");
+            document.write("<br>");
+     //10
+
+    //  document.write("<h2> Q:10. Write a program that takes user input. Convert and <br>show the input in capital letters..</h2>")
+    //   var value1 =prompt( "Enter anay word in small alphabat")
+    //   document.write("<h3>User input : " + value1 + "<br>" + "</h3>");
+    //         document.write(" <h3> Upper case : " + value1.toUpperCase() + "<br>" + "</h3>");
+           
+            
+    //         document.write("<br>");
+    //         document.write("<br>");
+
+ //11
+ document.write("<h2> Q:10. Write a program that takes user input. Convert and <br>show the input in capital letters..</h2>")
+
+ const str = 'flexiple';
+const str2 = str.charAt(0).toUpperCase() + str.slice(1);
+document.write("<h3>User input : " + str + "<br>" + "</h3>");
+ document.write(" <h3> Title case : " + str2 + "<br>" + "</h3>");
+ 
+ document.write("<br>");
+ document.write("<br>");
+
+
+ //12
+ document.write("<h2> Write a program that converts the variable num to string.</h2>")
+
+ var num1 = 35.36 ;
+document.write("<h3>Value : " + num1 + "<br>" + "</h3>");
+document.write(" <h3>Type is : " + typeof num1 + "<br>" + "</h3>");
+var numToStr = num1.toString().replace(".","");
+document.write("<h3>Value : " + numToStr+ "<br>" + "</h3>");
+document.write("<h3> Type is : " + typeof numToStr + "</h3>");
+
+document.write("<br>");
+document.write("<br>");
+
+
+
+        </script>
+
+    </h1>
+</body>
+
+</html>
