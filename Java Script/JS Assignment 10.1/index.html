@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 10.2</title>
+
+    <!-- Bootstrap CSS -->
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        body {
+            padding: 25px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+    <script>
+
+        //1
+
+        for (var a = 5; a >= 1; a--) {
+            for (var b = 1; b <= a; b++) {
+                document.write(" * ");
+
+            }
+
+            document.write("<br>")
+        }
+
+        document.write("<br>")
+
+        //2
+        for (var a = 1; a <= 5; a++) {
+            for (var b = 1; b <= a; b++) {
+                document.write(a + " ");
+
+            }
+            document.write("<br>")
+
+        }
+
+        document.write("<br>")
+
+
+        //3
+        document.write("<center>")
+        for (var a = 5; a >= 1; a--) {
+            for (var b = a; b >= 1; b--) {
+                document.write(" * ");
+
+            }
+
+            document.write("<br>")
+        }
+
+        document.write("</center>")
+        document.write("<br>")
+
+        //4
+
+       
+
+            let n = 5; // you can take input from prompt or change the value
+    let string = "";
+    // External loop
+    for (let i = 1; i <= n; i++) {
+      // printing spaces
+      for (let j = n; j > i; j--) {
+        string += " ";
+      }
+      // printing star
+      for (let k = 0; k < i * 2 - 1; k++) {
+        string += "*";
+      }
+      string += "<br>";
+    }
+    document.write(`<pre>${string}</pre>`);
+       
+
+
+        document.write("<br>")
+      
+      
+        //5
+
+        let n2 = 5; // you can take input from prompt or change the value
+    let string2 = "";
+    // External loop
+    for (let i = 0; i < n; i++) {
+      // printing spaces
+      for (let j = 0; j < i; j++) {
+        string2 += " ";
+      }
+      // printing star
+      for (let k = 0; k < (n - i) * 2 - 1; k++) {
+        string2 += "*";
+      }
+      string2 += "\n";
+    }
+    document.write(`<pre>${string2}</pre>`);
+
+        //6
+
+        let n3 = 5; // you can take input from prompt or change the value
+    let string3 = "";
+    // External loop
+    for (let i = 1; i <= n; i++) {
+      // printing characters
+      for (let j = 0; j < i; j++) {
+        string3 += String.fromCharCode(j + 65);
+      }
+      string3 += "\n";
+    }
+    document.write(`<pre>${string3}</pre>`);
+
+    //7
+
+
+
+
+    </script>
+
+</body>
+
+</html>
