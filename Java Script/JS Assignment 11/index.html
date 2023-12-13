@@ -27,6 +27,67 @@
         <h1 style="color: brown; ">Sajid Mushtaq : 116985</h1>
 
         <script>
+            document.write("<h2>  1. Write a program that takes two user inputs for first and last name using prompt <br> and merge them in a new variable titled fullName. Greet the user using his full name.</h2>")
+
+
+            var firstName = prompt("Enter Your First Name ")
+            var lastName = prompt("Enter Your Last Name ")
+
+
+            document.write("<h3>")
+            document.write(firstName + " " + lastName)
+
+            document.write("<h3>")
+
+
+            document.write("<br>")
+
+            //Q2
+            document.write("<h2>  2. Write a program to take a user input about his favorite <br> mobile phone model. Find and display the length of user input in your browser</h2>")
+            var mobile = prompt("Enter Your favorite Mobile phone ")
+
+            document.write("<h3>")
+
+            document.write("My Favorite Mobile is : " + mobile + "<br>")
+            document.write("Length is String : " + mobile.length + "<br>")
+
+            document.write("<h3>")
+            document.write("<br>")
+            //Q3
+
+
+            document.write("<h2> 3. Write a program to find the index of letter “n” in the word <br>“Pakistani” and display the result in your browser ")
+            document.write("<br>")
+            var p = "pakistan"
+            document.write("<h3>")
+            document.write("String is : " + p + "<br>")
+            document.write("Index of 'n' is  : " + p.indexOf("n") + "<br>")
+
+
+            document.write("<h3>")
+
+            //Q4
+
+            document.write("<h2> Q:4   Write a program to find the last index of letter “l” in the word “Hello World” and display the result in your browser.</h2> ")
+            document.write("<br>")
+            var hello = "Hello World"
+            document.write("<h3>")
+            document.write("String is : " + p + "<br>")
+            document.write("last Index of 'l' is  : " + p.lastIndexOf("l") + "<br>")
+
+
+            document.write("<h3>")
+            //Q5
+            document.write("<h2> Q:5  Write a program to find the character at 3rd index in the word “Pakistani” and display the result in your browser.</h2> ")
+            document.write("<br>")
+            var pk1 = "Pakistani"
+            document.write("<h3>")
+            document.write("String is : " + pk1 + "<br>")
+            document.write("character at index 3  : " + p.charAt(3) + "<br>")
+
+
+            document.write("<h3>")
+
             //Q7
             document.write("<h2>Q7 :Write a program to replace the “Hyder” to “Islam” in the <br> word “Hyderabad” and display the result in your browser.</h2>")
             var originalString = "Hyderabad";
@@ -57,45 +118,200 @@
             var valueInNumber = Number(number1);
             document.write("<h3>Value : " + valueInNumber + "<br>" + "</h3>");
             document.write("<h3> Type is : " + typeof valueInNumber + "</h3>");
-            
-            document.write("<br>");
-            document.write("<br>");
-     //10
 
-    //  document.write("<h2> Q:10. Write a program that takes user input. Convert and <br>show the input in capital letters..</h2>")
-    //   var value1 =prompt( "Enter anay word in small alphabat")
-    //   document.write("<h3>User input : " + value1 + "<br>" + "</h3>");
-    //         document.write(" <h3> Upper case : " + value1.toUpperCase() + "<br>" + "</h3>");
+            document.write("<br>");
+            document.write("<br>");
+
+            10
+
+            document.write("<h2> Q:10. Write a program that takes user input. Convert and <br>show the input in capital letters..</h2>")
+            var value1 = prompt("Enter anay word in small alphabat")
+            document.write("<h3>User input : " + value1 + "<br>" + "</h3>");
+            document.write(" <h3> Upper case : " + value1.toUpperCase() + "<br>" + "</h3>");
+
+
+            document.write("<br>");
+            document.write("<br>");
+
+            //11
+            document.write("<h2> Q:11. Write a program that takes user input. Convert and <br>show the input in capital letters..</h2>")
+
+            const str = 'javascript';
+            const str2 = str.charAt(0).toUpperCase() + str.slice(1);
+            document.write("<h3>User input : " + str + "<br>" + "</h3>");
+            document.write(" <h3> Title case : " + str2 + "<br>" + "</h3>");
+
+            document.write("<br>");
+            document.write("<br>");
+
+
+            //12
+            document.write("<h2> Q:11 Write a program that converts the variable num to string.</h2>")
+
+            var num1 = 35.36;
+            document.write("<h3>Value : " + num1 + "<br>" + "</h3>");
+            document.write(" <h3>Type is : " + typeof num1 + "<br>" + "</h3>");
+            var numToStr = num1.toString().replace(".", "");
+            document.write("<h3>Value : " + numToStr + "<br>" + "</h3>");
+            document.write("<h3> Type is : " + typeof numToStr + "</h3>");
+
+            document.write("<br>");
+            document.write("<br>");
+
+            //13
+            document.write(" <h2><br>Q.13 Write a program to take user input and store username in a variable. If the username contains any special symbol among [@ . , !], prompt the user to enter a valid username. For character codes of [@ .  </h2>")
            
+           var user_name=prompt("Enter user Name Not Contain special symbol")
+               var a = false
+         
+               var special=["!","@",",","."]
+               for(var i=0;i<special.length;i++){
+                   if(user_name.includes(special[i])){
+   
+                    alert("Enter valid Username")
+                     var a = true
+       
+                   }
+                   
+               }                
+                   if (a== false) {
+                       alert("  UserName is  Valid "+ user_name)
+                   }
+
+            //14
+                   document.write(" <h2><br>Q.14 You have <br> an array A = [cake”, “apple pie”, “cookie”, “chips”, “patties”] <br>Write a program to enable “search by user input” in an array. After searching, prompt the user whether the given item is found in the list or not. Note: Perform case insensitive search. Whether the user enters cookie, Cookie, COOKIE or coOkIE, program should inform about its availability. Example:  </h2>")
+
+           var bakery=prompt("enter a bakery item")
+       
+
+           var bk = ["cake", "apple pie", "cookie", "chips", "patties"]
+           var f=false;
+
+            for(var i=0;i<bk.length;i++){
+               if(bakery.toLowerCase() == bk[i]){
+                document.writeln("<h3>  Cookie is abailable <br>"+"   "+bakery+"  index no   "+i+"  in our bakery </h3>");
+                var f=true;
+               } 
+               
+            }
+            if(f==false){
+                document.writeln(" <h3> We  are sorry."+ bakery  +"  is not abailable in our bakery </h3>");
+               
+            }
+
+                   //15
+                   document.write(" <h2><br>Q.15 Write a program to take password as an input from user. The password must qualify these requirements:  <br> a. It should contain alphabets and numbers <br>  b. It should not start with a number <br> c. It must at least 6 characters long </h2> ")
+
+           var pass=prompt("valid password",)
+
+           
+                        function isValidPassword(password) {
+                // for checking if password length is between 8 and 15
+                if (!(password.length >= 8 && password.length <= 15)) {
+                    return false;
+                }
+
+                // to check space
+                if (password.indexOf(" ") !== -1) {
+                    return false;
+                }
+
+                // for digits from 0 to 9
+                let count = 0;
+                for (let i = 0; i <= 9; i++) {
+                    if (password.indexOf(i) !== -1) {
+                    count = 1;
+                    }
+                }
+                if (count === 0) {
+                    return false;
+                }
+
+                // for special characters
+                if (!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password)) {
+                    return false;
+                }
+
+                // for capital letters
+                count = 0;
+                for (let i = 65; i <= 90; i++) {
+                    if (password.indexOf(String.fromCharCode(i)) !== -1) {
+                    count = 1;
+                    }
+                }
+                if (count === 0) {
+                    return false;
+                }
+
+                // for small letters
+                count = 0;
+                for (let i = 97; i <= 122; i++) {
+                    if (password.indexOf(String.fromCharCode(i)) !== -1) {
+                    count = 1;
+                    }
+                }
+                if (count === 0) {
+                    return false;
+                }
+
+                // if all conditions fail
+                return true;
+                }
+
+              
+            if(isValidPassword(pass)){
+                document.write(`${pass} - Valid Password`);
+            } else {
+                document.write(`${pass} - Invalid Password!`);
+            }
+
+          
+
+             //16
+
+          document.write(" <h2><br> Q.16 Write a program to convert the following string to an array using string split method.  var university = “University of Karachi”; <br> Display the elements of array in your browser.</h2>")
+
+          var university = "University of Karachi";
+          
+               
+          var unarry=[] = university.split("")
+      
+          document.write(" <h3> convert string to  array  and type  </h3><br> "+ typeof unarry +" "+unarry )
             
-    //         document.write("<br>");
-    //         document.write("<br>");
+          for (let index = 0; index < unarry.length; index++) {
+            const element = unarry[index];
 
- //11
- document.write("<h2> Q:10. Write a program that takes user input. Convert and <br>show the input in capital letters..</h2>")
-
- const str = 'flexiple';
-const str2 = str.charAt(0).toUpperCase() + str.slice(1);
-document.write("<h3>User input : " + str + "<br>" + "</h3>");
- document.write(" <h3> Title case : " + str2 + "<br>" + "</h3>");
- 
- document.write("<br>");
- document.write("<br>");
+            document.write("<br>  "+element.toLocaleUpperCase())
+            
+          }
 
 
- //12
- document.write("<h2> Write a program that converts the variable num to string.</h2>")
+               //17
+        document.write("<h2><br> Q.17 Write a program to display the last character of a user input.</h2>")
 
- var num1 = 35.36 ;
-document.write("<h3>Value : " + num1 + "<br>" + "</h3>");
-document.write(" <h3>Type is : " + typeof num1 + "<br>" + "</h3>");
-var numToStr = num1.toString().replace(".","");
-document.write("<h3>Value : " + numToStr+ "<br>" + "</h3>");
-document.write("<h3> Type is : " + typeof numToStr + "</h3>");
+        var input =prompt("enter contry name..!","Paksitan");
+        
+        var p= input.slice(-1)
+        document.write(input + " <br><h3> last character of a input...............! </h3>"+ p)
+          
+            //18
+        document.write("<h2><br>  Q.18 You have a string “The quick brown fox jumps over the lazy dog”. Write a program to count number of occurrences of word “the” in given string.</h2>")
 
-document.write("<br>");
-document.write("<br>");
+            var text= "The quick brown fox jumps over the lazy dog"
 
+            var regex = /[a-zA-Z0-9]/g; // only count letters and numbers
+            document.write("<h3>Count whithout_space characters..............! </h3>"+text.match(regex).length+ "<br>"); // prints 35 to the console
+
+            
+
+             var coun=0;
+
+            for (var i = 0; i < text.length; i++) {
+
+                coun++
+             
+                
+            } document.write("<h3> Count whit_space characters..............! </h3>"+coun)
 
 
         </script>
