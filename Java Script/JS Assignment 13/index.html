@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Assignment 13 (DATE METHODS)</title>
+    <style>
+        h3 {
+            font-size: larger;
+            color: blue;
+        }
+
+        body {
+            padding: 5vi;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Sajid Mushtaq : 116895</h1>
+    <br>
+
+    <script>
+
+
+        //Q:1
+        document.write("<h3> Q:1  Write a program that displays current date and time in your browser. </h3>")
+
+        let now = (new Date());
+        document.write("<h2>" + now + "</h2>")
+        document.write("<br>")
+
+
+        //Q:2
+
+        document.write("<h3> Q:2 Write a program that alerts the current month in words.For example December. <br> </h3>")
+        let currentMonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        let month = new Date();
+        var nowMonth = currentMonth[now.getMonth()]
+        document.write("<h2>" + "Current Monthe :" + nowMonth + "</h2>" + "<br>")
+        document.write("<br>")
+
+        //Q:3
+
+        document.write("<h3> Q:3. Write a program that alerts the first 3 letters of the current day, <br> for example if today is Sunday then alert will show Sun. <br> </h3>")
+        var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        var now2 = new Date();
+        var theDay = now2.getDay();
+        var nameOfToday = dayNames[theDay];
+        document.write("<h2>" + "Today Is " + nameOfToday + "</h2>" + "<br>")
+        document.write("<br>")
+
+        //Q:4     
+        document.write("<h3> Q:4. Write a program that displays a message “It’s Fun day” ifits Saturday or Sunday today. <br> </h3>")
+        let dayNames2 = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        var now3 = new Date();
+        var theDay2 = now2.getDay();
+        var nameOfToday2 = dayNames2[theDay];
+
+
+
+        if (nameOfToday2 === "Sun") {
+            document.write("<h2>" + "It’s Fun day " + nameOfToday2.slice(3) + "</h2>" + "<br>")
+
+        }
+
+        else if (nameOfToday2 === "Sat") {
+
+            document.write("<h2>" + "It’s Fun day " + nameOfToday2.slice(3) + "</h2>" + "<br>")
+
+        }
+        else {
+            document.write("<h2>" + "Todays is Not Fun day " + "</h2>" + "<br>")
+        }
+
+        document.write("<br>")
+
+
+        //Q:5    
+
+        document.write("<h3> Q: 5. Write a program that shows the message “First fifteen <br> days of the month” if the date is less than 16th of the month <br> else shows “Last days of the month”. </h3>")
+
+        let monthDays = new Date();
+        monthDays.getDate().toLocaleString();
+        if (monthDays < "16") {
+            document.write("First fifteen days of the month");
+        }
+        else {
+            document.write("<h2>" + "Last days of the month" + "</h2>");
+        }
+
+        document.write("<br>")
+        document.write("<br>")
+        //Q:6
+
+        document.write("<h3> Q:6. Write a program that determines the minutes since <br>  midnight, Jan. 1, 1970 and assigns it to a variable that <br>hasn't been declared beforehand. Use any variable you like <br>to represent the Date object.. </h3>")
+
+        let currenDate = new Date()
+        document.write("<h2>" + "Current Date Is: " + currenDate + "</h2>")
+        document.write("<br>")
+        let miliSecond = Math.floor(currenDate / 1000)
+        document.write("<h2>" + "Elapsed milliseconds since January 1, 1970 : " + miliSecond + "</h2>");
+        document.write("<br>")
+
+        let minuts = Math.floor(currenDate / 1000 / 60)
+
+        document.write("<h2>" + "Elapsed minutes since January 1, 1970 : " + minuts + "</h2>");
+        document.write("<br>")
+
+        //Q:7
+        document.write("<h3> Q:7 Write a program that tests whether it's before noon and <br>alert “Its AM” else “its PM”. </h3>")
+        let time3 = new Date().getHours()
+
+        if (time3 <= 12) {
+            document.write("It's AM")
+        }
+        else {
+            document.write("<h2>" + "It's PM" + "</h2>")
+        }
+        document.write("<br>")
+
+
+        //Q:9   
+
+        document.write("<h3> Q:9 Create a date object of the starting date of this Ramadan <br>and alert the number of days past since 1st Ramadan? <br>Note: 1st Ramadan was on June 18, 2015 </h3>")
+
+        var date1, date2;
+
+        date1 = new Date("03/23/2023");
+        date2 = new Date();
+
+
+        var time_difference = date2.getTime() - date1.getTime();
+
+
+        var days_difference = time_difference / (1000 * 60 * 60 * 24);
+
+        document.write("<h2>" + Math.round(days_difference) + " days have passed since 1st Ramadan,2023" + "</h2>");
+
+
+        document.write("<br>")
+        document.write("<br>")
+
+        //Q:10   
+
+        document.write("<h3> 10. Write a program that displays in your browser the <br>seconds that elapsed between the reference date and the <br>beginning of 2015. </h3>")
+        var date3, date4;
+
+        date3 = new Date("03/23/2023");
+        date4 = new Date();
+
+
+        var time_difference2 = date4.getTime() - date3.getTime();
+
+
+        var days_difference2 = time_difference2 / (1000);
+
+        document.write("<h2>" + "On reference date Sat" + date3 + "<br>" + Math.round(days_difference2) + " seconds had passed since beginning of " + date3.toLocaleDateString() + " " + "</h2>")
+        document.write("<br>")
+        document.write("<br>")
+
+        //Q:11 
+
+        document.write("<h3> 11. Create a Date object for the current date and time.<br> Extract the hours, reset the date object an hour ahead and <br> finally display the date object in your browser. </h3>")
+
+        var today = new Date();
+        var hourago = new Date(today.getTime() - (1000 * 60 * 60));
+
+
+        document.write("<h2>" + "current date :" + today + "</h2>")
+        document.write("<h2>" + "1 Hour ago it was : " + hourago + "</h2>")
+        document.write("<br>")
+        document.write("<br>")
+
+        //Q:12 
+
+        document.write("<h3> 12. Write a program that creates a date object and show the <br> date in an alert box that is reset to 100 years back? </h3>")
+        var startDate = new Date();
+        var numOfYears = -100;
+        var expireDate = new Date(startDate);
+        expireDate.setFullYear(expireDate.getFullYear() + numOfYears);
+        expireDate.setDate(expireDate.getDate() - 1);
+
+        document.write("<h2>" + "Current Date  :" + Date() + "<br>" + "</h2>")
+        document.write("<h2>" + "100 Years back, it Was  " + expireDate + "</h2>")
+
+
+        document.write("<br>")
+        document.write("<br>")
+
+        //Q:13
+
+
+        document.write("<h3> 13. Write a program to ask the user about his age. Calculate <br> and show his birth year in your browser. </h3>")
+        let age = prompt("Ente Your age like this format MM/DD/YYYY ", "03/23/2023")
+        age = new Date(age).getFullYear()
+        let todayDate = new Date().getFullYear()
+        let yourAge = todayDate - age
+        document.write("<h2>" + "Your Age Is " + yourAge + "<br>" + "</h2>")
+        document.write("<h2>" + "Your Birh Year Is " + age + "</h2>")
+        document.write("<br>")
+        document.write("<br>")
+
+
+        //Q:14
+        document.write("<h3> 14. Write a program to generate your K-Electric bill in your <br> browser. All the amounts should be rounded off to 2<br>decimal places. Display the following fields: </h3>")
+        let custName = "Sajid Mushtaq "
+        let month5 = new Date()
+        let unit = 410
+        let chargUnit = 16
+        let latCharg = 350
+        document.write("<h1>"+"K Electric Bill"+"</h1>")
+
+        document.write("<h4>"+"Customer Name : " + custName + "<br>"+ "</h4>");
+        document.write("<h4>"+"Monthe  : " + nowMonth + "<br>"+ "</h4>");
+        document.write("<h4>"+"Number Of Units  : " + unit + "<br>"+ "</h4>");
+        document.write("<h4>"+"Charges per Unit  : " + chargUnit + "<br> <br>"+ "</h4>");
+        document.write("<h4>"+"Net Amount Payable (within Due Date)   : " + chargUnit * unit + "<br>"+ "</h4>");
+        document.write("<h4>"+"Late payment surcharge : " + latCharg + "<br>"+ "</h4>");
+
+        var totalAmount = (unit * chargUnit) + latCharg;
+        document.write("<h4>"+"Gross Amount Payable (After Due Date) : " + totalAmount + "<br>"+ "</h4>")
+        document.write("<br>")
+
+
+
+
+
+    </script>
+
+</body>
+</body>
+
+</html>
