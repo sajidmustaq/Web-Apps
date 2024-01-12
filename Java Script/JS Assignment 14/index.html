@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Assignment 14 (Function)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        h3 {
+            font-size: larger;
+            color: rgb(0, 121, 235);
+        }
+
+        body {
+            padding: 5vi;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Sajid Mushtaq : 116895</h1>
+    <br>
+    <h3>1. Write a function that displays current date & time in you browser. </h3>
+    <br>
+
+   <!-- ********Q:1******** -->
+
+    <button type="button" class="btn btn-outline-primary"
+    onclick="document.getElementById('date_Time').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+    <b> <p id="date_Time"></p> </b>
+    <br>
+  <!-- ********Q:2******** -->
+    <label for="startInput">Start Number:</label>
+<input type="number" id="startInput" />
+
+<label for="endInput">End Number:</label>
+<input type="number" id="endInput" />
+
+<button onclick="displayCounting()">Count</button>
+
+<div id="countingResult"></div>
+<br> <br>
+
+    <script>
+
+
+
+      
+
+      //  ********Q:2******** 
+
+        document.write("<h3>2. Write a function that takes first & last name and then it <br> greets the user using his full name. </h3>")
+        function name() {
+            firstName = prompt("Enter Your First Name")
+            lastName = prompt("Enter Your Last Name")
+            var fullName = (firstName + " " + lastName)
+            document.write("<h2>" + fullName + "</h2>")
+
+
+        }
+
+        name()
+        document.write("<br>")
+
+        //Q:3
+
+        document.write("<h3> 3. Write a function that adds two numbers (input by user) <br> and returns the sum of two numbers. </h3>")
+
+        function sum() {
+            num1 = parseInt(prompt("Enter First Number for Addition"))
+            num2 = parseInt(prompt("Enter Second Number for Addition"))
+            var total = (num1 + num2)
+            document.write("<h2>" + total + "</h2>")
+
+
+        }
+        sum()
+
+        document.write("<br>")
+
+
+        //Q:4     
+        document.write("<h3> 4. Calculator: Write a function that takes three arguments num1, num2 <br> & operator & compute the desired operation. Return and <br> show the desired result in your browser. </h3>")
+
+        function sumThree() {
+            s1 = parseInt(prompt("Enter First Number for Addition"))
+            s3 = prompt("Enter operator like + ,- , *,/")
+            s2 = parseInt(prompt("Enter Second Number for Addition"))
+            var operators = ["+", "/", "*", "-",]
+            for (i = 0; i <= operators.length; i++) {
+                if (s3 == operators[0]) {
+                    document.write("<h2>" + s1 + s2 + "</h2>")
+                    break;
+                }
+
+                else if (s3 == operators[3]) {
+                    document.write("<h2>" + s1 - s2 + "</h2>")
+                    break;
+                }
+
+                else if (s3 == operators[2]) {
+                    document.write("<h2>" + s1 * s2 + "</h2>")
+                    break;
+                }
+                else if (s3 == operators[1]) {
+                    document.write("<h2>" + s1 / s2 + "</h2>")
+                    break;
+                }
+
+                else {
+                    document.write(" Enter valid Oprater")
+                    break;
+                }
+            }
+        }
+        sumThree()
+
+        document.write("<br>")
+
+        //Q:5    
+
+        document.write("<h3> Q 5. Write a function that squares its argument. </h3>")
+        function square() {
+            nums = parseInt(prompt("Enter Any Numbr for Square"))
+            document.write("<h2>" + nums + " Square  Is:  " + nums * nums + "</h2>")
+        }
+        square()
+        document.write("<br>")
+
+        //Q:6
+
+
+        document.write("<h3> Q:6. Write a function that computes factorial of a number.</h3>")
+        let n = prompt("Enter a Number")
+        let arry = []
+        for (let i = 1; i <= n; i++) {
+            arry[i - 1] = i;
+        }
+
+        let sum5 = arry.reduce((res, curr) => {
+            return res + curr;
+        });
+        document.write("<h2>" + "The factorial " + n + " is " + sum5 + "</h2>")
+
+
+        //Q:7
+        document.write("<h3> Q:7 Write a function that take start and end number as inputs & display counting in your browser. </h3>")
+
+        function displayCounting() {
+        var start = parseInt(document.getElementById("startInput").value);
+        var end = parseInt(document.getElementById("endInput").value);
+
+        if (isNaN(start) || isNaN(end)) {
+            alert("Please enter valid numbers for start and end.");
+            return;
+        }
+
+        if (start > end) {
+            alert("Start number should be less than or equal to the end number.");
+            return;
+        }
+
+        var countingResult = "";
+        for (var i = start; i <= end; i++) {
+            countingResult += i + "<br>";
+        }
+
+        document.getElementById("countingResult").innerHTML = countingResult;
+    }
+
+
+        //Q:9   
+
+        //document.write("<h3> Q:9 Create a date object of the starting date of this Ramadan <br>and alert the number of days past since 1st Ramadan? <br>Note: 1st Ramadan was on June 18, 2015 </h3>")
+
+
+
+        //Q:10
+
+        // document.write("<h3> 10. Write a program that displays in your browser the <br>seconds that elapsed between the reference date and the <br>beginning of 2015. </h3>")
+
+
+        //Q:11
+
+        //  document.write("<h3> 11. Create a Date object for the current date and time.<br> Extract the hours, reset the date object an hour ahead and <br> finally display the date object in your browser. </h3>")
+
+
+        //Q:12
+
+        //  document.write("<h3> 12. Write a program that creates a date object and show the <br> date in an alert box that is reset to 100 years back? </h3>")
+
+        //Q:13
+
+
+        //  document.write("<h3> 13. Write a program to ask the user about his age. Calculate <br> and show his birth year in your browser. </h3>")
+
+
+
+        //Q:14
+        //  document.write("<h3> 14. Write a program to generate your K-Electric bill in your <br> browser. All the amounts should be rounded off to 2<br>decimal places. Display the following fields: </h3>")
+
+
+
+
+
+
+    </script>
+
+</body>
+</body>
+
+</html>
