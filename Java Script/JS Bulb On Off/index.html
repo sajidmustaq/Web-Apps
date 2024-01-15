@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>See More</title>
+
+    <!--<link rel="stylesheet" href="screen.css" media="screen">-->
+
+    <style>
+        h3,
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px 0px 10px 30px;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        a#myButton,
+        a {
+            text-decoration: none;
+            color: red;
+        }
+
+        #open {
+            display: inline-block;
+            padding: 30px;
+        }
+
+        #content {
+            display: none;
+        }
+
+        #show:target #content {
+            display: inline-block;
+            padding: 30px;
+            margin: 0;
+        }
+
+        #show:target #open {
+            display: none;
+        }
+
+        #onb {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="show">
+        <h3>Show More and Less In CSS</h3>
+
+        <p id="open">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse cupiditate fugit quaerat dolorem,
+            quam quibusdam ea
+            impedit eaque corrupti distinctio, nisi blanditiis iste optio sunt, repudiandae neque itaque officiis
+            maxime!
+            <a id="myButton" href="#show">See more...</a>
+        </p>
+        <p id="content" class="less">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse cupiditate fugit
+            quaerat dolorem, quam quibusdam ea
+            impedit eaque corrupti distinctio, nisi blanditiis iste optio sunt, repudiandae neque itaque officiis
+            maxime!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse cupiditate fugit quaerat dolorem, quam
+            quibusdam ea
+            impedit eaque corrupti distinctio, nisi blanditiis iste optio sunt, repudiandae neque itaque officiis
+            maxime!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse cupiditate fugit quaerat dolorem, quam
+            quibusdam ea
+            impedit eaque corrupti distinctio, nisi blanditiis iste optio sunt, repudiandae neque itaque officiis
+            maxime!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse cupiditate fugit quaerat dolorem, quam
+            quibusdam ea
+            impedit eaque corrupti distinctio, nisi blanditiis iste optio sunt, repudiandae neque itaque officiis
+            maxime!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse cupiditate fugit quaerat dolorem,
+            <a href="#open">Less</a>
+        </p>
+    </div>
+
+
+    <div class="bulb">
+        <img id="myImage" src="Off.jpg"></img>
+
+
+        <button id="btn1" onclick="onBulb() ; offBulb()" type="button" class="btn btn-success" >ON</button>
+        <!-- <button onclick="offBulb()" type="button" class="btn btn-outline-warning">OFF</button> -->
+
+
+
+    </div>
+    <div id="show-less">
+        <h2>Show More and Less from JavaScript</h2>
+
+
+
+    </div>
+
+
+
+    <script>
+
+        function onBulb(btn1) {
+            var image = document.getElementById('myImage');
+            if (image.src.match("Off.jpg")) {
+                image.src = "On.jpg";
+                document.getElementById("btn1").innerText = "OFF"
+                event.target.style.backgroundColor = 'Red';
+                
+            } else {
+                var image = document.getElementById('myImage');
+                if (image.src.match("On.jpg")) {
+                    image.src = "Off.jpg";
+                    document.getElementById("btn1").innerText = "ON"
+                    event.target.style.backgroundColor = 'green';
+                }
+            }}
+            const btn = document.getElementById('btn');
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

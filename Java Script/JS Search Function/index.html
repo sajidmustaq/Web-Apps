@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<!-- CDN of Bootstrap -->
+	<link rel="stylesheet" href= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+		integrity= 
+"sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+		crossorigin="anonymous"> 
+
+	<!-- CDN of mark.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"
+		integrity= 
+"sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww=="
+		crossorigin="anonymous"> 
+	</script> 
+
+
+   <style>
+    body{
+        margin: 20px;
+    }
+
+      .highlight {
+         background-color: yellow;
+         font-weight: bold;
+      }
+      .content{
+        width: 50%;
+        font-size: larger;
+      }
+
+      .search2{
+            display: flex;
+
+        }
+	</style> 
+</head>
+<body>
+
+   <div class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Aliquam cursus maximus eros, non consequat nulla vulputate id. 
+      Sed porttitor quam a felis viverra lacinia. 
+      Vestibulum vestibulum massa at orci ultrices, in maximus tellus aliquam.
+   </div>
+
+   <form>
+    <div class="search2">
+   <h3 >Searching Latter is : </h3>
+   <h3 id="search1">  </h3>
+</div>
+      <input type="text" id="searchInput" placeholder="Search..." >
+      <button type="button" onclick="highlightText(); getValue()">Search</button >
+   </form>
+
+
+
+
+
+
+
+
+   <script>
+
+      function highlightText() {
+         const searchInput = document.getElementById('searchInput');
+         const searchValue = searchInput.value.trim();
+         const contentElement = document.querySelector('.content');
+   
+         if (searchValue !== '') {
+            const content = contentElement.textContent;
+            const regex = new RegExp(searchValue, 'gi');
+            const highlightedContent = content.replace(
+               regex,
+               (match) => `<span class="highlight">${match}</span>`
+            );
+            contentElement.innerHTML = highlightedContent;
+          } else {
+             contentElement.innerHTML = contentElement.textContent;
+          }
+          
+       }
+   function getValue(){
+    let text1 =document.getElementById("searchInput").value;
+    document.getElementById("search1").innerHTML= text1
+   }
+
+       
+   </script>
+</body>
+</html>

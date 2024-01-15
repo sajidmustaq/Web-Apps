@@ -153,27 +153,21 @@
         //Q:7
         document.write("<h3> Q:7 Write a function that take start and end number as inputs & display counting in your browser. </h3>")
 
-        function displayCounting() {
-        var start = parseInt(document.getElementById("startInput").value);
-        var end = parseInt(document.getElementById("endInput").value);
-
+        function displayCounting(start, end) {
+        // Check if the inputs are valid numbers
         if (isNaN(start) || isNaN(end)) {
-            alert("Please enter valid numbers for start and end.");
+            console.log("Please enter valid numbers for start and end.");
             return;
         }
 
-        if (start > end) {
-            alert("Start number should be less than or equal to the end number.");
-            return;
+        // Display counting in the browser
+        for (let i = start; i <= end; i++) {
+            document.write(i + "<br>");
         }
-
-        var countingResult = "";
-        for (var i = start; i <= end; i++) {
-            countingResult += i + "<br>";
-        }
-
-        document.getElementById("countingResult").innerHTML = countingResult;
     }
+
+    // Example usage:
+    displayCounting(1, 10);
 
 
         //Q:9   
