@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show More & Shoow less</title>
+    <style>
+        .container {
+            width: 50%;
+            height: auto;
+            text-align: left;
+            font-size: xx-large;
+            background-color: #415A77;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: rgba(246, 246, 247, 0.367) 0px 50px 100px -20px, rgba(247, 245, 245, 0.378) 0px 30px 60px -30px;
+        }
+        h1{
+            text-align: center;
+            color: #90fd65;
+        }
+
+        a {
+            text-align: right;
+            text-decoration: underline;
+            color: #90fd65;
+            cursor: pointer;
+            font-size: large;
+            padding: 0px 5px 10px 0px;
+        }
+
+        p {
+            padding: 10px;
+            color: #ecf0f1;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M757 207L756 -20' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M764 177L763 537' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M869 324L868 626' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M984 355L983 -50' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M624 557L623 181' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M525 97L524 -91' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M825 548L824 383' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M325 255L324 636' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M273 478L272 209' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1373 99L1372 402' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M816 93L815 488' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M324 26L323 -153' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M904 358L903 510' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M145 341L144 67' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1405 231L1404 52' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1225 232L1224 588' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M257 255L256 -127' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1128 69L1127 -77' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1100 10L1099 -330' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M473 97L472 -130' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M248 58L247 -92' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1331 291L1330 -18' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1411 23L1410 -209' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1257 543L1256 918' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1051 132L1050 -59' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M959 517L958 192' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1014 151L1013 390' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1071 105L1070 347' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M191 49L190 345' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M581 218L580 393' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M169 158L168 469' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M170 386L169 634' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M393 107L392 -96' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M289 289L288 6' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M919 199L918 472' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1062 345L1061 602' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1001'%3e%3cstop stop-color='rgba(28%2c 83%2c 142%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='%231c538e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='0%25' x2='0%25' y2='100%25' id='SvgjsLinearGradient1002'%3e%3cstop stop-color='rgba(28%2c 83%2c 142%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='%231c538e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sajid Mushtaq 116985</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, atque, aspernatur, architecto
+            assumenda quos et quia fugit sunt consequatur voluptatem in optio id voluptates ducimus mollitia possimus
+            nihilfugit sunt consequatur voluptatem in optio id voluptates ducimus mollitia possimus nihil fugit sunt
+            consequatur voluptatem in optio id voluptates ducimus mollitia possimus nihil
+            voluptas pariatur?</p>
+
+        <a id="btn" style="display: none;" onclick="toggleText()">Show More...</a>
+    </div>
+    <script>
+        var text = document.getElementById('para').textContent;
+        var currentLength = 100;
+
+
+        if (text.length > currentLength) {
+            var copy = text.slice(0, currentLength);
+            document.getElementById('para').textContent = copy;
+            document.getElementById('btn').style.display = 'block';
+        }
+
+        function toggleText() {
+            var para = document.getElementById('para');
+            var btn = document.getElementById('btn');
+
+            if (currentLength < text.length) {
+                currentLength += 100;
+
+                if (currentLength >= text.length) {
+                    para.textContent = text;
+                    btn.innerText = 'Show Less';
+                } else {
+                    var copy = text.slice(0, currentLength);
+                    para.textContent = copy;
+                    btn.innerText = 'Show More...';
+                }
+            } else {
+               
+                currentLength = 100;
+                var copy = text.slice(0, currentLength);
+                para.textContent = copy;
+                btn.innerText = 'Show More...';
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
