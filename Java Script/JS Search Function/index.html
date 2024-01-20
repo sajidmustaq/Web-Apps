@@ -1,61 +1,183 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" href= 
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- CDN of Bootstrap -->
-	<link rel="stylesheet" href= 
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-		integrity= 
-"sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-		crossorigin="anonymous"> 
+    <!-- CDN of Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-	<!-- CDN of mark.js -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"
-		integrity= 
-"sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww=="
-		crossorigin="anonymous"> 
-	</script> 
+    <!-- CDN of mark.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"
+        integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww=="
+        crossorigin="anonymous">
+        </script>
 
 
-   <style>
-    body{
-        margin: 20px;
-    }
+    <style>
+        body {
+            margin: 20px;
+        }
 
-      .highlight {
-         background-color: yellow;
-         font-weight: bold;
-      }
-      .content{
-        width: 50%;
-        font-size: larger;
-      }
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
 
-      .search2{
+        .content {
+            width: 50%;
+            font-size: larger;
+        }
+
+        .search2 {
             display: flex;
 
         }
-	</style> 
+
+        h3,
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px 0px 10px 30px;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        a#myButton,
+        a {
+            text-decoration: none;
+            color: red;
+        }
+
+        #open {
+            display: inline-block;
+            padding: 30px;
+        }
+
+        #content {
+            display: none;
+        }
+
+        #show:target #content {
+            display: inline-block;
+            padding: 30px;
+            margin: 0;
+        }
+
+        #show:target #open {
+            display: none;
+        }
+
+        #onb {
+            display: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 50%;
+            padding-bottom: 10px;
+        }
+
+        #show {
+            width: 100%;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-top: 30px;
+            background-color: aqua;
+
+        }
+
+        .container h3 {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        body {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            /* background: rgb(10, 238, 198);
+            background: linear-gradient(90deg, rgba(10, 238, 198, 1) 0%, rgba(55, 55, 242, 1) 42%, rgba(13, 203, 241, 1) 100%); */
+            background: #00aa77;
+            background-image: url("zenbg-1.png"), url("zenbg-2.png");
+            background-repeat: repeat-x, repeat;
+        }
+
+        .container1 {
+            display: block;
+            justify-self: center;
+            align-self: center;
+            margin: 25px auto;
+            width: 50%;
+            padding: 25px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: aqua;
+
+        }
+
+        .container1 .content {
+            width: 100%;
+        }
+        button{
+            background-color: rgb(167, 248, 147);
+            border: none;
+            border-radius: 5px;
+            border-style: none;
+            height: 35px;
+            cursor: pointer;
+        }
+    </style>
+
 </head>
+
 <body>
+    <div class="container1">
+        <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aliquam cursus maximus eros, non consequat nulla vulputate id.
+            Sed porttitor quam a felis viverra lacinia.
+            Vestibulum vestibulum massa at orci ultrices, in maximus tellus aliquam.
+        </div>
 
-   <div class="content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Aliquam cursus maximus eros, non consequat nulla vulputate id. 
-      Sed porttitor quam a felis viverra lacinia. 
-      Vestibulum vestibulum massa at orci ultrices, in maximus tellus aliquam.
-   </div>
+        <form>
+            <div class="search2">
+                <h3>Searching Latter is : </h3>
+                <h3 id="search1"> </h3>
+            </div>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" onclick="highlightText(); getValue()">Search</button>
+        </form>
+    </div>
+    <div class="container">
+        <div id="show">
+            <h3>Show More and Less In CSS</h3>
 
-   <form>
-    <div class="search2">
-   <h3 >Searching Latter is : </h3>
-   <h3 id="search1">  </h3>
-</div>
-      <input type="text" id="searchInput" placeholder="Search..." >
-      <button type="button" onclick="highlightText(); getValue()">Search</button >
-   </form>
+            <p id="open">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse cupiditate fugit quaerat
+                dolorem,
+                quam quibusdam ea
+                impedit eaque corrupti distinctio, nisi blanditiis iste optio sunt, repudiandae neque itaque officiis
+                maxime!
+                <a id="myButton" href="#show">See more...</a>
+            </p>
+            <p id="content" class="less">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse cupiditate fugit
+                quaerat dolorem, quam quibusdam ea
+
+
+                impedit eaque corrupti distinctio, nisi blanditiis iste optio sunt, repudiandae neque itaque officiis
+                maxime!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse cupiditate fugit quaerat dolorem,
+                <a href="#open">Less</a>
+            </p>
+        </div>
+    </div>
 
 
 
@@ -64,32 +186,31 @@
 
 
 
-   <script>
+    <script>
 
-      function highlightText() {
-         const searchInput = document.getElementById('searchInput');
-         const searchValue = searchInput.value.trim();
-         const contentElement = document.querySelector('.content');
-   
-         if (searchValue !== '') {
-            const content = contentElement.textContent;
-            const regex = new RegExp(searchValue, 'gi');
-            const highlightedContent = content.replace(
-               regex,
-               (match) => `<span class="highlight">${match}</span>`
-            );
-            contentElement.innerHTML = highlightedContent;
-          } else {
-             contentElement.innerHTML = contentElement.textContent;
-          }
-          
-       }
-   function getValue(){
-    let text1 =document.getElementById("searchInput").value;
-    document.getElementById("search1").innerHTML= text1
-   }
+        function highlightText() {
+            const searchInput = document.getElementById('searchInput');
+            const searchValue = searchInput.value.trim();
+            const contentElement = document.querySelector('.content');
 
-       
-   </script>
+            if (searchValue !== '') {
+                const content = contentElement.textContent;
+                const regex = new RegExp(searchValue, 'gi');
+                const highlightedContent = content.replace(regex, (match) => `<span class="highlight">${match}</span>`
+                );
+                contentElement.innerHTML = highlightedContent;
+            } else {
+                contentElement.innerHTML = contentElement.textContent;
+            }
+
+        }
+        function getValue() {
+            let text1 = document.getElementById("searchInput").value;
+            document.getElementById("search1").innerHTML = text1
+        }
+
+
+    </script>
 </body>
+
 </html>
