@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #a8dadc;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 90vmin;
+  height: 70vmin;
+}
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -5px;
+  font-size: 13vmin;
+
+  cursor: pointer;
+  background-color: #dff2ea;
+
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 1.5vmin;
+  height: 60vmin;
+  width: 60vmin;
+}
+main {
+  margin-top: 15px;
+}
+h1 {
+  margin-top: 5px;
+}
+.green {
+  color: green;
+}
+.red {
+  color: #e63946;
+}
+#resetBtn,
+#newGame {
+  --c: #229091; /* the color*/
+  font-size: xx-large;
+  width: auto;
+  height: 7vmin;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 8px;
+  padding: 5px;
+  box-shadow: 0 0 0 0.1em inset var(--c);
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p, 0%)) 0%,
+    var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p, 0%)) 100%;
+  background-size: 50.5% calc(var(--_p, 0%) / 2 + 0.5%);
+  outline-offset: 0.1em;
+  transition: background-size 0.4s, background-position 0s 0.4s;
+}
+#resetBtn:hover,
+#newGame:hover {
+  --_p: 100%;
+  transition: background-position 0.4s, background-size 0s;
+}
+#resetBtn:active,
+#newGame:active {
+  box-shadow: 0 0 9e9Q inset #0009;
+  background-color: var(--c);
+  color: #fff;
+}
+#msg {
+  font-size: 8vmin;
+}
+.hide {
+  display: none;
+}

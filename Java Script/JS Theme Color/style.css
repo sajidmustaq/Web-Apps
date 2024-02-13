@@ -63,7 +63,7 @@ color: #FEF5EF;
     align-items: center;
     text-align: center;
     /* border: 2px solid black; */
-    width: 30%;
+    width: 50%;
     height: 100px;
     margin: auto;
     padding: 30px;
@@ -71,6 +71,7 @@ color: #FEF5EF;
     border-radius: 15px;
     position: relative;
     overflow: hidden;
+    
 }
 .container::before{
     content: '';
@@ -111,10 +112,10 @@ button{
     border-bottom: 2px solid black;
 
 }
-/* button.active {
+button.active {
     border-bottom: 2px solid red;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-} */
+}
 
 #color1{
     background-color: #004E98;

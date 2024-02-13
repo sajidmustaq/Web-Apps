@@ -1,3 +1,5 @@
+
+
 let buttons = document.querySelectorAll(".container button");
 let body = document.querySelector("#body");
 btnBox=document.getElementsByClassName("container")
@@ -14,7 +16,7 @@ function applyTheme(colorClass) {
         case "color1":
             document.body.style.backgroundColor = '#004E98';
             document.body.style.color = '#FF6700';
-            // btnBox.style.backgroundColor="red"
+           
             document.querySelector(".container").style.backgroundColor='#584B53'
             break;
         case "color2":
