@@ -1,4 +1,5 @@
 {
     "prettier.bracketSpacing": true,
-    "prettier.bracketSameLine": true
+    "prettier.bracketSameLine": true,
+    "livePreview.defaultPreviewPath": "/Java Script/Quiz Game/index.html"
 }

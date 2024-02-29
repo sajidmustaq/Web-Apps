@@ -39,11 +39,16 @@ var qaObjects = [
 
 let index = 0;
 let quesBox = document.getElementById("quesBox");
+let optionSelect = document.querySelectorAll(".option");
+console.log(optionSelect);
 
 let loeadQuestion = () => {
   let data = qaObjects[index];
   quesBox.innerText = `${index + 1}) ${data.question}`;
-  
+  optionSelect[0].nextElementSibling.innerText = data.a;
+  optionSelect[1].nextElementSibling.innerText = data.b;
+  optionSelect[2].nextElementSibling.innerText = data.c;
+  optionSelect[3].nextElementSibling.innerText = data.d;
 };
 
 loeadQuestion();
