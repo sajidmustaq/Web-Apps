@@ -1,7 +1,6 @@
 var qaObjects = [
   {
     question: "What does HTML stand for?",
-
     a: "HyperText Markup Language",
     b: "HyperText Makeup Language",
     c: "HighText Markup Language",
@@ -10,7 +9,6 @@ var qaObjects = [
   },
   {
     question: "What does CSS stand for?",
-
     a: "Computer Style Sheets",
     b: "Cascading Style Syntax",
     c: "Creative Style System",
@@ -19,7 +17,6 @@ var qaObjects = [
   },
   {
     question: "How is JavaScript typically embedded in an HTML document?",
-
     a: "<js> tag",
     b: "<javascript> tag",
     c: "<script> tag",
@@ -28,7 +25,6 @@ var qaObjects = [
   },
   {
     question: "What is the purpose of the 'box-sizing' property in CSS?",
-
     a: "Controls the background size of an element",
     b: "Defines the shadow size around an element",
     c: "Specifies the sizing behavior of the content box",
@@ -40,27 +36,104 @@ var qaObjects = [
 let index = 0;
 let quesBox = document.getElementById("quesBox");
 let optionSelect = document.querySelectorAll(".option");
-console.log(optionSelect);
+let total = qaObjects.length;
+let right = 0;
+let wrong = 0;
 
-let loeadQuestion = () => {
+// Declare reset function here
+let resetGame = () => {
+index = 0;
+right = 0;
+wrong = 0;
+loadQuestion();
+};
+let reset = () => {
+optionSelect.forEach((input) => {
+    input.checked = false;
+    input.parentNode.className = "form-check"; // Reset the class
+});
+};
+// function resetGame() {
+//   index = 0;
+//   right = 0;
+//   wrong = 0;
+//   loadQuestion();
+// }
+
+let loadQuestion = () => {
+  if (index === total) {
+      return endQuiz();
+  }
+  
+  // reset(); // Now it won't throw a reference error
+  
   let data = qaObjects[index];
-  quesBox.innerText = `${index + 1}) ${data.question}`;
+  quesBox.innerText = `${index + 1}: ${data.question}`;
+
   optionSelect[0].nextElementSibling.innerText = data.a;
   optionSelect[1].nextElementSibling.innerText = data.b;
   optionSelect[2].nextElementSibling.innerText = data.c;
   optionSelect[3].nextElementSibling.innerText = data.d;
 };
 
-loeadQuestion();
+loadQuestion();
 
-// Accessing individual Q&A with options
-// for (var i = 0; i < qaObjects.length; i++) {
-//   console.log("Question " + (i + 1) + ": " + qaObjects[i].question);
-//   console.log("Options:");
-//   console.log("a. " + qaObjects[i].options.a);
-//   console.log("b. " + qaObjects[i].options.b);
-//   console.log("c. " + qaObjects[i].options.c);
-//   console.log("d. " + qaObjects[i].options.d);
-//   console.log("Correct Answer: " + qaObjects[i].correctAnswer);
-//   console.log("\n");
-// }
+let submit = () => {
+let data = qaObjects[index];
+let ans = getAnswer();
+
+// Check if 'data' is defined before accessing 'correctAnswer'
+if (data && data.correctAnswer) {
+    if (ans === data.correctAnswer) {
+        right++;
+    } else {
+        wrong++;
+    }
+    index++;
+
+    // Move the loadQuestion call outside the if statement
+    loadQuestion();
+
+    // Reset the background color for all options
+    optionSelect.forEach((input) => {
+        input.parentNode.className = "form-check";
+    });
+} else {
+    console.error('Error: Unable to retrieve data for the current question.');
+}
+};
+
+
+
+let getAnswer = () => {
+let checkedRadio = document.querySelector(".option:checked");
+
+if (checkedRadio) {
+    return checkedRadio.value;
+} else {
+    // Handle the case where no radio button is checked, e.g., return a default value
+    return null;
+}
+};
+
+
+let endQuiz = () => {
+document.getElementById("quesBox").innerHTML = `
+  <h1>Quiz Completed</h1>
+  <p id="correct">Correct Answers: ${right}</p>
+  <p id="wrong">Wrong Answers: ${wrong}</p>
+  <p>Thank you for completing the quiz!</p>
+ 
+  <button  id="resetGame" onclick="resetGame()">Reset Game</button>`;
+};
+
+
+function sel(id) {
+  var divs = document.getElementById("container").getElementsByTagName("div");
+  for (var i = 0; i < divs.length; i++) {
+      if (divs[i] != id) {
+          divs[i].className = "form-check";
+      }
+  }
+  id.className = "selitem";
+}
