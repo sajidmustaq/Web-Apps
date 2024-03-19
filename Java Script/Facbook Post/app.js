@@ -24,3 +24,4 @@ createPostButton.addEventListener("click", () => {
 
   postContainer.appendChild(newBox);
 });
+
