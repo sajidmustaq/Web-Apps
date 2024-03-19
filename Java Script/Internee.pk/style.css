@@ -1,0 +1,472 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /*//League Spartan", sans-serif; */
+  font-family: sans-serif;
+}
+/* navbar style */
+.navbar {
+  background: #fff;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+.navbar .navbar-nav .nav-link {
+  color: #000;
+}
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-left {
+  margin-left: 10%;
+}
+.container-fluid img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+.container-fluid a.navbar-brand {
+  color: green;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid span {
+  color: black;
+  text-decoration: none;
+}
+.container-fluid p {
+  color: #8c52fe;
+  font-size: small;
+}
+#active {
+  color: #8c52fe;
+}
+.nav-item a {
+  text-decoration: none;
+  margin: 10px;
+  color: #000;
+  font-size: large;
+  font-weight: 400;
+}
+.nav-item a:hover {
+  color: #8c52fe;
+}
+
+.portal {
+  background-color: #8c52fe;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  padding: 0.6rem;
+}
+.portal:hover {
+  background-color: #8c52fe;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  padding: 0.6rem;
+}
+
+.btn-outline-dark {
+  border-radius: 0;
+}
+.btn-outline-dark:focus {
+  box-shadow: none;
+}
+@media screen and (max-width: 768px) {
+  .btn-outline-dark {
+    border: none;
+    padding: 0;
+    outline: none;
+  }
+
+  .btn-outline-dark:hover {
+    background: none;
+    color: gray;
+  }
+}
+
+/* section 1 */
+
+.section-1 {
+  width: 100%;
+  height: 80vh;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/close-up-young-business-team-working.jpg");
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+.section-1 a {
+  text-decoration: none;
+  color: #fff;
+}
+#spn-sec-1 {
+  background-color: rgba(67, 167, 71, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.h6-sec-1 {
+  font-weight: 500;
+  position: absolute;
+  top: 20px;
+  z-index: 10;
+}
+.sec-1-inner {
+  z-index: 55;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.sec-1-inner h6 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.sec-1-inner h1 {
+  font-size: 62px;
+  font-weight: 700;
+}
+.sec-1-inner p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.sec-1-inner p a {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(208, 228, 255);
+}
+#a-sec-1 {
+  border: 2px solid #fff;
+  border-radius: 25px;
+  width: fit-content;
+  padding: 15px;
+  color: #fff;
+}
+#a-sec-1:hover {
+  background-color: #8c52fe;
+  transition: 0.5s;
+}
+/* section 2 */
+
+#section-2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8%;
+  margin: auto;
+}
+
+.card-sec-2-top {
+  background-image: url(images/founder.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 90vh;
+  width: 25%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.card-sec-mid {
+  width: 45%;
+  height: 90vh;
+  background-color: #8c52fe;
+  padding-top: 10%;
+  color: #fff;
+  padding: 8% 3% 3% 3%;
+}
+.card-sec-mid h1 {
+  width: 100%;
+  font-size: 40px;
+  font-weight: 600;
+}
+.card-sec-mid p {
+  line-height: 35px;
+}
+.card-sec-mid p > a {
+  color: #39e592;
+  text-decoration: none;
+  font-weight: 600;
+}
+.mid-btm {
+  margin-top: 35px;
+}
+.mid-btm .a1 {
+  color: #fff;
+  font-weight: 500;
+  font-size: larger;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 8px;
+  margin-left: 15px;
+  transition: 0.5s;
+}
+.mid-btm .a1:hover {
+  background-color: #fff;
+  color: #000;
+}
+.mid-btm .a2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: larger;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.mid-btm .a2:hover {
+  border-bottom: 2px solid #fff;
+}
+.card-sec-2-btm {
+  background-image: url(images/rayyan.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 90vh;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  width: 25%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.card-sec-2-btm div,
+.card-sec-2-top div {
+  position: absolute;
+  bottom: 70px;
+  left: 15px;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #43a724;
+  border-radius: 15px;
+  padding: 5px;
+}
+@media screen and (max-width: 992px) {
+  .card-sec-2-btm,
+  .card-sec-2-top {
+    width: 100%;
+    border-radius: 25px;
+    margin: 20px 5px;
+  }
+  #section-2 {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .card-sec-mid {
+    width: 100%;
+    border-radius: 25px;
+    margin: 20px 5px;
+  }
+}
+
+/* section 3 */
+
+#section-3 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  margin: auto;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+#section-3 .col-6 {
+  margin-top: 25px;
+}
+#section-3 .card {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+  height: 160px;
+  color: #fff;
+  margin: 0px 20px;
+  border: 8px solid #8c52fe;
+  background-color: #43a724;
+}
+#section-3 .card:hover {
+  cursor: pointer;
+  border: 8px solid white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: 0.5s;
+}
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+.card-body i {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.card-body p {
+  font-size: 12px;
+}
+.card-body h6 {
+  position: absolute;
+  top: -3px;
+  right: -2px;
+  background-color: #8c52fe;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 666;
+}
+
+/* section 4 */
+#section-4 {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px 15px 10px 15px;
+  margin: 30px auto;
+}
+.card-sec-4-left,
+.card-sec-4-right {
+  width: 45%;
+  margin: 10px 15px;
+  height: 600px;
+}
+.card-sec-4-left {
+  background-color: #43a724;
+  color: #fff;
+  padding: 35px 15px 10px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.card-sec-4-left h2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.card-sec-left-m {
+  display: flex;
+  justify-content: start;
+
+  align-self: flex-start;
+}
+.card-sec-left-m div {
+  margin: 10px 15px;
+}
+.card-sec-4-right {
+  background-image: url(images/people-working-as-team-company.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+@media screen and (max-width: 992px) {
+  .card-sec-4-left,
+  .card-sec-4-right {
+    width: 100%;
+    border-radius: 25px;
+    margin: 20px 5px;
+  }
+  #section-4 {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  #section-3 {
+    height: 80vh;
+  }
+}
+
+
+/* section 5 */
+#section-5 .card{
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: left;
+  text-align: left;
+
+}
+#section-5 .card .mid-i{
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+
+
+#section-5 .card h1{
+  font-weight: 700;
+  display: flex;
+justify-content: flex-start;
+text-align: start;
+width: 100%;
+margin: 10px 0px;
+}
+#section-5 .card img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#section-5 .card:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  cursor: pointer;
+  transition: 0.7s
+}
+#section-5 .border-btm{
+  border-bottom: 1px solid rgb(207, 204, 204);
+  width: 80%;
+  margin: 20px 0px;
+}
+#section-5 a{
+ background-color: #8c52fe;
+ border-radius: 25px;
+ width: auto;
+ padding: 12px;
+display: flex;
+justify-self: end;
+align-self: last baseline;
+text-decoration: none;
+color: #fff;
+font-weight: 500;
+margin-top: 20px;
+
+}
+#section-5 i{
+color: #43a724;
+margin: 5px 8px;
+font-size: 20px;
+text-align: left;
+
+}
