@@ -1,239 +1,285 @@
+/* Your custom CSS code here */
 .navbar {
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 4px 6px rgba(22, 22, 26, 0.18);
+}
+#navbarSupportedContent ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .navbar .navbar-nav .nav-link {
   color: #000;
+
 }
+
 .btn-outline-dark {
   border-radius: 0;
 }
+
 .btn-outline-dark:focus {
   box-shadow: none;
 }
+
 @media screen and (max-width: 768px) {
   .btn-outline-dark {
-    border: none;
-    padding: 0;
-    outline: none;
+      border: none;
+      padding: 0;
+      outline: none;
   }
 
   .btn-outline-dark:hover {
-    background: none;
-    color: gray;
+      background: none;
+      color: gray;
   }
 }
-#f-logo1{
+
+#f-logo1 {
   width: 3rem;
   height: 3rem;
-}  
-.form{
+}
 
-position: relative;
+.form {
+  position: relative;
+}
 
+.form .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #9ca3af;
+}
+
+.form-input {
+  height: 3rem;
+  text-indent: 33px;
+  border-radius: 10px;
+  font-size: small;
+  width: 15rem;
+  border: 1px solid silver;
+}
+
+.form-input:focus {
+  box-shadow: none;
+}
+
+.nav-item .nav-link {
+  font-size: 20px;
+  padding: 5px;
+  width: 4rem;
+  height: 3rem;
+  margin: 0px auto;
+}
+
+#right-nav li a {
+  height: 50px;
+  width: 50px;
+  background-color: #e1e2e2;
+  border-radius: 50%;
+  border: 2px solid silver;
+  margin: 5px;
+}
+
+#right-nav li a:hover {
+  border: none;
+  border-radius: 50%;
+}
+
+#profile-pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #9ca3af;
+}
+
+.username {
+  width: 200px;
+}
+
+/* Left Sidebar */
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  background-color: #f8f9fa; /* Light grey */
+  padding-top: 20px; /* Add padding to the top */
+  width: 280px; /* Set a specific width */
+  margin-top: 40px;
+}
+
+.sidebar-sticky {
+  padding-top: 30px;
+  width: 100%;
 
 }
 
-.form .fa-search{
-
-position: absolute;
-top:20px;
-left: 20px;
-color: #9ca3af;
-
-
-}
-
-/* .form span{
-
-    position: absolute;
-right: 17px;
-top: 13px;
-padding: 2px;
-border-left: 1px solid #0365f8;
-
-
-} */
-
-.form-input{
-
-height: 3rem;
-text-indent: 33px;
-border-radius: 10px;
-font-size: small;
-width: 15rem;
-border: 1px solid silver;
-
-}
-
-.form-input:focus{
-
-box-shadow: none;
-
-}
-.nav-item .nav-link{
-font-size: 20px;
-padding: 5px;
-width: 4rem;
-height: 3rem;
-margin: 0px auto;
-}
-#nev-1 li a{
-width: 100px;
-height: 100px;
-}
-
-#navbarSupportedContent a {
-color: black;
-width: 100px;
-}
-
-#navbarSupportedContent a:hover{
-background-color: #e1e2e2;
-border-bottom: 3px solid rgb(13, 110, 253);
-border-radius: 5px;
-border-bottom-left-radius: 0px;
-border-bottom-right-radius: 0px;
-color: rgb(13, 110, 253);
-
-
-}
-#right-nav {
+.sidebar-sticky ul {
   display: flex;
-  justify-content: end;
-  align-items: center;
-  text-align: center;
-  padding: 0px;
-  margin-right: 0px;
+  flex-direction: column; /* Stack items vertically */
+  gap: 5px; /* Add space between items */
+  padding-left: 0; /* Remove default padding */
+  float: left;
+}
 
-} 
-#right-nav  li a{
-  height: 50px;
-  width: 50px;
-background-color: #e1e2e2;
+.sidebar-sticky ul li {
+  list-style: none; /* Remove bullet points */
+}
+
+.sidebar-sticky ul li a {
+  display: flex; /* Align link and icon in a row */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add padding to links */
+  color: #333; /* Text color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.sidebar-sticky ul li a i {
+  margin-right: 5px; /* Add space between icon and text */
+}
+
+/* Custom Scrollbar for Sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Main Content */
+.card {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: left;
+  padding: 20px;
+}
+.card img{
+width: 50px;
+height: 50px;
 border-radius: 50%;
-border: 2px solid silver;
-margin: 5px;
 }
-#right-nav  li a:hover{
- border: none;
- 
-
-  border-radius: 50%;
+.card h3,.card p{
+  display: inline;
+  justify-self: left;
+  width: 50%;
+  margin-top: 5px;
 
 }
-#profile-pic{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #9ca3af
+.card-body{
+  display: inline;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.fa-user-group ,.fa-thumbs-up{
+color: blue; 
+margin-right: 5px;
+font-size: large;
+}
+.fa-heart{
+color: red; 
+margin-right: 5px;
+font-size: large;
+}
+.fa-message{
+  margin-left: 20px;
+}
+/* Custom Scrollbar for Sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* popup CSS */
+
+.openBtn {
+  display: flex;
+  justify-content: left;
+}
+.openButton {
+  border: none;
+  border-radius: 5px;
+  background-color: #1c87c9;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+  position: fixed;
+}
+.loginPopup {
+  position: relative;
+  text-align: start;
+  width: 100%;
+}
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 45%;
+  top: 10%;
+  transform: translate(-50%, 5%);
+  border: 3px solid #999999;
+  border-radius: 10px;
+  z-index: 9;
+}
+.formContainer {
+  max-width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
   
 }
-.username{
-width:200px;
+.formContainer input[type=text] ,.formContainer input{
+  height: fit-content;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #eee;
 }
-#side-bar-m{
-width: 300px;
-
+.formContainer input[type=text]:focus,
+.formContainer input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
 }
-#side-bar-m li a h4{
-width: 300px;
-margin-left: 2rem;
-
-}
-
-/* card */
-.container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-#cards_landscape_wrap-2 .card-flyer {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.9s ease;
+.formContainer .btn {
+  padding: 12px 20px;
+  border: none;
+  background-color: #8ebf42;
+  color: #fff;
   cursor: pointer;
-  width: 100%; 
-}
-
-#cards_landscape_wrap-2 .card-flyer:hover {
-  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.2);
-}
-
-#cards_landscape_wrap-2 .card-flyer .image-box img {
-  -webkit-transition: all 0.9s ease;
-  -moz-transition: all 0.9s ease;
-  -o-transition: all 0.9s ease;
-  -ms-transition: all 0.9s ease;
   width: 100%;
-  height: auto;
+  margin-bottom: 15px;
+  opacity: 0.8;
 }
-
-#cards_landscape_wrap-2 .card-flyer .text-box {
-  padding: 20px;
-  text-align: center;
-  width: 100%;
+.formContainer .cancel {
+  background-color: #cc0000;
 }
-
-#cards_landscape_wrap-2 .card-flyer .text-box h1 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.formContainer .btn:hover,
+.openButton:hover {
+  opacity: 1;
 }
-
-#cards_landscape_wrap-2 .card-flyer {
-  font-size: 14px;
-}
-
-.text-box .card-text {
-  text-decoration: underline;
-  font-size: larger;
-  font-weight: 500;
-  color: blue;
-}
-.card-flyer {
-  max-width: 300px; /* Set a maximum width for the card */
-  overflow: hidden; /* Hide overflow content */
-}
-
-.text-box {
-  height: 100%; /* Fill the entire height of the card */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-title,
-.card-text {
-  margin: 0;
-}
-
-/* Media query for small screens */
-@media (max-width: 768px) {
-  #side-bar-m {
-    display: none;
-  }
-
-  #cards_landscape_wrap-2 .col-md-6 {
-    flex: 0 0 100%; /* Set the card width to 100% on small screens */
-    /* max-width: 100%; */
-  }
-
-  /* Adjust padding for the card text box */
-  #cards_landscape_wrap-2 .card-flyer .text-box {
-    padding: 10px;
-  }
-
-  /* Adjust font size for card title and text */
-  #cards_landscape_wrap-2 .card-flyer .text-box h1 {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-
-  #cards_landscape_wrap-2 .card-flyer .text-box .card-text {
-    font-size: 14px;
-  }
-}
-
