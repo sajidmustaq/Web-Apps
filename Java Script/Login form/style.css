@@ -162,7 +162,7 @@ textarea {
   transition: all .5s ease;
   -webkit-appearance: none;
   &:hover, &:focus {
-    background: #169C77;
+    background-color: #169C77;
   }
 }
 
