@@ -283,3 +283,6 @@ font-size: large;
 .openButton:hover {
   opacity: 1;
 }
+#logout{
+  margin-left: 5px;
+}

@@ -52,3 +52,9 @@ creatBtn.addEventListener("click", (e) => {
     popupForm.style.display = "none";
     popupForm.reset(); // Reset the form
 });
+
+
+let logout=document.getElementById("logout")
+logout.addEventListener("click",()=>{
+  window.location.href="index.html"
+})
