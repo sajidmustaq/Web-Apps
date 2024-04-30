@@ -49,15 +49,15 @@ var fuel = prompt("Enter Fuel litres in like 1 litre or 0.50 litre")
 
 let fuellitter =
   fuel < "0.50" ? "Please refill the fuel in your car" : "Good Fuel";
-document.write(fuellitter);
+document.write("<br>" + fuellitter);
 
 // Q:4 Write a program to take input color of road traffic signal
 // from the user & show the message according to this table:
 // traffic signal
 
-var traffic_signal = prompt("Enter Color Red , Yellow Or Green")
-  .trim()
-  .toLowerCase();
+// var traffic_signal = prompt("Enter Color Red , Yellow Or Green")
+//   .trim()
+//   .toLowerCase();
 // if (traffic_signal == "red") {
 //   alert("Must Stop");
 // } else if (traffic_signal == "yellow") {
@@ -66,27 +66,17 @@ var traffic_signal = prompt("Enter Color Red , Yellow Or Green")
 //   document.write("Move now");
 // } else document.write("Enter Traffic Light Color In Lower Case");
 
+var traffic_signal = prompt("Enter Color Red, Yellow, or Green").trim().toLowerCase();
 
+var message = 
+  traffic_signal === "red" ? "Must Stop" :
+  traffic_signal === "yellow" ? "Ready to move" :
+  traffic_signal === "green" ? "Move now" :
+  
 
-let traffic_light = traffic_signal=="red"? document.write("Must Stop") :traffic_signal=="yellow"? document.write(" Ready to move "):traffic_signal == "green"?document.write("Move now")
+document.write( "<br>" + message);
 
-// const score = 45;
-
-// const scoreRating =
-//   score > 70
-//     ? "Excellent"
-//     : score > 50
-//     ? "Average"
-//     : score > 40
-//     ? "Fair"
-//     : "Do better";
-
-// console.log(scoreRating);
-// "Fair"
-//Q:5 Run this script, & check whether alert message would be
-//    displayed or not. Record the outputs.
-
-var a = 4;
+let a1 = 4;
 
 if (++a === 5) {
   alert("given condition for variable a is true");
@@ -108,6 +98,47 @@ if (c < 14) {
 if (c !== 14) {
   alert("condition 4 is true");
 }
+
+
+// const score = 45;
+
+// const scoreRating =
+//   score > 70
+//     ? "Excellent"
+//     : score > 50
+//     ? "Average"
+//     : score > 40
+//     ? "Fair"
+//     : "Do better";
+
+// console.log(scoreRating);
+// "Fair"
+//Q:5 Run this script, & check whether alert message would be
+//    displayed or not. Record the outputs.
+
+// let a = 4;
+
+// if (++a === 5) {
+//   alert("given condition for variable a is true");
+// }
+// var b = 82;
+// if (++b === 83) {
+//   alert("given condition for variable b is true");
+// }
+// var c = 12;
+// if (++c === 13) {
+//   alert("condition 1 is true");
+// }
+// if (c === 13) {
+//   alert("condition 2 is true");
+// }
+// if (c < 14) {
+//   alert("condition 3 is true");
+// }
+// if (c !== 14) {
+//   alert("condition 4 is true");
+// }
+
 var materialCost = 20000;
 var laborCost = 2000;
 var totalCost = materialCost + laborCost;
