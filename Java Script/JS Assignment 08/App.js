@@ -1,19 +1,19 @@
 function calculateTotalAndAverage() {
-    var studentName = document.getElementById('studentName').value;
-    var maths = parseInt(document.getElementById('maths').value);
-    var physics = parseInt(document.getElementById('physics').value);
-    var aemistry = parseInt(document.getElementById('aemistry').value);
-    var english = parseInt(document.getElementById('english').value);
-    var biology = parseInt(document.getElementById('biology').value);
+    let studentName = document.getElementById('studentName').value;
+    let maths = parseInt(document.getElementById('maths').value);
+    let physics = parseInt(document.getElementById('physics').value);
+    let aemistry = parseInt(document.getElementById('aemistry').value);
+    let english = parseInt(document.getElementById('english').value);
+    let biology = parseInt(document.getElementById('biology').value);
 
     if (isNaN(maths) || isNaN(physics) || isNaN(aemistry) || isNaN(english) || isNaN(biology)) {
         alert('Please enter valid marks for all subjects');
         return;
     }
 
-    var total = maths + physics + aemistry + english + biology;
-    var average = total / 5;
-    var grade = '';
+    let total = maths + physics + aemistry + english + biology;
+    let average = total / 5;
+    let grade = '';
 
     if (average >= 80) {
         grade = 'A+';
@@ -37,11 +37,11 @@ function calculateTotalAndAverage() {
 }
 
 // =======> Q:1Write a program that takes a character (number or string)
-// in a variable & checks whether the given input is a
+// in a letiable & checks whether the given input is a
 // number, uppercase letter or lower case letter. (Hint: ASCII
 // codes:- A=65, Z=90, a=97, z=122).
 
-//  var n = prompt("aeck your number", "Type your number here");
+//  let n = prompt("aeck your number", "Type your number here");
 //  n = parseInt(n);
 //  if (isNaN(n))
 //     {
@@ -66,7 +66,7 @@ function calculateTotalAndAverage() {
 // =======>     Q:2 Write a JavaScript program that accept two integers and
 //              display the larger. Also show if the two integers are equal.
 
-// var a = prompt("Enter Alphabat lowercase or uppercase  ", "Like A or a")
+// let a = prompt("Enter Alphabat lowercase or uppercase  ", "Like A or a")
 // if (a >= "A" && a <= "Z") {
 //     alert(a + " is an UpperCase Character ");
 // }
@@ -81,8 +81,8 @@ function calculateTotalAndAverage() {
 // }
 
 
-// var a = prompt("Enter Number 1");
-// var b = prompt("Enter Number 2");
+// let a = prompt("Enter Number 1");
+// let b = prompt("Enter Number 2");
 
 // if (a > 0 && b > 0 && a > b) {
 //     alert("The larger number is " + a);
@@ -98,7 +98,7 @@ function calculateTotalAndAverage() {
 //   =======>          Q:3 Write a program that takes input a number from user &
 //              state whether the number is positive, negative or zero.
 
-// var a = prompt(" Check the number is positive, negative or zero.");
+// let a = prompt(" Check the number is positive, negative or zero.");
 
 // if (a > 0)
 //     alert("The Numbe is Positive");
@@ -114,7 +114,7 @@ function calculateTotalAndAverage() {
 //     length 1) and returns true if it is a vowel, false otherwise
 
 
-// var a = prompt(" Enter Vowel");
+// let a = prompt(" Enter Vowel");
 
 // if (a == 'v' || a == 'o' || a == 'w' || a == 'e' || a == 'l') {
 //     alert("The character is a Vowel");
@@ -125,9 +125,9 @@ function calculateTotalAndAverage() {
 
 
 //=======>  5. Write a program that
-// a. Store correct password in a JS variable.
+// a. Store correct password in a JS letiable.
 
-// var a = prompt("Please enter your password  <password is sajid> ");
+// let a = prompt("Please enter your password  <password is sajid> ");
 // if(a === "sajid"){
 //     alert("Password is Correct")
 // }
@@ -139,8 +139,8 @@ function calculateTotalAndAverage() {
 //=======> 6 This if/else statement does not work. Try to fix it:
 
 
-// var greeting;
-// var hour = 13;
+// let greeting;
+// let hour = 13;
 // if (hour < 18) {
 //     alert (greeting = "Good day");
 
@@ -154,82 +154,34 @@ function calculateTotalAndAverage() {
 // following case using if, else & else if statements
 
 
-var a = prompt("Enter the time based on 24 hours like 19 , 23 ,24  ");
-if (a === "0") {
-    alert("Time is 12 AM")
-}
-else if (a === "1") {
-    alert("Time is 1 AM")
-}
-else if (a === "2") {
-    alert("Time is 2 AM")
-}
-else if (a === "3") {
-    alert("Time is 3 AM")
-}
-else if (a === "4") {
-    alert("Time is 4 AM")
-}
-else if (a === "5") {
-    alert("Time is 5 AM")
-}
-else if (a === "6") {
-    alert("Time is 6 AM")
-}
-else if (a === "7") {
-    alert("Time is 7 AM")
-}
-else if (a === "8") {
-    alert("Time is 8 AM")
-}
-else if (a === "9") {
-    alert("Time is 9 AM")
-}
-else if (a === "10") {
-    alert("Time is 10 AM")
-}
-else if (a === "11") {
-    alert("Time is 11 AM")
-}
-else if (a === "12") {
-    alert("Time is 12 PM")
-}
-else if (a === "13") {
-    alert("Time is 1 PM")
-}
-else if (a === "14") {
-    alert("Time is 2 PM")
-}
-else if (a === "15") {
-    alert("Time is 3 PM")
-}
-else if (a === "16") {
-    alert("Time is 4 PM")
-}
-else if (a === "17") {
-    alert("Time is 5 PM")
-}
-else if (a === "18") {
-    alert("Time is 6 PM")
-}
-else if (a === "19") {
-    alert("Time is 7 PM")
-}
-else if (a === "20") {
-    alert("Time is 8 PM")
-}
-else if (a === "21") {
-    alert("Time is 9 PM")
-}
-else if (a === "22") {
-    alert("Time is 10 PM")
-}
-else if (a === "23") {
-    alert("Time is 11 PM")
-}
-else if (a === "24") {
-    alert("Time is 12 PM")
-}
-else {
-    alert("Enter Correct Time")
-}
+let a = prompt("Enter the time based on 24 hours like 19, 23, 24");
+let time = (
+    (a === "0") ? "12 AM" :
+    (a === "1") ? "1 AM" :
+    (a === "2") ? "2 AM" :
+    (a === "3") ? "3 AM" :
+    (a === "4") ? "4 AM" :
+    (a === "5") ? "5 AM" :
+    (a === "6") ? "6 AM" :
+    (a === "7") ? "7 AM" :
+    (a === "8") ? "8 AM" :
+    (a === "9") ? "9 AM" :
+    (a === "10") ? "10 AM" :
+    (a === "11") ? "11 AM" :
+    (a === "12") ? "12 PM" :
+    (a === "13") ? "1 PM" :
+    (a === "14") ? "2 PM" :
+    (a === "15") ? "3 PM" :
+    (a === "16") ? "4 PM" :
+    (a === "17") ? "5 PM" :
+    (a === "18") ? "6 PM" :
+    (a === "19") ? "7 PM" :
+    (a === "20") ? "8 PM" :
+    (a === "21") ? "9 PM" :
+    (a === "22") ? "10 PM" :
+    (a === "23") ? "11 PM" :
+    (a === "24") ? "12 PM" :
+    "Enter Correct Time"
+);
+
+alert("Time is " + time);
