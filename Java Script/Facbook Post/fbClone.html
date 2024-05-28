@@ -10,7 +10,7 @@
     <!-- Font Awesome CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="style.css" rel="stylesheet">
+    <link href="fbstyle.css" rel="stylesheet">
 
 </head>
 
@@ -109,7 +109,7 @@
                         <div class="btn-group mr-2">
                             <button type="button" class="btn btn-sm btn-outline-primary" onclick="openForm()">Create
                                 Post</button>
-                                <button type="button" class="btn btn-outline-danger" id="logout" >Log Out</button>
+                            <button type="button" class="btn btn-outline-danger" id="logout">Log Out</button>
                         </div>
                     </div>
                 </div>
@@ -143,37 +143,37 @@
             </div>
         </div>
     </div>
-<div id="formpopup">
-    <div class="loginPopup">
-        <div class="formPopup" id="popupForm">
-            <form action="/action_page.php" class="formContainer" id="postForm">
-                <h2 id="formposth1">New Post</h2>
-                <label for="name">
-                    <strong>Enter Your Name</strong>
-                </label>
-                <input type="text" id="name" placeholder="Your Name" name="name" required>
+    <div id="formpopup">
+        <div class="loginPopup">
+            <div class="formPopup" id="popupForm">
+                <form action="/action_page.php" class="formContainer" id="postForm">
+                    <h2 id="formposth1">New Post</h2>
+                    <label for="name">
+                        <strong>Enter Your Name</strong>
+                    </label>
+                    <input type="text" id="name" placeholder="Your Name" name="name" required>
 
-                <label for="postwrite">
-                    <strong>Write Your Feed</strong>
-                </label>
-                <input type="text" id="cardbdy-p1" placeholder="Your Feed" name="postwrite" required>
+                    <label for="postwrite">
+                        <strong>Write Your Feed</strong>
+                    </label>
+                    <input type="text" id="cardbdy-p1" placeholder="Your Feed" name="postwrite" required>
 
-                <label for="files">Upload Your Image:</label>
-                <input type="file" accept="image/gif, image/jpeg, image/png" id="files" name="files">
-                <img id="imagePreview" src="#" alt="Image Preview" style="max-width: 100%; display: none;">
+                    <label for="files">Upload Your Image:</label>
+                    <input type="file" accept="image/gif, image/jpeg, image/png" id="files" name="files">
+                    <img id="imagePreview" src="#" alt="Image Preview" style="max-width: 100%; display: none;">
 
-                <button type="button" class="btn" id="Creat-btn">Create Post</button>
+                    <button type="button" class="btn" id="Creat-btn">Create Post</button>
 
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            </form>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- End of Sidebar -->
 
     <!-- Bootstrap JS -->
-    <script src="app.js"></script>
+    <script src="fbclone.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
