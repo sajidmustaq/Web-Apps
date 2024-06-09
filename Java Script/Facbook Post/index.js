@@ -2,6 +2,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-analytics.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js";
+import { getFirestore,db} from "https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -18,7 +19,23 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
+// Initialize Cloud Firestore and get a reference to the service
+const db = getFirestore(app);
 
+
+
+const fullName=document.getElementById("signupName")
+const email = document.getElementById('signupEmail').value;
+const password = document.getElementById('signupPassword').value;
+
+
+
+let userData={
+    fullName : fullName,
+    email : email,
+    password : password,
+    
+}
 // Sign Up Function
 document.getElementById('signupForm').addEventListener('submit', (e) => {
     e.preventDefault();
@@ -26,10 +43,19 @@ document.getElementById('signupForm').addEventListener('submit', (e) => {
     const password = document.getElementById('signupPassword').value;
     const signupName = document.getElementById('signupName').value;
 
-    createUserWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
+    createUserWithEmailAndPassword(auth, userData.email, userData.password)
+        .then(async(userCredential) => {
             const user = userCredential.user;
             console.log('Signed up:', user.email);
+            try {
+                const docRef = await addDoc(collection(db, "users"), {
+                  ...userData,
+                  uid : user.uid,
+                });
+                console.log("Document written with ID: ", docRef.id);
+              } catch (e) {
+                console.error("Error adding document: ", e);
+              }
             alert(`Hi ${signupName}, Your ID has been created. Please sign in.`);
             // Close the signup modal
             document.querySelector('#signupModal .btn-close').click();

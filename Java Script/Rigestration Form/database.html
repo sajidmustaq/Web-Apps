@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Data Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="/images/database.png" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/database.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <h1>Data Base</h1>
+            <button id="logoutButton" class="btn btn-danger">Logout</button>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>S. No</th>
+                        <th>Full Name</th>
+                        <th>Email Id</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Gender</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBodyData">
+                    <!-- Rows will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="module" src="/JavaScript/database.js"></script>
+</body>
+
+</html>

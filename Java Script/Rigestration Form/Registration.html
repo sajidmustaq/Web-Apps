@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="/images/Registration.png" type="image/x-icon">
+  <link rel="stylesheet" href="/CSS/register.css">
+
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Registration Form</h1>
+    </header>
+    <div class="form-wrap">  
+      <form id="survey-form">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" class="form-control" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" class="form-control" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label id="country-label" for="country">Country</label>
+              <select name="country" id="country" class="form-control" required>
+                <option value="" selected disabled>Select your country</option>
+                <option value="Pakistan">PAKISTAN</option>
+                <option value="Indonasia">INDONASIA</option>
+                <option value="USA">USA</option>
+                <option value="Iraq">IRAQ</option>
+                <option value="Afghanistan">AFGHANISTAN</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label  for="city">City</label>
+              <input type="text" name="city" id="cityList" placeholder="Enter your city" class="form-control" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" name="phone" id="phoneNumber" placeholder="Enter your phone number" class="form-control" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Gender</label>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="genderMale" value="Male" name="gender" class="custom-control-input" required>
+                <label class="custom-control-label" for="genderMale">Male</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="genderFemale" value="Female" name="gender" class="custom-control-input">
+                <label class="custom-control-label" for="genderFemale">Female</label>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="emailIdRgFrm" placeholder="Enter your email" class="form-control" required>
+            </div>
+          </div>
+      
+        
+          <div class="col-md-6">
+            <div class="form-group">
+              <label  for="password">Password</label>
+              <input type="password" name="password" id="passwordRgFrm" placeholder="Enter your password" class="form-control" required>
+            </div>
+         
+        </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <button type="submit" id="submit" class="btn btn-primary btn-block">Submit Data</button>
+          </div>
+        </div>
+      </form>
+    </div>  
+  </div>
+
+  <script type="module" src="/JavaScript/Registration.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+ 
+  </script>
+</body>
+</html>

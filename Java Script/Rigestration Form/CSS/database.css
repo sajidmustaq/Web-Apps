@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+
+body {
+  padding: 100px 0;
+  background: #ecf0f4;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 45px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+#description {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.table {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.table thead th {
+  background: #00bcd9;
+  color: #fff;
+  border: none;
+  text-align: center;
+}
+
+.table tbody tr {
+  text-align: center;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #fff;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  background: #00bcd9;
+  color: #fff;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.modal-title {
+  font-weight: 700;
+}
+
+.close {
+  color: #fff;
+  opacity: 1;
+}
+
+.modal-body {
+  padding: 30px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group > label {
+  display: block;
+  font-size: 18px;
+  color: #000;
+}
+
+.custom-control-label {
+  color: #000;
+  font-size: 16px;
+}
+
+.form-control {
+  height: 50px;
+  background: #ecf0f4;
+  border: none;
+  padding: 0 15px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #00bcd9;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+}
+
+textarea.form-control {
+  height: 160px;
+  padding-top: 15px;
+  resize: none;
+}
+
+.modal-footer {
+  padding: 20px;
+  text-align: center;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.btn {
+  padding: .657rem .75rem;
+  font-size: 18px;
+  letter-spacing: 0.050em;
+  transition: all 0.3s ease-in-out;
+  /* margin-bottom: 10px; */
+  float:inline-end;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px 0;
+    font-size: 16px;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tbody tr {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .table tbody tr td {
+    display: block;
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .table tbody tr td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
