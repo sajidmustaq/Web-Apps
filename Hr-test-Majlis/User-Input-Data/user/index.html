@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Entry and Admin Access</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/inputmask.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>User Data Entry</h2>
+        <form id="userForm" enctype="multipart/form-data">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="fatherName" name="fatherName" placeholder="Father Name"
+                        required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <select id="province" name="province" class="form-control urdu" required>
+                        <option value="">Select Province/صوبہ</option>
+                        <option value="sindh">سندھ (Sindh)</option>
+                        <option value="punjab">پنجاب (Punjab)</option>
+                        <option value="kpk">کے پی کے (KPK)</option>
+                        <option value="balochistan">بلوچستان (Balochistan)</option>
+                        <option value="kashmir">کشمیر (Kashmir)</option>
+                        <option value="gb">گلگت بلتستان (GB)</option>
+                        <option value="karachi">کراچی (Karachi)</option>
+                        <option value="ict">اسلام آباد (Islamabad)</option>
+                        <option value="lahore">لاھور (Lahore)</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <select id="city" name="city" class="form-control urdu" required>
+                        <option value="">Select Division/ڈویژن</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="tel" class="form-control urdu" id="employeeCode" name="employeeCode"
+                        placeholder="Employee Code /اگر پہلے سے اجیر ہیں/اجیر کوڈ" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" class="form-control" id="testNumber" name="testNumber"
+                        placeholder="Test Number" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber"
+                        placeholder="Mobile Number" required>
+                </div>
+                <div class="col-md-6 custom-file-input1">
+                    <input type="tel" class="form-control urdu" id="confirmMobileNumber" name="confirmMobileNumber"
+                        placeholder="Mobile Number/تصدیق کرنے والے کا" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="fileUpload">
+                        <input type="file" id="photo" class="upload form-control " />
+                        <span class="urdu">اپنی تصویر اپلوڈ کریں</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="fileUpload">
+                        <input type="file" id="idCardFront" class="upload" />
+                        <span class="urdu">شناختی کارڈ کی فرنٹ سائڈ اپلوڈ کریں</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="fileUpload">
+                        <input type="file" id="idCardBack" class="upload" />
+                        <span class="urdu">شناختی کارڈ کی بیک سائڈ اپلوڈ کریں</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="fileUpload">
+                        <input type="file" id="permissionForm" class="upload" />
+                        <span class="urdu">permission and Confirmation Form for Interview/
+                            اجازت و تصدیق فارم برائےانٹرویو اپلوڈ کریں</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <select class="form-control urdu" id="department" name="department" required>
+                        <option value="">Which test to take?/ کونسا ٹیسٹ دینا ہے۔؟</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <select class="form-control urdu" id="testDepartment" name="testDepartment" required>
+                        <option value="">Department Of Test/ٹیسٹ کا شعبہ</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- Loader Spinner -->
+        <div id="loader" class="hidden">
+            <span class="loader"></span>
+        </div>
+
+    </div>
+
+    <!-- Admin section -->
+    <!-- <div class="container">
+        <button id="adminBtn">Admin</button>
+        <div id="idForm" class="hidden">
+            <input type="text" id="adminId" placeholder="Enter Admin ID">
+            <button id="verifyId">Verify</button>
+        </div>
+        <div id="signInForm" class="hidden">
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="signIn">Sign In</button>
+        </div>
+        <div id="signUpForm" class="hidden">
+            <input type="text" id="newEmail" placeholder="Email">
+            <input type="password" id="newPassword" placeholder="Password">
+            <button id="signUp">Sign Up</button>
+        </div>
+    </div> -->
+    <!-- Admin section end -->
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
