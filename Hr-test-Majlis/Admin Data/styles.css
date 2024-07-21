@@ -1,0 +1,57 @@
+/* admin.css */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fefae0;
+    color: #222d42;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  table th {
+    background-color: #d4a373;
+    color: #fff;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #faedcd;
+  }
+  
+  table tbody tr:hover {
+    background-color: #ffefcf;
+  }
+  
+  @media screen and (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+  }
+  
